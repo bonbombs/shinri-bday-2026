@@ -1,0 +1,28 @@
+
+{% set signature %}
+    {% include "signatures/" + userid + ".njk" ignore missing %}
+{% endset %}
+<tr style="border:1px solid;">
+    <td>post #{{loop.index}}</td>
+    <td style="text-align:right;">{{post.data.date | htmlDateTime }}</td>
+</tr>
+<tr>
+    <td style="vertical-align: top;">
+        <p>{{ userdata.user }}</p>
+        <p><u>{{ userdata.username }}</u></p>
+        
+        <p><b>joined</b> {{userdata.joined}}</p>
+        {# <p><b>joined</b> <time datetime="{{ userdata.joined | toJSDate | htmlDateString }}">{{ userdata.joined | toJSDate | readableDate }}</time></p> #}
+    </td>
+    <td style="padding: 0.25em 1.5em;">
+        {{ userdata.content | safe }}
+        {{ postcontent | safe }}
+    </td>
+</tr>
+{% if signature | trim | length %}
+<tr>
+    <td></td>
+    <td style="border-top: 1px solid;padding: 0.25em 1.5em;">{{ signature | safe }}</td>
+</tr>
+{% else %}
+{% endif %}

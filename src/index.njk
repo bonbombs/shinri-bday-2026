@@ -1,0 +1,30 @@
+---js
+const eleventyNavigation = {
+	key: "Home",
+	order: 1
+};
+
+const numberOfLatestThreadsToShow = 3;
+---
+{% set allthreads = collections.threads | noTitle %}
+{% set threadCount = allthreads | length %}
+{% set latestThreadCount = threadCount | min(numberOfLatestThreadsToShow) %}
+<h1>Latest {{ latestThreadCount }} thread{% if latestThreadCount != 1 %}s{% endif %}</h1>
+
+{% set threadslist = allthreads | head(-1 * numberOfLatestThreadsToShow) %}
+{% set threadslistCounter = threadCount %}
+{% include "threadslist.njk" %}
+
+{% set moreThreads = threadCount - numberOfLatestThreadsToShow %}
+{% if moreThreads > 0 %}
+<p>{{ moreThreads }} more thread{% if moreThreads != 1 %}s{% endif %} can be found in <a href="blog.njk">the archive</a>.</p>
+{% endif %}
+
+{# List every content page in the project #}
+{#
+<ul>
+	{%- for entry in collections.all %}
+	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
+	{%- endfor %}
+</ul>
+#}
