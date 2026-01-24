@@ -2,27 +2,30 @@
 {% set signature %}
     {% include "signatures/" + userid + ".njk" ignore missing %}
 {% endset %}
-<tr style="border:1px solid;">
-    <td>post #{{loop.index}}</td>
-    <td style="text-align:right;">{{post.data.date | htmlDateTime }}</td>
-</tr>
-<tr>
-    <td style="vertical-align: top;">
-        <p>{{ userdata.user }}</p>
-        <p><u>{{ userdata.username }}</u></p>
-        
-        <p><b>joined</b> {{userdata.joined}}</p>
-        {# <p><b>joined</b> <time datetime="{{ userdata.joined | toJSDate | htmlDateString }}">{{ userdata.joined | toJSDate | readableDate }}</time></p> #}
-    </td>
-    <td style="padding: 0.25em 1.5em;">
-        {{ userdata.content | safe }}
-        {{ postcontent | safe }}
-    </td>
-</tr>
-{% if signature | trim | length %}
-<tr>
-    <td></td>
-    <td style="border-top: 1px solid;padding: 0.25em 1.5em;">{{ signature | safe }}</td>
-</tr>
-{% else %}
-{% endif %}
+{% set postcount = collections.postsByUser[userid] | length %}
+<div id="{{ postid or post.fileSlug }}" class="post">
+    <div class="inner">
+        <dl class="profile">
+            <div class="avatar"></div>
+            <dt><u>{{ userdata.username }}</u></dt>
+            <dd>posts: <a href="/users/{{userid}}">{{ postcount }}</a></dd>
+            {% if userdata.title %}<dd>{{userdata.title}}</dd>{% endif %}
+            {% if userdata.location %}<dd><b>Location:</b> {{userdata.location}}</dd>{% endif %}
+            {% if userdata.oshis %}<dd><b>Oshis:</b> {{userdata.oshis}}</dd>{% endif %}
+            {% if userdata.hobbies %}<dd><b>Hobbies:</b> {{userdata.hobbies}}</dd>{% endif %}
+            <dd><b>Joined:</b> {{userdata.joined}}</dd>
+        </dl>
+        <div class="body">
+            {{ header | safe }}
+            <div class="content">
+                {{ userdata.content | safe }}
+                {{ postcontent | safe }}
+            </div>
+            {% if signature | trim | length %}
+            <div class="signature" style="border-top: 1px solid;padding: 0.25em 1.5em;">{{ signature | safe }}</div>
+            {% else %}
+            {% endif %}
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

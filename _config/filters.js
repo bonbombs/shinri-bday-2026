@@ -70,6 +70,27 @@ export default function(eleventyConfig) {
         // You can now access this as collections.postsByThread['your-tag-name']
         return postsByThread;
     });
+   
+	eleventyConfig.addCollection("posts", function (collectionAPI) {
+		return collectionAPI.getFilteredByGlob("./src/**/post-*.md");
+	});
+	eleventyConfig.addCollection("postsByUser", function (collectionAPI) {
+        const posts = collectionAPI.getFilteredByGlob("./src/**/post-*.md");
+        const postsByUser = {};
+
+        posts.forEach(item => {
+            const user = item.data.user;
+            if (user) {
+                if (!postsByUser[user]) {
+                    postsByUser[user] = [];
+                }
+                postsByUser[user].push(item);
+            }
+        });
+
+        // You can now access this as collections.postsByUser['your-tag-name']
+        return postsByUser;
+    });
 
 	eleventyConfig.addFilter("findUser", (users, id) => {
 		return users.find((u) => u.id == id)

@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 ---
+<link rel="stylesheet" href="{{ "/css/posts.css" }}" />
 
 <header>
     <h1>{{ title }}</h1>
@@ -19,6 +20,12 @@ layout: layouts/base.njk
     {% set userid = post.data.user %}
     {% set userdata = users | findUser(userid) %}
     {% set postcontent = post.content %}
+    {% set header %}
+        <div>post #{{loop.index}} by 
+            <span>{{ userdata.username }}</span> » 
+            <time datetime="{{post.data.date}}">{{post.data.date | htmlDateTime }}</time>
+        </div>
+    {% endset %}
     {% include "layouts/post.njk" %}
 {% endfor %}
 </table>

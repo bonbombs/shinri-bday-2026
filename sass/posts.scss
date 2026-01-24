@@ -1,0 +1,38 @@
+.post {
+
+    position: relative;
+    margin-bottom: 4px;
+    padding: 5px 10px;
+    border: 1px solid;
+
+    .body {
+        position: relative;
+        float: right;
+        line-height: 1.5;
+        position: relative;
+        width: 75%;
+        padding: 0;
+    }
+
+    .avatar {
+        width: 150px;
+        height: 150px;
+        background-color: burlywood;
+    }
+    
+    .profile {
+        line-height: 1.5;
+        border-width: 0 0 0 1px;
+        float: left;
+        width: 25%;
+        min-height: 80px;
+        margin: 5px 0px;
+    }
+
+    dd {
+        margin-inline-start: 1em;
+        font-size: 0.85em;
+    }
+}
+
+.clear { clear: both; }

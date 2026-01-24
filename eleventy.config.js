@@ -1,10 +1,47 @@
+import path from "node:path";
+import * as sass from "sass";
+
 import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
 import pluginNavigation from "@11ty/eleventy-navigation";
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import pluginBundle from "@11ty/eleventy-plugin-bundle";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import { generateUsers } from "./_plugin/generateUsers.js";
 
 import pluginFilters from "./_config/filters.js";
 
 export default async function (eleventyConfig) {
+
+    eleventyConfig.addExtension("scss", {
+		outputFileExtension: "css",
+
+		// opt-out of Eleventy Layouts
+		useLayouts: false,
+
+		compile: async function (inputContent, inputPath) {
+			let parsed = path.parse(inputPath);
+			// Don’t compile file names that start with an underscore
+			if(parsed.name.startsWith("_")) {
+				return;
+			}
+
+			let result = sass.compileString(inputContent, {
+				loadPaths: [
+					parsed.dir || ".",
+					this.config.dir.includes,
+				]
+			});
+
+			// Map dependencies for incremental builds
+			this.addDependencies(inputPath, result.loadedUrls);
+
+			return async (data) => {
+				return result.css;
+			};
+		},
+	});
+
     eleventyConfig
 		.addPassthroughCopy({
 			"./public/": "/"
@@ -17,25 +54,47 @@ export default async function (eleventyConfig) {
 
 	// Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
 	// Bundle <style> content and adds a {% css %} paired shortcode
-	eleventyConfig.addBundle("css", {
-		toFileDirectory: "dist",
-		// Add all <style> content to `css` bundle (use <style eleventy:ignore> to opt-out)
-		// Supported selectors: https://www.npmjs.com/package/posthtml-match-helper
-		bundleHtmlContentFromSelector: "style",
-	});
+	// eleventyConfig.addBundle("css", {
+	// 	toFileDirectory: "dist",
+	// 	// Add all <style> content to `css` bundle (use <style eleventy:ignore> to opt-out)
+	// 	// Supported selectors: https://www.npmjs.com/package/posthtml-match-helper
+	// 	bundleHtmlContentFromSelector: "style",
+	// });
 
 	// Bundle <script> content and adds a {% js %} paired shortcode
-	eleventyConfig.addBundle("js", {
-		toFileDirectory: "dist",
-		// Add all <script> content to the `js` bundle (use <script eleventy:ignore> to opt-out)
-		// Supported selectors: https://www.npmjs.com/package/posthtml-match-helper
-		bundleHtmlContentFromSelector: "script",
-	});
+	// eleventyConfig.addBundle("js", {
+	// 	toFileDirectory: "dist",
+	// 	// Add all <script> content to the `js` bundle (use <script eleventy:ignore> to opt-out)
+	// 	// Supported selectors: https://www.npmjs.com/package/posthtml-match-helper
+	// 	bundleHtmlContentFromSelector: "script",
+	// });
 
     // Plugins
     eleventyConfig.addPlugin(pluginNavigation);
+    eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(HtmlBasePlugin);
 	eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
+	eleventyConfig.addPlugin(pluginBundle);
+    generateUsers();
+
+    eleventyConfig.addPlugin(feedPlugin, {
+        type: "atom", // or "rss", "json"
+        outputPath: "/feed/feed.xml",
+        stylesheet: "pretty-atom-feed.xsl",
+        collection: {
+            name: "posts",
+            limit: 10,
+        },
+        metadata: {
+            language: "en",
+            title: "Blog Title",
+            subtitle: "This is a longer description about your blog.",
+            base: "https://example.com/",
+            author: {
+                name: "Your Name"
+            }
+        }
+    });
 
     // Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
@@ -80,6 +139,7 @@ export const config = {
 		"html",
 		"liquid",
 		"11ty.js",
+        "scss"
 	],
 
 	// Pre-process *.md files with: (default: `liquid`)
