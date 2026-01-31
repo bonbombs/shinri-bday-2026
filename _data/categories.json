@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Welcome",
+        "desc": "welcome lost traveler! ronins inquire here"
+    },
+    {
+        "title": "Introductions",
+        "desc": "New to the pond? Introduce yourself!"
+    },
+    {
+        "title": "General",
+        "desc": "Anything and everything Josuiji Shinri!"
+    },
+    {
+        "title": "Stream Discussions",
+        "desc": "Talk about recent streams!"
+    },
+    {
+        "title": "Watering Hole",
+        "desc": "Off-topic conversations"
+    }
+]

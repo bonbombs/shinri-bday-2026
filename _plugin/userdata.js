@@ -7,7 +7,7 @@ export default [
         // "oshis": "Shinri",
         // "age": "Ancient"
         // "hobbies": "Playing Games, Knitting, Going to Movies"
-        "joined": "2026-01-02"
+        "joined": "2026-01-02",
     },
     { 
         "id": "koi-mod",
@@ -16,7 +16,8 @@ export default [
         "location": "here",
         "oshis": "Shinri",
         "hobbies": "Observing...",
-        "joined": "2023-05-23"
+        "joined": "2023-02-01",
+        "avatar": "https://pbs.twimg.com/media/GIzTaTMbEAASL2G.png"
     },
     { 
         "id": "shinri-fan-2",
@@ -26,7 +27,8 @@ export default [
         "oshis": "Shinri",
         "age": "Ancient",
         "hobbies": "Playing Games, Knitting, Going to Movies",
-        "joined": "2025-10-04"
+        "joined": "2025-10-04",
+        "avatar": "https://media.tenor.com/3vPbdfI9zDwAAAAM/holostars-holostars-english.gif"
     },
     { 
         "id": "koinspiratorial",
@@ -36,7 +38,8 @@ export default [
         "oshis": "Shinri, Octavio",
         "age": "I'll Never Tell!",
         "hobbies": "Conspiracy Theories, Watching Streams, Karaoke",
-        "joined": "2025-10-04"
+        "joined": "2025-10-04",
+        "avatar": "https://img1.picmix.com/output/pic/normal/9/5/6/6/10966659_673ca.gif"
     },
     { 
         "id": "beegfeesh",
@@ -46,6 +49,7 @@ export default [
         "oshis": "Shinri, Axel",
         "age": "Not too beeg, not too small",
         "hobbies": "Swimming, Watching Streams, Memeing",
-        "joined": "2025-10-04"
+        "joined": "2025-10-04",
+        "avatar": "https://shop.geekjack.net/cdn/shop/files/DMCXtgpbd8ywHL8d_600x600_crop_center.jpg?v=1694392250"
     },
 ]

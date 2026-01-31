@@ -5,11 +5,11 @@ eleventyNavigation:
   order: 100
 date: 2021-09-14T16:26:36+0200
 permalink: "/search/"
-layout: "layouts/search.njk"
+layout: "layouts/base.njk"
 ---
 {% js %}{%include "js/search.js" %}{% endjs %}
 
-{% css %}
+{# {% css %}
 .field {
 	width: 270px;
 	height: 34px;
@@ -22,10 +22,11 @@ layout: "layouts/search.njk"
 	border-radius: 17px;
 	-webkit-appearance: none;
 }
-{% endcss %}
+{% endcss %} #}
 
 <form onSubmit="return false;">
 	<input class="field" type="text" name="q" id="input_search" placeholder="Search" onChange="submitSearch(this.value.toLowerCase());" />
 </form>
 
+<h2 id="results"></h2>
 <div id="list_results"></div>

@@ -1,0 +1,32 @@
+---
+pagination:
+  data: categories
+  size: 1
+  alias: category
+permalink: /category/{{ category.title | slug }}/
+---
+
+<h1>{{ category.title }}</h1>
+
+this page is still in progress
+
+{% set threadlist = collections.threadsByCategory[category.title] %}
+{% if (threadlist | length) == 0 %}
+no threads here ): you should make one!
+{% else %}
+<ol>
+{% for thread in threadlist | where("data.pinned", true) | reverse %}
+  <li>
+    📌 <a href="{{ thread.url }}">{{ thread.data.title }}</a>
+  </li>
+{% endfor %}
+{% for thread in threadlist | reverse %}
+{% if thread.data.pinned %}
+{% else %}
+  <li>
+    <a href="{{ thread.url }}">{{ thread.data.title }}</a>
+  </li>
+{% endif %}
+{% endfor %}
+</ol>
+{% endif %}

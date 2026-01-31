@@ -21,6 +21,7 @@
 		3. Learn more: https://github.com/11ty/eleventy-plugin-bundle
 		#}
 		<link rel="stylesheet" href="/css/base.css">
+		<link rel="stylesheet" href="/css/posts.css" />
 		{#- Render the CSS bundle #}
 		{%- if eleventy.env.runMode === "serve" %}
 		{# External files (local dev live reload will refresh without page reload) #}
@@ -31,11 +32,19 @@
 		{%- endif %}
 	</head>
 	<body>
-		{# <a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a> #}
+		<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<a href="/" class="home-link">{{ metadata.title }}</a>
-
+			<marquee scrollamount="5" behavior="alternate">
+				<h1 id="title">
+					<span><img src="/assets/img/dancing_fish.gif"></span>
+					<span><img src="/assets/img/dancing_fish.gif"></span>
+					welcome to the koi pond
+					<span><img src="/assets/img/dancing_fish.gif"></span>
+					<span><img src="/assets/img/dancing_fish.gif"></span>
+				</h1>
+			</marquee>
+			<div id="banner"><img src="/assets/img/banner.png"/></div>
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
@@ -54,9 +63,16 @@
 		<hr/>
 		<footer>
             <p>powered by fishnet explorer</p>
+			<img src="/assets/img/ie.gif"/>
+			<p><b>affiliate links</b></p>
+			<span id="affiliates">
+			<a href="#">elysium delivery services</a>
+			<a href="#">the badlands</a>
+			<a href="#">~tempus cafe~</a>
+			</span>
 		</footer>
 
 		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
-		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
+		<script src="{% getBundleFileUrl "js" %}"></script>
 	</body>
 </html>

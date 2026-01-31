@@ -1,4 +1,5 @@
 import { DateTime } from "luxon";
+import _ from "lodash";
 
 export default function(eleventyConfig) {
 	eleventyConfig.addFilter("toJSDate", (str, format, zone) => {
@@ -71,8 +72,28 @@ export default function(eleventyConfig) {
         return postsByThread;
     });
    
+	eleventyConfig.addCollection("thread", function (collectionAPI) {
+		return collectionAPI.getFilteredByGlob("./src/**/thread-*.md");
+	});
 	eleventyConfig.addCollection("posts", function (collectionAPI) {
 		return collectionAPI.getFilteredByGlob("./src/**/post-*.md");
+	});
+	eleventyConfig.addCollection("threadsByCategory", function (collectionAPI) {
+		const threads = collectionAPI.getFilteredByGlob("./src/**/thread-*.md");
+        const threadsByCategory = {};
+
+        threads.forEach(item => {
+            const category = item.data.category;
+            if (category) {
+                if (!threadsByCategory[category]) {
+                    threadsByCategory[category] = [];
+                }
+                threadsByCategory[category].push(item);
+            }
+        });
+        // You can now access this as collections.threadsByCategory['your-tag-name']
+		console.log(threadsByCategory)
+        return threadsByCategory;
 	});
 	eleventyConfig.addCollection("postsByUser", function (collectionAPI) {
         const posts = collectionAPI.getFilteredByGlob("./src/**/post-*.md");
@@ -94,5 +115,16 @@ export default function(eleventyConfig) {
 
 	eleventyConfig.addFilter("findUser", (users, id) => {
 		return users.find((u) => u.id == id)
+	});
+
+	eleventyConfig.addFilter("findThread", (threads, id) => {
+		return threads.find((t) => t.data.id == id)
+	});
+
+	eleventyConfig.addNunjucksFilter("where", (arr, key, expected = null) => {
+		if ([null, undefined].includes(expected)) {
+			return arr.filter(item => !!_.get(item, key));
+		}
+		return arr.filter(item => _.get(item, key) === expected);
 	});
 }

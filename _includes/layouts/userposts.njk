@@ -3,8 +3,9 @@ layout: layouts/base.njk
 ---
 <link rel="stylesheet" href="{{ "/css/posts.css" }}" />
 
+{% set user = users | findUser(id) %}
 <header>
-    <h1>posts by {{ id }}</h1>
+    <h1>posts by {{ user.username }}</h1>
     {# <span><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></span> #}
 </header>
 <div class="post-metadata">
@@ -15,13 +16,16 @@ layout: layouts/base.njk
 	{%- endfor %} #}
 </div>
 
-<table style="border:1px solid;     border-collapse: collapse;">
+<div>
 {% for post in collections.postsByUser[id] | reverse %}
     {% set userid = post.data.user %}
     {% set userdata = users | findUser(userid) %}
     {% set postcontent = post.content %}
     {% set postid %}post-0{{loop.index}}{%endset%}
-    {% set header = post.data.thread %}
+    {% set t = (collections.thread | findThread(post.data.thread)) %}
+    {% set header %}
+    <a href="{{post.page.url}}">{{t.data.title}}</a>
+    {% endset %}
     {% include "layouts/post.njk" %}
 {% endfor %}
-</table>
+</div>

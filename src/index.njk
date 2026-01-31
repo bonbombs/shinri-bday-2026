@@ -6,19 +6,91 @@ const eleventyNavigation = {
 
 const numberOfLatestThreadsToShow = 3;
 ---
-{% set allthreads = collections.threads | noTitle %}
-{% set threadCount = allthreads | length %}
-{% set latestThreadCount = threadCount | min(numberOfLatestThreadsToShow) %}
-<h1>Latest {{ latestThreadCount }} thread{% if latestThreadCount != 1 %}s{% endif %}</h1>
+{# {% set allthreads = collections.threads | noTitle %} #}
+{# {% set threadCount = allthreads | length %} #}
+{# {% set latestThreadCount = threadCount | min(numberOfLatestThreadsToShow) %} #}
+{# <h1>Latest {{ latestThreadCount }} thread{% if latestThreadCount != 1 %}s{% endif %}</h1> #}
 
-{% set threadslist = allthreads | head(-1 * numberOfLatestThreadsToShow) %}
-{% set threadslistCounter = threadCount %}
-{% include "threadslist.njk" %}
+{# {% set threadslist = allthreads | head(-1 * numberOfLatestThreadsToShow) %} #}
+{# {% set threadslistCounter = threadCount %} #}
 
-{% set moreThreads = threadCount - numberOfLatestThreadsToShow %}
+{# {% set categories = categories | head(-1 * numberOfLatestThreadsToShow) %} #}
+{# {% set threadslistCounter = threadCount %} #}
+
+<style>
+	table {
+		width: 100%;
+		border: 1px solid;
+		border-collapse: collapse;
+	}
+
+	tr {
+		min-height: 100px;
+		background-color: skyblue;
+	}
+
+	td {
+		padding: 5px 10px;
+		vertical-align: top;
+		border: 1px solid;
+	}
+	td:first-child {
+		width: 75%;
+	}
+
+	.category-header td {
+		background-color: bisque;
+		font-size: 1.25em;
+		font-family: cursive;
+		font-weight: bold;
+	}
+</style>
+
+
+<table reversed class="postlist">
+{%- for category in categories %}
+	{% set threadsInCategory = collections.threadsByCategory[category.title] %}
+	<tr class="category-header">
+		<td colspan="2">
+			<a href="/category/{{ category.title | slug }}/">{{category.title}}</a></td>
+	</tr>
+	<tr>
+		<td>{{ category.desc }}
+			{%if threadsInCategory %}
+			<div>
+				{% for thread in threadsInCategory | where("data.pinned", true) | reverse %}
+				<span>
+					📌 <a href="{{ thread.url }}">{{ thread.data.title }}</a>
+				</span>
+				{% endfor %}
+			</div>
+			{%endif%}
+		</td>
+		<td>
+		{% if threadsInCategory | length > 0 %}
+		{% set thread = collections.threadsByCategory[category.title] | last %}
+		{% set postcount = collections.postsByThread[thread.data.id] | length %}
+		<div class="category-thread">
+			<a href="{{ thread.url }}" class="postlist-link">{% if thread.data.title %}{{ thread.data.title }}{% else %}<code>{{ thread.url }}</code>{% endif %}</a>
+			<div>
+				<time class="postlist-date" datetime="{{ thread.date | htmlDateString }}">{{ thread.date | readableDate("LL-dd-yyyy") }}</time>
+				<span>{{postcount}} posts</span>
+			</div>
+		</div>
+		{% else %}
+		<div class="category-thread">
+			<span>0 posts</span>
+		</div>
+		{% endif %}
+		</td>
+	</tr>
+{%- endfor %}
+</table>
+
+{# {% set moreThreads = threadCount - numberOfLatestThreadsToShow %}
 {% if moreThreads > 0 %}
 <p>{{ moreThreads }} more thread{% if moreThreads != 1 %}s{% endif %} can be found in <a href="blog.njk">the archive</a>.</p>
-{% endif %}
+{% endif %} #}
 
 {# List every content page in the project #}
 {#

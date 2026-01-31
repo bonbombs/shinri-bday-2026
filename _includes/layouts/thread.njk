@@ -15,20 +15,28 @@ layout: layouts/base.njk
 	{%- endfor %} #}
 </div>
 
-<table style="border:1px solid;     border-collapse: collapse;">
+<div>
+{% set thread = collections.thread | findThread(id) %}
 {% for post in collections.postsByThread[id] %}
     {% set userid = post.data.user %}
     {% set userdata = users | findUser(userid) %}
     {% set postcontent = post.content %}
     {% set header %}
-        <div>post #{{loop.index}} by 
-            <span>{{ userdata.username }}</span> » 
-            <time datetime="{{post.data.date}}">{{post.data.date | htmlDateTime }}</time>
-        </div>
+        <span class="header-inner">
+            <a href="{{post.page.url}}">
+            {% if loop.index > 1 %}Re: {% endif %}
+            {{ thread.data.title }}</a> by 
+            <span><a href="/users/{{userdata.id}}">{{ userdata.username }}</a></span> » 
+            <time datetime="{{post.date}}">{{post.date | htmlDateTime }}</time>
+        </span>
+        <span class="num">#{{loop.index}}</span>
     {% endset %}
     {% include "layouts/post.njk" %}
 {% endfor %}
-</table>
+{% if locked %}
+<div class="thread-notice">this thread is locked</div>
+{% endif %}
+</div>
 {# {%- set previousPost = page.data | getPreviousCollectionItem %}
 {%- set nextPost = page.data | getNextCollectionItem %}
 {%- if nextPost or previousPost %}

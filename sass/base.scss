@@ -1,3 +1,83 @@
+:root {
+    cursor: crosshair;
+}
 body {
     width: 800px;
+    background: url(../img/background.gif);
+    background-size: 100vw 50vh;
+    background-color: aquamarine;
+    margin: auto;
+}
+#title {
+    font-family: cursive;
+}
+#banner {
+    position: relative;
+    width: 100%;
+    border: 5px dashed orange;
+    text-align: center;
+    background-color: burlywood;
+    box-sizing: border-box;
+    img { height: 200px; }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../img/sparkle.gif);
+        background-size: 250px;
+    }
+}
+nav {
+    position: relative;
+    width: max-content;
+    text-align: center;
+    margin: auto;
+    ul {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        text-align: center;
+
+        li {
+            border: 5px solid;
+            border-style: ridge;
+            list-style: none;
+            cursor: pointer;
+            background-color: bisque;
+
+            &:hover {
+                border-style: inset;
+            }
+
+            a {
+                padding: 5px 15px;
+                display: block;
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+
+    #affiliates {
+        a {
+            border: 2px solid;
+            background-color: honeydew;
+            padding: 3px 10px;
+        }
+    }
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }

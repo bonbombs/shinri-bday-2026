@@ -44,13 +44,14 @@ export default async function (eleventyConfig) {
 
     eleventyConfig
 		.addPassthroughCopy({
-			"./public/": "/"
+			"./public/": "/",
+            "./assets/": "/assets/"
 		})
     
     // Watch CSS files
 	eleventyConfig.addWatchTarget("css/**/*.css");
 	// Watch images for the image pipeline.
-	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif}");
+	eleventyConfig.addWatchTarget("src/**/*.{svg,webp,png,jpg,jpeg,gif}");
 
 	// Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
 	// Bundle <style> content and adds a {% css %} paired shortcode
@@ -73,7 +74,7 @@ export default async function (eleventyConfig) {
     eleventyConfig.addPlugin(pluginNavigation);
     eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(HtmlBasePlugin);
-	eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
+	// eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 	eleventyConfig.addPlugin(pluginBundle);
     generateUsers();
 
@@ -97,25 +98,25 @@ export default async function (eleventyConfig) {
     });
 
     // Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
-	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-		// Output formats for each image.
-		formats: ["avif", "webp", "auto"],
+	// eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+	// 	// Output formats for each image.
+	// 	formats: ["avif", "webp", "auto"],
 
-		// widths: ["auto"],
+	// 	// widths: ["auto"],
 
-		failOnError: false,
-		htmlOptions: {
-			imgAttributes: {
-				// e.g. <img loading decoding> assigned on the HTML tag will override these values.
-				loading: "lazy",
-				decoding: "async",
-			}
-		},
+	// 	failOnError: false,
+	// 	htmlOptions: {
+	// 		imgAttributes: {
+	// 			// e.g. <img loading decoding> assigned on the HTML tag will override these values.
+	// 			loading: "lazy",
+	// 			decoding: "async",
+	// 		}
+	// 	},
 
-		sharpOptions: {
-			animated: true,
-		},
-	});
+	// 	sharpOptions: {
+	// 		animated: true,
+	// 	},
+	// });
 
     eleventyConfig.addPlugin(pluginFilters);
 

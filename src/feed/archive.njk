@@ -28,11 +28,25 @@
   "items": [
     {%- for post in collections.posts | reverse %}
     {%- set absolutePostUrl %}{{ post.url }}{% endset %}
+    {%- set thread = collections.thread | findThread(post.data.thread) %}
+    {%- set user = users | findUser(post.data.user) %}
+    {% set postcount = collections.postsByUser[post.data.user] | length %}
     {
       "id": "{{ absolutePostUrl }}",
       "user": "{{ post.data.user }}",
+      "userdata": {
+        "postcount": "{{postcount}}",
+        "username": "{{ user.username | escape}}",
+        "title": "{{user.title | escape}}",
+        "location": "{{user.location | escape}}",
+        "oshis": "{{user.oshis | escape}}",
+        "age": "{{user.age}}",
+        "hobbies": "{{user.hobbies | escape}}",
+        "joined": "{{user.joined}}",
+        "avatar": "{{user.avatar}}"
+      },
       "url": "{{ absolutePostUrl }}",
-      "title": "{{ post.data.title }}",
+      "title": "{{ thread.data.title }}",
       "thread": "{{ post.data.thread }}",
       "content_html": {% if post.content %}{{ post.content | renderTransforms(post.data.page, metadata.base) | dump | safe }}{% else %}""{% endif %},
       "date_published": "{{ post.date | dateToRfc3339 }}"

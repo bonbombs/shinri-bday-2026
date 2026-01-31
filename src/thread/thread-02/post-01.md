@@ -1,6 +1,7 @@
 ---
 user: koi-mod
 thread: thread-02
+permalink: "/thread/{{ thread }}/index.html#{{ page.fileSlug | slugify }}"
 date: 2026-01-22T22:00:22.1Z
 ---
 
