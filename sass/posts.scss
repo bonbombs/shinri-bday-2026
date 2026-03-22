@@ -6,6 +6,10 @@
     border: 5px double orange;
     background: powderblue;
 
+    .inner {
+        display: flex;
+    }
+
     .body {
         position: relative;
         float: right;
@@ -13,6 +17,9 @@
         position: relative;
         width: 75%;
         padding: 0;
+
+        display: flex;
+        flex-direction: column;
     }
 
     .header {
@@ -30,6 +37,53 @@
 
     .content {
         overflow-x: auto;
+        line-height: 1.1;
+        height: 100%;
+        padding-bottom: 1em;
+        padding-right: 0.25em;
+    }
+
+    img {
+        max-height: 500px;
+    }
+
+    details {
+        summary {
+            &::before { content: "Show: "; }
+            cursor: help;
+        }
+
+        &[open] {
+            summary::before { content: "Hide: "; }
+            .spoiler-content {
+    
+            }
+        }
+    }
+
+    pre {
+        // width: fit-content;
+        padding: 0;
+        border: 1px solid;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: teal;
+
+        &::before {
+            content: "Code: ";
+            margin-bottom: 0.1em;
+            display: block;
+            padding: 0.25em 1em;
+            border-bottom: 1px solid;
+        }
+
+        code {
+            display: block;
+            padding: 0.5em;
+            padding-left: 1.5em;
+            line-height: 1.5;
+
+            cursor: auto;
+        }
     }
 
     .avatar {

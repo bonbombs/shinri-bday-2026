@@ -8,11 +8,18 @@ import pluginRss from "@11ty/eleventy-plugin-rss";
 import pluginBundle from "@11ty/eleventy-plugin-bundle";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { generateUsers } from "./_plugin/generateUsers.js";
+import mdContainer from "markdown-it-container";
 
 import pluginFilters from "./_config/filters.js";
 
 export default async function (eleventyConfig) {
+	eleventyConfig.addPairedShortcode("spoiler", function(content, title) {
+		return `<details><summary>${title ?? "Spoiler Alert"}</summary>\n<div class="spoiler-content">\n${content}\n</div>\n</details>`;
+	});
 
+	eleventyConfig.addPairedShortcode("quote", function(content) {
+		return `<blockquote>\n${content}\n</blockquote>`;
+	});
     eleventyConfig.addExtension("scss", {
 		outputFileExtension: "css",
 
