@@ -18,74 +18,102 @@ const numberOfLatestThreadsToShow = 3;
 {# {% set threadslistCounter = threadCount %} #}
 
 <style>
-	table {
+	.postlist {
 		width: 100%;
-		border: 1px solid;
 		border-collapse: collapse;
 	}
 
-	tr {
-		min-height: 100px;
-		background-color: skyblue;
-	}
-
-	td {
-		padding: 5px 10px;
-		vertical-align: top;
-		border: 1px solid;
-	}
-	td:first-child {
-		width: 75%;
-	}
-
 	.category-header td {
-		background-color: bisque;
-		font-size: 1.25em;
-		font-family: cursive;
-		font-weight: bold;
+		padding: 0.25em 1em;
+		background: teal;
+	}
+
+	.postlist td {
+		border: 1px solid teal;
+	}
+
+	.postrow {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		gap: 1em;
+		margin-top: 1em;
+	}
+	.postsearch {
+		display: block;
+	}
+
+	.header-table td {
+		padding: 1em;
 	}
 </style>
 
-
-<table reversed class="postlist">
-{%- for category in categories %}
-	{% set threadsInCategory = collections.threadsByCategory[category.title] %}
-	<tr class="category-header">
-		<td colspan="2">
-			<a href="/category/{{ category.title | slug }}/">{{category.title}}</a></td>
-	</tr>
-	<tr>
-		<td>{{ category.desc }}
-			{%if threadsInCategory %}
-			<div>
-				{% for thread in threadsInCategory | where("data.pinned", true) | reverse %}
-				<span>
-					📌 <a href="{{ thread.url }}">{{ thread.data.title }}</a>
-				</span>
-				{% endfor %}
-			</div>
-			{%endif%}
-		</td>
-		<td>
-		{% if threadsInCategory | length > 0 %}
-		{% set thread = collections.threadsByCategory[category.title] | last %}
-		{% set postcount = collections.postsByThread[thread.data.id] | length %}
-		<div class="category-thread">
-			<a href="{{ thread.url }}" class="postlist-link">{% if thread.data.title %}{{ thread.data.title }}{% else %}<code>{{ thread.url }}</code>{% endif %}</a>
-			<div>
-				<time class="postlist-date" datetime="{{ thread.date | htmlDateString }}">{{ thread.date | readableDate("LL-dd-yyyy") }}</time>
-				<span>{{postcount}} posts</span>
-			</div>
-		</div>
-		{% else %}
-		<div class="category-thread">
-			<span>0 posts</span>
-		</div>
-		{% endif %}
-		</td>
-	</tr>
-{%- endfor %}
+<table class="header-table">
+	<tr><th>read first!</th></tr>
+	<tr><td>
+		hey welcome to the board! we've got a few rules here, so please read them before you enter the website
+		<br/><br/>don't post fake stories
+		<br/>don't post exact places or addresses
+		<br/>if a thread disappears, we probably didn't delete them if you hear something outside right now... maybe stay inside
+		<br/><br/>look around awhile, post if you've seen something strange, you're probably not the only one.
+		<br/><br/>if you decide to investigate anything talked about here, that's on you, we are not responsible for what happens.
+	</td></tr>
 </table>
+<div class="postrow">
+	<table reversed class="postlist">
+	{%- for category in categories %}
+		{% set threadsInCategory = collections.threadsByCategory[category.title] %}
+		<tr class="category-header">
+			<td colspan="2">
+				<a href="/category/{{ category.title | slug }}/">{{category.title}}</a></td>
+		</tr>
+		<tr>
+			<td>{{ category.desc }}
+				{%if threadsInCategory %}
+				<div>
+					{% for thread in threadsInCategory | where("data.pinned", true) | reverse %}
+					<span>
+						📌 <a href="{{ thread.url }}">{{ thread.data.title }}</a>
+					</span>
+					{% endfor %}
+				</div>
+				{%endif%}
+			</td>
+			<td>
+			{% if threadsInCategory | length > 0 %}
+			{% set thread = collections.threadsByCategory[category.title] | last %}
+			{% set postcount = collections.postsByThread[thread.data.id] | length %}
+			<div class="category-thread">
+				<a href="{{ thread.url }}" class="postlist-link">{% if thread.data.title %}{{ thread.data.title }}{% else %}<code>{{ thread.url }}</code>{% endif %}</a>
+				<div>
+					<time class="postlist-date" datetime="{{ thread.date | htmlDateString }}">{{ thread.date | readableDate("LL-dd-yyyy") }}</time>
+					<span>{{postcount}} posts</span>
+				</div>
+			</div>
+			{% else %}
+			<div class="category-thread">
+				<span>0 posts</span>
+			</div>
+			{% endif %}
+			</td>
+		</tr>
+	{%- endfor %}
+	</table>
+	<div>
+		<table class="postsearch">
+			<tr><th>search</th></tr>
+			<tr><td>
+				<form action="/search/">
+					<input type="search" name="q" placeholder="search..."/>
+					<button type="submit">>go</button>
+					<select name="topic" value="">
+						<option value="" disabled>topic...</option>
+					</select>
+				</form>
+			</td></tr>
+		</table>
+		<img class="ad" src="assets/img/FREE-TRIP.gif" style="width: 100%; margin: 1em 0;"/>
+	</div>
+</div>
 
 {# {% set moreThreads = threadCount - numberOfLatestThreadsToShow %}
 {% if moreThreads > 0 %}

@@ -52,6 +52,7 @@ function runSearch(q) {
 }
 
 function submitSearch(q) {
+    console.log("AAA")
     runSearch(q);
 
     const url = new URL(window.location.href);
@@ -64,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
         archive_results = data;
 
         const url = window.location.href;
+        console.log(url)
         const params = new URLSearchParams(new URL(url).search);
         const q = params.get("q");
         if (q && (q.length > 0)) {

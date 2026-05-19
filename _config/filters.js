@@ -14,6 +14,7 @@ export default function(eleventyConfig) {
 
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+		dateObj.setFullYear(1996);
 		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat('yyyy-LL-dd');
 	});
 
@@ -73,13 +74,13 @@ export default function(eleventyConfig) {
     });
    
 	eleventyConfig.addCollection("thread", function (collectionAPI) {
-		return collectionAPI.getFilteredByGlob("./src/**/thread-*.md");
+		return collectionAPI.getFilteredByGlob("./src/**/thread.md");
 	});
 	eleventyConfig.addCollection("posts", function (collectionAPI) {
 		return collectionAPI.getFilteredByGlob("./src/**/post-*.md");
 	});
 	eleventyConfig.addCollection("threadsByCategory", function (collectionAPI) {
-		const threads = collectionAPI.getFilteredByGlob("./src/**/thread-*.md");
+		const threads = collectionAPI.getFilteredByGlob("./src/**/thread.md");
         const threadsByCategory = {};
 
         threads.forEach(item => {

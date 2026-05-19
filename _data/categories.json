@@ -1,22 +1,26 @@
 [
     {
         "title": "Welcome",
-        "desc": "welcome lost traveler! ronins inquire here"
+        "desc": "Welcome to Cryptid Seekers' Haven, a haven for cryptid seekers!"
     },
     {
-        "title": "Introductions",
-        "desc": "New to the pond? Introduce yourself!"
+        "title": "Forum Fun!",
+        "desc": "Let's play games and puzzles!"
     },
     {
-        "title": "General",
-        "desc": "Anything and everything Josuiji Shinri!"
+        "title": "General Discussion",
+        "desc": "Watering hole for non-cryptid conversatons."
     },
     {
-        "title": "Stream Discussions",
-        "desc": "Talk about recent streams!"
+        "title": "Cryptid Sightings",
+        "desc": "Have you seen a cryptid recently? Post here!"
     },
     {
-        "title": "Watering Hole",
-        "desc": "Off-topic conversations"
+        "title": "Internet Cryptids",
+        "desc": "Dedicated area to discussing cryptids of the digital flavor."
+    },
+    {
+        "title": "Private Discussion Zone",
+        "desc": "TOP SECRET"   
     }
 ]

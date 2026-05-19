@@ -1,13 +1,73 @@
 export default [
+    {
+        "id": "secret-garden",
+        "username": "SecretGarden",
+        "joined": "1996-12-31",
+        
+    },
+    {
+        "id": "stillwaters",
+        "username": "StillWaters",
+        "title": "Pond Watcher",
+        "location": "Somewhere nearby",
+        "oshis": "Shinri",
+        "age": "Old enough to remember",
+        "hobbies": "Reading threads, replying late, preparing for the unavoidable apocalypse",
+        "joined": "1996-10-04",
+
+    },
+    {
+        "id": "ladylake",
+        "username": "LadyOfTheLake",
+        "title": "Matron of the deep",
+        "location": "The oldest stone by the pond",
+        "oshis": "Shinri",
+        "age": "Classified",
+        "hobbies": "Cooking (lore and food), midnight walks and photographic cryptids",
+        "joined": "1996-10-04",
+
+    },
+    {
+        "id": "neverscared",
+        "username": "NeverScared",
+        "title": "King of Horror Games",
+        "location": "In Shinri's walls",
+        "oshis": "Shinri",
+        "age": "Ancient",
+        "hobbies": "Playing Games, Knitting, Going to the Movies",
+        "joined": "1996-12-31",
+
+    },
+    {
+        "id": "ripplepoppop",
+        "username": "RipplePopPop",
+        "title": "Draft #3",
+        "location": "Near the lilypads",
+        "oshis": "Shinri, Jurard, Flayon",
+        "age": "14",
+        "hobbies": "Writing fanfics, anime, horror, number 1 BlueHedgehog fan",
+        "joined": "1996-10-04",
+    },
+    {
+        "id": "dewdrop",
+        "username": "DewDrop",
+        "title": "",
+        "location": "on a morning walk",
+        "oshis": "Shinri",
+        "age": "-",
+        "hobbies": "Hunting cryptids, lazy afternoon naps, cuddles",
+        "joined": "1996-10-04",
+
+    },
     { 
         "id": "missing-koi",
         "username": "MissingKoi",
-        // "title": "King of Horror Games",
-        // "location": "In Shinri's Walls",
-        // "oshis": "Shinri",
-        // "age": "Ancient"
-        // "hobbies": "Playing Games, Knitting, Going to Movies"
-        "joined": "2026-01-02",
+        "title": "Pattern analyst",
+        "location": "Below the surface",
+        "oshis": "Shinri, Ruze",
+        "age": "Last seen yesterday",
+        "hobbies": "Lurking, Late-Night Posting, Keeping Notes, Conspiracy Theories, Moképon",
+        "joined": "1996-10-04",
     },
     { 
         "id": "koi-mod",
@@ -17,18 +77,6 @@ export default [
         "oshis": "Shinri",
         "hobbies": "Observing...",
         "joined": "2023-02-01",
-        "avatar": "https://pbs.twimg.com/media/GIzTaTMbEAASL2G.png"
-    },
-    { 
-        "id": "shinri-fan-2",
-        "username": "sleepy koi",
-        "title": "King of Horror Games",
-        "location": "In Shinri's Walls",
-        "oshis": "Shinri",
-        "age": "Ancient",
-        "hobbies": "Playing Games, Knitting, Going to Movies",
-        "joined": "2025-10-04",
-        "avatar": "https://media.tenor.com/3vPbdfI9zDwAAAAM/holostars-holostars-english.gif"
     },
     { 
         "id": "koinspiratorial",
@@ -38,8 +86,7 @@ export default [
         "oshis": "Shinri, Octavio",
         "age": "I'll Never Tell!",
         "hobbies": "Conspiracy Theories, Watching Streams, Karaoke",
-        "joined": "2025-10-04",
-        "avatar": "https://img1.picmix.com/output/pic/normal/9/5/6/6/10966659_673ca.gif"
+        "joined": "1996-10-04",
     },
     { 
         "id": "beegfeesh",
@@ -49,7 +96,6 @@ export default [
         "oshis": "Shinri, Axel",
         "age": "Not too beeg, not too small",
         "hobbies": "Swimming, Watching Streams, Memeing",
-        "joined": "2025-10-04",
-        "avatar": "https://shop.geekjack.net/cdn/shop/files/DMCXtgpbd8ywHL8d_600x600_crop_center.jpg?v=1694392250"
+        "joined": "1996-10-04",
     },
 ]

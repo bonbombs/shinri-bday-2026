@@ -14,19 +14,64 @@ this page is still in progress
 {% if (threadlist | length) == 0 %}
 no threads here ): you should make one!
 {% else %}
-<ol>
+<table class="postlist">
+  <tr>
+			<th>subject</th>
+			<th>started by</th>
+			<th>replies</th>
+			<th>last post</th>
+  </tr>
 {% for thread in threadlist | where("data.pinned", true) | reverse %}
-  <li>
-    📌 <a href="{{ thread.url }}">{{ thread.data.title }}</a>
-  </li>
+  {% set lastPost = collections.postsByThread[thread.data.id] | last %}
+  {% set userid = lastPost.data.user %}
+  {% set userdata = users | findUser(userid) %}
+  <tr>
+    <td>
+      📌 <a href="{{ thread.url }}" class="postlist-link">{% if thread.data.title %}{{ thread.data.title }}{% else %}<code>{{ thread.url }}</code>{% endif %}</a>
+    </td>
+    <td>
+      <div class="category-thread">
+        <a href="/users/{{userid}}">{{userdata.username}}</a>
+      </div>
+    </td>
+    <td>
+      {% set postcount = collections.postsByThread[thread.data.id] | length %}
+      <span>{{postcount}} posts</span>
+    </td>
+    <td>
+      {# {{lastPost}} #}
+      <a href="{{lastPost.page.url}}">
+        <time class="postlist-date" datetime="{{ thread.date | htmlDateString }}">{{ thread.date | readableDate("LL-dd-yyyy") }}</time>
+      </a>
+    </td>
+  </tr>
 {% endfor %}
 {% for thread in threadlist | reverse %}
-{% if thread.data.pinned %}
-{% else %}
-  <li>
-    <a href="{{ thread.url }}">{{ thread.data.title }}</a>
-  </li>
+{% if not thread.data.pinned %}
+  {% set lastPost = collections.postsByThread[thread.data.id] | last %}
+  {% set userid = lastPost.data.user %}
+  {% set userdata = users | findUser(userid) %}
+  <tr>
+    <td>
+      <a href="{{ thread.url }}" class="postlist-link">{% if thread.data.title %}{{ thread.data.title }}{% else %}<code>{{ thread.url }}</code>{% endif %}</a>
+    </td>
+    <td>
+      <div class="category-thread">
+        <a href="/users/{{userid}}">{{userdata.username}}</a>
+      </div>
+    </td>
+    <td>
+      {% set postcount = collections.postsByThread[thread.data.id] | length %}
+      <span>{{postcount}} posts</span>
+    </td>
+    <td>
+      {# {{lastPost}} #}
+      <a href="{{lastPost.page.url}}">
+        <time class="postlist-date" datetime="{{ thread.date | htmlDateString }}">{{ thread.date | readableDate("LL-dd-yyyy") }}</time>
+      </a>
+    </td>
+  </tr>
 {% endif %}
 {% endfor %}
-</ol>
+</table>
 {% endif %}

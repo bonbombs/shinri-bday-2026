@@ -1,15 +1,51 @@
+@font-face {
+    font-family: Title;
+    src: url("/assets/fonts/Alkhemikal.ttf");
+}
+
 :root {
     cursor: crosshair;
 }
 body {
-    width: 800px;
-    background: url(../img/background.gif);
+    width: 1000px;
+    // background: url(../img/background.gif);
     background-size: 100vw 50vh;
-    background-color: aquamarine;
+    background-color: rgb(42, 0, 42);
     margin: auto;
 }
 #title {
-    font-family: cursive;
+    color: teal;
+}
+#header {
+
+    .ad {
+        width: 125px;
+    }
+}
+table {
+    color: teal;
+    border: 0;
+    border-collapse: collapse;
+    width: 100%;
+
+    td {
+        background-color: black;
+        padding: 1em;
+    }
+    th {
+        padding: 0.1em 1em;
+    }
+    th, tr.category-header {
+        height: 25px;
+        text-align: left;
+        color: white;
+        background-color: teal;
+
+        a {
+            color: white;
+            font-weight: bold;
+        }
+    }
 }
 #banner {
     position: relative;
@@ -30,35 +66,54 @@ body {
         background-size: 250px;
     }
 }
-nav {
-    position: relative;
-    width: max-content;
-    text-align: center;
-    margin: auto;
-    ul {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        text-align: center;
+.ad {
+    margin: 1em auto;
+    display: block;
+}
+// nav {
+//     position: relative;
+//     width: max-content;
+//     text-align: center;
+//     margin: auto;
+//     ul {
+//         position: relative;
+//         display: flex;
+//         flex-direction: row;
+//         width: 100%;
+//         text-align: center;
 
-        li {
-            border: 5px solid;
-            border-style: ridge;
-            list-style: none;
-            cursor: pointer;
-            background-color: bisque;
+//         li {
+//             border: 5px solid;
+//             border-style: ridge;
+//             list-style: none;
+//             cursor: pointer;
+//             background-color: bisque;
 
-            &:hover {
-                border-style: inset;
-            }
+//             &:hover {
+//                 border-style: inset;
+//             }
 
-            a {
-                padding: 5px 15px;
-                display: block;
-            }
-        }
-    }
+//             a {
+//                 padding: 5px 15px;
+//                 display: block;
+//             }
+//         }
+//     }
+// }
+
+#main header {
+    background-color: teal;
+    color: white;
+    padding: 0.25em 1em;
+    h1 { margin: 0; }
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 0.5em;
+    margin: 0.25em 0;
+    padding: 0;
 }
 
 footer {
@@ -71,6 +126,14 @@ footer {
             padding: 3px 10px;
         }
     }
+}
+
+a {
+    color: orange;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Title;
 }
 
 .visually-hidden:not(:focus):not(:active) {

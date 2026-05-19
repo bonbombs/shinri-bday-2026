@@ -37,23 +37,39 @@
 		<header>
 			<marquee scrollamount="5" behavior="alternate">
 				<h1 id="title">
-					<span><img src="/assets/img/dancing_fish.gif"></span>
-					<span><img src="/assets/img/dancing_fish.gif"></span>
-					welcome to the koi pond
-					<span><img src="/assets/img/dancing_fish.gif"></span>
-					<span><img src="/assets/img/dancing_fish.gif"></span>
+					welcome to dead threads
 				</h1>
 			</marquee>
-			<div id="banner"><img src="/assets/img/banner.png"/></div>
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav>
-				<h2 class="visually-hidden">Top level navigation menu</h2>
-				<ul class="nav">
-				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-				{%- endfor %}
-				</ul>
-			</nav>
+			<table id="header" class="header-table">
+				<tr>
+					<td>
+						
+					</td>
+					<td>
+							welcome, <b>Guest</b>. 
+							Please <a href="#">login</a> or <a href="#">register</a>. 
+							<a href="#">thinking of joining the forum?</a>
+							<br/>
+							today is <date id="today">1996</date>
+					</td>
+				</tr>
+				<tr>
+					<th></th>
+					<th>
+						{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+						<nav>
+							<h2 class="visually-hidden">Top level navigation menu</h2>
+							<ul class="nav">
+								<li class="nav-item"><a href="/">home</a></li>
+								<li class="nav-item"><a id="random-link" href="">random</a></li>
+								<li class="nav-item"><a href="/recent">recent posts</a></li>
+								<li class="nav-item"><a href="/help">help</a></li>
+							</ul>
+						</nav>
+					</th>
+				</tr>
+			</table>
+			<img class="ad" src="/assets/img/internet-explorer-3-0-1996.gif"/>
 		</header>
 
 		<main id="main">
@@ -63,7 +79,7 @@
 		<hr/>
 		<footer>
             <p>powered by fishnet explorer</p>
-			<img src="/assets/img/ie.gif"/>
+			<img src="/assets/img/Fishnet_internet_explorer.jpg"/>
 			<p><b>affiliate links</b></p>
 			<span id="affiliates">
 			<a href="#">elysium delivery services</a>
@@ -73,6 +89,24 @@
 		</footer>
 
 		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
+		<script>
+			const dateEl = document.getElementById("today");
+			const today = new Date();
+			today.setFullYear(1996);
+			dateEl.innerHTML = today.toLocaleDateString(undefined, {
+				year: "numeric",
+				month: "long",
+				day: "numeric",
+			});
+
+			document.addEventListener("DOMContentLoaded", function() {
+				fetch("/feed/archive.json").then(response => response.json()).then(data => {
+					const posts = data.items;
+					const randomIdx = Math.floor(Math.random() * data.items.length);
+					document.getElementById("random-link").href = posts[randomIdx].url.split("#")[0];
+				});
+			});
+		</script>
 		<script src="{% getBundleFileUrl "js" %}"></script>
 	</body>
 </html>
