@@ -8,8 +8,6 @@ permalink: /category/{{ category.title | slug }}/
 
 <h1>{{ category.title }}</h1>
 
-this page is still in progress
-
 {% set threadlist = collections.threadsByCategory[category.title] %}
 {% if (threadlist | length) == 0 %}
 no threads here ): you should make one!
