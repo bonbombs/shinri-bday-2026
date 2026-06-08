@@ -9,7 +9,9 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 i got into a bit of an argument with my father so i want to know what you guys think
 should cryptids contribute to society and get jobs? 
 
-like we know some are intelligent enough to do menial task but we do have to take into consideration that this will take away jobs from our current and future generation
+like we know some are intelligent enough to do menial task like we know some are intelligent enough to do menial task
+and i can see where my father was coming from on some stances
+but some of them are basically just animals
 
 i can see where my father was coming from on some stances, but some of them are basically just animals
 
@@ -48,7 +50,7 @@ date: "1996-02-22T22:00:22.1Z"
 
 Why would I wish that evil on them?
 
-A drawing of an icklefish floating down an river in winter with the text “i hope this email doesn’t find you” and “i hope you’ve escaped and now you’re free”
+<img src="/assets/img/post/icklefish email.jpg"/>
 
 <---->
 
