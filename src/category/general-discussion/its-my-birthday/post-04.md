@@ -5,7 +5,8 @@ date: "1996-02-22T22:00:22.1Z"  # timestamp
 category: General Discussion            # category post should belong in (should be the name as in thread.md)
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}" # do not change this. copy & paste as-is
 ---
-happy birthday SecretGarden 
+
+happy birthday SecretGarden<br/>
 i took this picture for you on my last trip
 
 <img src="/assets/img/post/Flutterrom birthday small.gif"/>

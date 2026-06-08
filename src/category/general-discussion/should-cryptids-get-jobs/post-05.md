@@ -8,4 +8,5 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 
 Why would I wish that evil on them?
 
-A drawing of an icklefish floating down an river in winter with the text "i hope this email doesn't find you" and "i hope you've escaped and now you're free"
+<img src="/assets/img/post/icklefish email.jpg"/>
+
