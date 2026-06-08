@@ -100,9 +100,7 @@ user: ripplepoppop
 date: "1996-02-22T22:00:22.1Z"
 ---
 
-that’s amazing!!!! I made a poem for the occasion!!!
-
-(insert poem about LotL’s apali photo trip, could be short like haikus of desired)
+that’s amazing!!!!
 
 <---->
 
@@ -111,7 +109,7 @@ user: missing-koi
 date: "1996-02-22T22:00:22.1Z"
 ---
 
-(inserts an image related to a puzzle, whether it’s one of the actual passcode puzzles or just a hint)
+<img src="/assets/img/puzzles/32559787-1c2f-46e2-9e86-7651c976e5a1.png"/>
 
 
 <---->
