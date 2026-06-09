@@ -170,6 +170,3 @@ and the little fish never swam again.
 
 
 
-
-
-
