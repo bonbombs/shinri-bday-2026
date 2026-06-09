@@ -10,7 +10,7 @@
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "watch:sass": "npx sass sass:_site/css --watch",
     "start": "npm run watch:eleventy & npm run watch:sass",
-    "build": "npm run clean-before && npx @11ty/eleventy && npm run clean-after",
+    "build": "npm run clean-before && npx @11ty/eleventy && npx sass sass:_site/css && npm run clean-after",
     "clean-before": "rimraf _site",
     "clean-after": "rimraf --glob '_site/**/index.html#post-*'",
     "debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
