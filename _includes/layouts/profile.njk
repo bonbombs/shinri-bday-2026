@@ -20,6 +20,7 @@ layout: layouts/base.njk
 
     dd:not(.title) {
         display: flex;
+        margin-bottom: 0.35em;
     }
     dd span:nth-child(1) {
         flex-basis: 200px;
@@ -48,17 +49,18 @@ layout: layouts/base.njk
                 </dl>
                 <dl>
                     <dt class="username"><b>{{ user.username }}</b></dt>
-                    {% if user.title %}<dd class="title"><q>{{user.title}}</q></dd>{% endif %}
+                    {% if user.quote %}
+                        <dd class="title"><q><i>{{user.quote}}</i></q></dd>
+                    {% endif %}
                     <br/>
-                    <table>
-                        {# {% if user.title %}<dd class="title"><span>{{user.title or "-"}}<span></dd>{% endif %} #}
-                        <dd><span>Location: </span><span>{{user.location or "-"}}</span><dd>
-                        <dd><span>Oshis: </span><span>{{user.oshis or "-"}}</span><dd>
-                        <dd><span>Hobbies: </span><span>{{user.hobbies or "-"}}</span><dd>
-                        <dd><span>Joined: </span><span>{{user.joined}}<span></dd>
-                        <dd><span>Last login: </span><span>{{user.login or "1996-01-01"}}</span></dd>
-                        <dd><span>Forum posts: </span><span>{{ postcount }}</span></dd>
-                    </table>
+                    <dd><span>Title: </span><span>{{user.title or "-"}}<span></dd>
+                    <dd><span>Location: </span><span>{{user.location or "-"}}</span><dd>
+                    <dd><span>Oshis: </span><span>{{user.oshis or "-"}}</span><dd>
+                    <dd><span>Hobbies: </span><span>{{user.hobbies or "-"}}</span><dd>
+                    <dd><span>Joined: </span><span>{{user.joined}}<span></dd>
+                    <dd><span>Last login: </span><span>{{user.login or "1996-01-01"}}</span></dd>
+                    <dd><span>Forum posts: </span><span>{{ postcount }}</span></dd>
+
                     {% if signature | trim | length %}
                     <dd style="margin-top: 2em;margin-left: 1em;"><b><u>Signature:</u><b></dd>
                     <div class="signature" style="margin-top: 1em;margin-left: 1em;border:0;"><div class="inner">{{ signature | safe }}</div></div>

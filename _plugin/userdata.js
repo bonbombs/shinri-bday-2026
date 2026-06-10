@@ -68,6 +68,7 @@ export default [
         "age": "Last seen yesterday",
         "hobbies": "Lurking, Late-Night Posting, Keeping Notes, Conspiracy Theories, Moképon",
         "joined": "1996-10-04",
+        "quote": "six a sentence for a surprise"
     },
     { 
         "id": "koi-mod",

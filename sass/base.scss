@@ -147,3 +147,12 @@ h1, h2, h3, h4, h5, h6 {
     white-space: nowrap;
     width: 1px;
 }
+
+details {
+    summary {
+        color: #22beca;
+    }
+    .spoiler-content {
+        color: white;
+    }
+}
