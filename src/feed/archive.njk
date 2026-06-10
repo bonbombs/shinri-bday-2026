@@ -31,6 +31,8 @@
     {%- set thread = collections.thread | findThread(post.data.thread) %}
     {%- set user = users | findUser(post.data.user) %}
     {% set postcount = collections.postsByUser[post.data.user] | length %}
+    {% if post.data.category == "Password Protected" %}
+    {% else %}
     {
       "id": "{{ absolutePostUrl }}",
       "user": "{{ post.data.user }}",
@@ -48,10 +50,12 @@
       "url": "{{ absolutePostUrl }}",
       "title": "{{ thread.data.title }}",
       "thread": "{{ post.data.thread }}",
+      "category": "{{ post.data.category }}",
       "content_html": {% if post.content %}{{ post.content | renderTransforms(post.data.page, metadata.base) | dump | safe }}{% else %}""{% endif %},
       "date_published": "{{ post.date | dateToRfc3339 }}"
     }
     {% if not loop.last %},{% endif %}
+    {% endif %}
     {%- endfor %}
   ]
 }

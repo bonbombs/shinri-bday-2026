@@ -1,0 +1,75 @@
+---
+layout: layouts/base.njk
+---
+<style>
+	.postrow {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		gap: 1em;
+		margin-top: 1em;
+	}
+	.postsearch {
+		display: block;
+	}
+
+
+    .username {
+        color: #f99d3c;
+        margin-bottom: 0.25em;
+    }
+
+    dd:not(.title) {
+        display: flex;
+    }
+    dd span:nth-child(1) {
+        flex-basis: 200px;
+    }
+    dd span:nth-child(2) {
+        flex-grow: 1;
+        text-align: right;
+
+    }
+</style>
+
+{% set user = users | findUser(id) %}
+{% set postcount = collections.postsByUser[id] | length %}
+{% set signature %}
+    {% include "signatures/" + id + ".njk" ignore missing %}
+{% endset %}
+<div class="postrow">
+    <div class="post-wrapper">
+        <header><b>member profile</b></header>
+        <div class="post">
+            <div class="inner">
+                <dl>
+                    <div class="avatar">
+                        <img src="/assets/img/user/profile/{{id}}.jpg"/>
+                    </div>
+                </dl>
+                <dl>
+                    <dt class="username"><b>{{ user.username }}</b></dt>
+                    {% if user.title %}<dd class="title"><q>{{user.title}}</q></dd>{% endif %}
+                    <br/>
+                    <table>
+                        {# {% if user.title %}<dd class="title"><span>{{user.title or "-"}}<span></dd>{% endif %} #}
+                        <dd><span>Location: </span><span>{{user.location or "-"}}</span><dd>
+                        <dd><span>Oshis: </span><span>{{user.oshis or "-"}}</span><dd>
+                        <dd><span>Hobbies: </span><span>{{user.hobbies or "-"}}</span><dd>
+                        <dd><span>Joined: </span><span>{{user.joined}}<span></dd>
+                        <dd><span>Last login: </span><span>{{user.login or "1996-01-01"}}</span></dd>
+                        <dd><span>Forum posts: </span><span>{{ postcount }}</span></dd>
+                    </table>
+                    {% if signature | trim | length %}
+                    <dd style="margin-top: 2em;margin-left: 1em;"><b><u>Signature:</u><b></dd>
+                    <div class="signature" style="margin-top: 1em;margin-left: 1em;border:0;"><div class="inner">{{ signature | safe }}</div></div>
+                    {% else %}
+                    {% endif %}
+                </dl>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        {% include "./sidebar.njk" ignore missing %}
+    </div>
+</div>

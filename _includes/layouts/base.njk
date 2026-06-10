@@ -43,12 +43,12 @@
 			<table id="header" class="header-table">
 				<tr>
 					<td>
-						
+						<img src="/assets/img/user/profile/user.jpg" alt="generic user icon"/>
 					</td>
 					<td>
 							welcome, <b>Guest</b>. 
-							Please <a href="#">login</a> or <a href="#">register</a>. 
-							<a href="#">thinking of joining the forum?</a>
+							Please <a href="https://twitter.com/josuijishinri">login</a> or <a href="https://www.youtube.com/@JosuijiShinri?sub_confirmation=1">register</a>. 
+							<a href="https://www.youtube.com/@JosuijiShinri/community">thinking of joining the forum?</a>
 							<br/>
 							today is <date id="today">1996</date>
 					</td>
@@ -69,7 +69,7 @@
 					</th>
 				</tr>
 			</table>
-			<img class="ad" src="/assets/img/internet-explorer-3-0-1996.gif"/>
+			<img id="banner" class="ad" src="/assets/img/ads/internet-explorer-3-0-1996.gif"/>
 		</header>
 
 		<main id="main">
@@ -82,7 +82,7 @@
 			<img src="/assets/img/Fishnet_internet_explorer.jpg"/>
 			<p><b>affiliate links</b></p>
 			<span id="affiliates">
-			<a href="#">elysium delivery services</a>
+			<a href="https://x.com/ElysiumDelivery">elysium delivery services</a>
 			<a href="#">the badlands</a>
 			<a href="#">~tempus cafe~</a>
 			</span>
@@ -99,12 +99,21 @@
 				day: "numeric",
 			});
 
+			const ads = ["FREE-TRIP.gif", "save-the-bleaksoot.jpg", "rissun-bay.jpg"];
+			const banners = ["internet-explorer-3-0-1996.gif", "punikonic-v2.gif"];
+
 			document.addEventListener("DOMContentLoaded", function() {
 				fetch("/feed/archive.json").then(response => response.json()).then(data => {
 					const posts = data.items;
 					const randomIdx = Math.floor(Math.random() * data.items.length);
 					document.getElementById("random-link").href = posts[randomIdx].url.split("#")[0];
 				});
+
+				const ad = document.getElementById("ad");
+				const banner = document.getElementById("banner");
+
+				if (ad) ad.src = `/assets/img/ads/${ads[Math.floor(Math.random() * ads.length)]}`;
+				if (banner) banner.src = `/assets/img/ads/${banners[Math.floor(Math.random() * banners.length)]}`;
 			});
 		</script>
 		<script src="{% getBundleFileUrl "js" %}"></script>

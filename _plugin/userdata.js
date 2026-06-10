@@ -98,4 +98,9 @@ export default [
         "hobbies": "Swimming, Watching Streams, Memeing",
         "joined": "1996-10-04",
     },
+    {
+        "id": "user",
+        "username": "???",
+        "joined": "1970-1-1",
+    }
 ]

@@ -3,13 +3,14 @@
     position: relative;
     margin-bottom: 4px;
     padding: 5px 10px;
-    border: 5px double teal;
+    border: 5px double #043038;
     background: black;
 
     color: white;
 
     .inner {
         display: flex;
+        gap: 1em;
     }
 
     .body {
@@ -43,6 +44,11 @@
         height: 100%;
         padding-bottom: 1em;
         padding-right: 0.25em;
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: initial;
+            color: white;
+        }
 
         img {
             max-height: 500px;
@@ -92,6 +98,7 @@
     .avatar {
         width: 150px;
         height: 150px;
+        margin-bottom: 1em;
         background-color: burlywood;
         img {
             width: 100%;
@@ -133,7 +140,7 @@
 
 .thread-notice {
     text-align: center;
-    border: 5px double teal;
+    border: 5px double #043038;
     background: black;
     padding: 20px;
     font-style: italic;

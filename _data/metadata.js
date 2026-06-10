@@ -1,11 +1,11 @@
 export default {
-	title: "the koi pond",
-	url: "https://the-koi-pond.neocities.com/",
+	title: "Dead Threads",
+	url: "https://shinri-bday-2026.neocities.com/",
 	language: "en",
-	description: "happy birthday shinri!!!",
+	description: "Shinri's Birthday ARG",
 	author: {
 		name: "Elysium Delivery Services",
 		email: "youremailaddress@example.com",
-		url: "https://example.com/about-me/"
+		url: "https://twitter.com/elysium-delivery-services/"
 	}
 }
