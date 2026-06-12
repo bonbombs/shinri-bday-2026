@@ -1,12 +1,10 @@
 ---
-user: ladylake
-thread: its-my-birthday
+user: secret-garden
+thread: game-time-27
 date: "1996-02-22T22:00:22.1Z"
 category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
+Okay, let's try this one!
 
-happy birthday SecretGarden<br/>
-i took this picture for you on my last trip
-
-<img src="/assets/img/post/Flutterrom birthday small.gif"/>
+<img src="/assets/img/puzzles/c7b7c35b-cbd2-4d1a-baff-09dc995a0101.png">

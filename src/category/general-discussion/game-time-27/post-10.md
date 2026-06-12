@@ -1,12 +1,9 @@
 ---
-user: ladylake
-thread: its-my-birthday
+user: koinspiratorial
+thread: game-time-27
 date: "1996-02-22T22:00:22.1Z"
 category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-happy birthday SecretGarden<br/>
-i took this picture for you on my last trip
-
-<img src="/assets/img/post/Flutterrom birthday small.gif"/>
+seems like you have all the answers save when its about yourself huh

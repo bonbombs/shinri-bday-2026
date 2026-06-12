@@ -1,12 +1,13 @@
 ---
-user: ladylake
-thread: its-my-birthday
+user: stillwaters
+thread: exquisite-corpse
 date: "1996-02-22T22:00:22.1Z"
 category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-happy birthday SecretGarden<br/>
-i took this picture for you on my last trip
+{% spoiler %}
+And, satisfied, she decides to call it a day.
+{% endspoiler %}
 
-<img src="/assets/img/post/Flutterrom birthday small.gif"/>
+I hope I haven’t closed out the story too early!

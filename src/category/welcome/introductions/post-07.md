@@ -1,12 +1,11 @@
 ---
-user: neverscared
+user: ripplepoppop
 thread: introductions
 date: "1996-02-22T22:00:22.1Z"
 category: Welcome
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-Hello all…<br/>
-I was invited here by MissingKoi… you seem like a nice bunch of kids…<br/>
-I looked at your list… and I think this Bigfoot fellow is… quite interesting!<br/>
-I am looking forward to getting to know you all…
+hihihihihi!!! i'm ripplepoppop! i kinda came here but accident but it seems really cool!!
+
+my fav cryptid is a… rit-ozel? writ-ouzel?? the bird thing that eats words and moves pens around and stuff. i really like writing and reading fanfic and meeting new people!!!

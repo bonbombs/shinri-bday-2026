@@ -1,12 +1,11 @@
 ---
-user: ladylake
-thread: its-my-birthday
+user: secret-garden
+thread: spooky-stories
 date: "1996-02-22T22:00:22.1Z"
 category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-happy birthday SecretGarden<br/>
-i took this picture for you on my last trip
+That sounds concerning. Did you report it to anyone?
 
-<img src="/assets/img/post/Flutterrom birthday small.gif"/>
+Also, I thought you finished school a while back. But maybe I’m confused?
