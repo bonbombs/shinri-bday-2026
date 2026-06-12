@@ -8,25 +8,39 @@
 }
 body {
     width: 1000px;
-    // background: url(../img/background.gif);
-    background-size: 100vw 50vh;
+    background: url("../assets/img/bg_koipond.png");
+    background-size: 1500px;
+    background-position: 50% 0;
     background-color: rgb(42, 0, 42);
     margin: auto;
 }
 #title {
-    color: teal;
+    color: #22beca;
 }
 #header {
-
-    .ad {
-        width: 125px;
+    td:nth-child(1) {
+        text-align: right;
+        width: 75px;
+        padding: 1em 0em;
+    }
+    img {
+        width: 56px;
+    }
+    a {
+        color: #f99d3c;
+        font-weight: normal;
     }
 }
 table {
-    color: teal;
+    color: white;
     border: 0;
     border-collapse: collapse;
     width: 100%;
+
+    td:nth-child(1) a.postlist-link {
+        font-weight: bold;
+		color: white;
+	}
 
     td {
         background-color: black;
@@ -39,7 +53,7 @@ table {
         height: 25px;
         text-align: left;
         color: white;
-        background-color: teal;
+        background-color: #043038;
 
         a {
             color: white;
@@ -47,25 +61,7 @@ table {
         }
     }
 }
-#banner {
-    position: relative;
-    width: 100%;
-    border: 5px dashed orange;
-    text-align: center;
-    background-color: burlywood;
-    box-sizing: border-box;
-    img { height: 200px; }
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: url(../img/sparkle.gif);
-        background-size: 250px;
-    }
-}
+
 .ad {
     margin: 1em auto;
     display: block;
@@ -102,7 +98,7 @@ table {
 // }
 
 #main header {
-    background-color: teal;
+    background-color: #043038;
     color: white;
     padding: 0.25em 1em;
     h1 { margin: 0; }
@@ -118,22 +114,29 @@ nav ul {
 
 footer {
     text-align: center;
+    margin-bottom: 3rem;
 
     #affiliates {
         a {
             border: 2px solid;
-            background-color: honeydew;
+            background-color: black;
             padding: 3px 10px;
         }
     }
 }
 
 a {
-    color: orange;
+    color: #f99d3c;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Title;
+    color: #22beca;
+}
+
+.header-table td {
+    padding: 1em;
+    color: #22beca;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -143,4 +146,13 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     white-space: nowrap;
     width: 1px;
+}
+
+details {
+    summary {
+        color: #22beca;
+    }
+    .spoiler-content {
+        color: white;
+    }
 }

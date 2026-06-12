@@ -3,19 +3,7 @@ const eleventyNavigation = {
 	key: "Home",
 	order: 1
 };
-
-const numberOfLatestThreadsToShow = 3;
 ---
-{# {% set allthreads = collections.threads | noTitle %} #}
-{# {% set threadCount = allthreads | length %} #}
-{# {% set latestThreadCount = threadCount | min(numberOfLatestThreadsToShow) %} #}
-{# <h1>Latest {{ latestThreadCount }} thread{% if latestThreadCount != 1 %}s{% endif %}</h1> #}
-
-{# {% set threadslist = allthreads | head(-1 * numberOfLatestThreadsToShow) %} #}
-{# {% set threadslistCounter = threadCount %} #}
-
-{# {% set categories = categories | head(-1 * numberOfLatestThreadsToShow) %} #}
-{# {% set threadslistCounter = threadCount %} #}
 
 <style>
 	.postlist {
@@ -25,11 +13,11 @@ const numberOfLatestThreadsToShow = 3;
 
 	.category-header td {
 		padding: 0.25em 1em;
-		background: teal;
+		background: #043038;
 	}
 
 	.postlist td {
-		border: 1px solid teal;
+		border: 1px solid #043038;
 	}
 
 	.postrow {
@@ -40,10 +28,6 @@ const numberOfLatestThreadsToShow = 3;
 	}
 	.postsearch {
 		display: block;
-	}
-
-	.header-table td {
-		padding: 1em;
 	}
 </style>
 
@@ -60,6 +44,7 @@ const numberOfLatestThreadsToShow = 3;
 </table>
 <div class="postrow">
 	<table reversed class="postlist">
+	{% set categories = (categories.push({ title: "Password Protected", protected: true }), categories) %}
 	{%- for category in categories %}
 		{% set threadsInCategory = collections.threadsByCategory[category.title] %}
 		<tr class="category-header">
@@ -79,7 +64,7 @@ const numberOfLatestThreadsToShow = 3;
 				{%endif%}
 			</td>
 			<td>
-			{% if threadsInCategory | length > 0 %}
+			{% if threadsInCategory | length > 0 and not category.protected %}
 			{% set thread = collections.threadsByCategory[category.title] | last %}
 			{% set postcount = collections.postsByThread[thread.data.id] | length %}
 			<div class="category-thread">
@@ -89,9 +74,13 @@ const numberOfLatestThreadsToShow = 3;
 					<span>{{postcount}} posts</span>
 				</div>
 			</div>
-			{% else %}
+			{% elseif not category.protected %}
 			<div class="category-thread">
 				<span>0 posts</span>
+			</div>
+			{% else %}
+			<div class="category-thread">
+				
 			</div>
 			{% endif %}
 			</td>
@@ -99,19 +88,7 @@ const numberOfLatestThreadsToShow = 3;
 	{%- endfor %}
 	</table>
 	<div>
-		<table class="postsearch">
-			<tr><th>search</th></tr>
-			<tr><td>
-				<form action="/search/">
-					<input type="search" name="q" placeholder="search..."/>
-					<button type="submit">>go</button>
-					<select name="topic" value="">
-						<option value="" disabled>topic...</option>
-					</select>
-				</form>
-			</td></tr>
-		</table>
-		<img class="ad" src="assets/img/FREE-TRIP.gif" style="width: 100%; margin: 1em 0;"/>
+		{% include "layouts/sidebar.njk" ignore missing %}
 	</div>
 </div>
 

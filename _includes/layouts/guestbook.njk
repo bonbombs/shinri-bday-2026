@@ -31,7 +31,7 @@ layout: layouts/base.njk
         </span>
         <span class="num">#{{loop.index}}</span>
     {% endset %}
-    {% include "layouts/post.njk" %}
+    {% include "layouts/guestbook-entry.njk" %}
 {% endfor %}
 {% if locked %}
 <div class="thread-notice">this thread is locked</div>

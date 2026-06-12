@@ -2,5 +2,5 @@ export default {
 	tags: [
 		"user"
 	],
-	"layout": "layouts/userposts.njk",
+	"layout": "layouts/profile.njk",
 };

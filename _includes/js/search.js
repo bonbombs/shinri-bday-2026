@@ -52,7 +52,6 @@ function runSearch(q) {
 }
 
 function submitSearch(q) {
-    console.log("AAA")
     runSearch(q);
 
     const url = new URL(window.location.href);

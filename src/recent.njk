@@ -14,7 +14,7 @@ const numberOfLatestThreadsToShow = 3;
 	}
 
 	.postlist td {
-		border: 1px solid teal;
+		border: 1px solid #043038;
 	}
 
 	.postrow {
@@ -25,10 +25,6 @@ const numberOfLatestThreadsToShow = 3;
 	}
 	.postsearch {
 		display: block;
-	}
-
-	.header-table td {
-		padding: 1em;
 	}
 </style>
 
@@ -43,6 +39,8 @@ const numberOfLatestThreadsToShow = 3;
     {% set lastPost = collections.postsByThread[threaditem.data.id] | last %}
     {% set userid = lastPost.data.user %}
     {% set userdata = users | findUser(userid) %}
+    {% if threaditem.data.category == "Password Protected" %}
+    {% else %}
     <tr>
         <td>
             <a href="{{ threaditem.url }}" class="postlist-link"><span>[{{threaditem.data.category}}]</span> {% if threaditem.data.title %}{{ threaditem.data.title }}{% else %}<code>{{ threaditem.url }}</code>{% endif %}</a>
@@ -63,5 +61,6 @@ const numberOfLatestThreadsToShow = 3;
             </a>
         </td>
     </tr>
+    {% endif %}
 {%- endfor %}
 </table>
