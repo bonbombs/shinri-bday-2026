@@ -20,5 +20,5 @@ Try going into their profile page. Maybe they'll share something they haven't po
 {% endspoiler %}
 
 {% spoiler "Is Shinri overcooking?" %}
-if you clicked into this, then probably. yes.
+if you clicked into this, <a href="/hints">then probably. yes.</a>
 {% endspoiler %}
