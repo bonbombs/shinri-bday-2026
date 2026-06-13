@@ -1,0 +1,43 @@
+---
+layout: "layouts/empty.njk"
+---
+
+<style>
+    td {
+        padding-right: 2em;
+    }
+    thead tr {
+        font-weight: bold;
+    }
+</style>
+
+<h1>Index of /hints</h1>
+
+<table id="hierarchy">
+    <!--folder structure goes here-->
+    <thead>
+        <tr>
+            <td></td>
+            <td>Name</td>
+            <td>Last modified</td>
+            <td>Size</td>
+            <td>Description</td>
+        </tr>
+    </thead>
+    <tr>
+        <td><img src="/assets/icons/subdirectory.png"></td>
+        <td><a href="/">Parent directory</a></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    {% for hint in hints %}
+    <tr>
+        <td><img src="/assets/icons/img.png"></td>
+        <td><a href="/hints/{{hint.path}}" target="_blank">{{hint.path}}</a></td>
+        <td>{{hint.modified}}</td>
+        <td>{{hint.size or "-"}}</td>
+        <td>{{hint.desc or "-"}}</td>
+    </tr>
+    {% endfor %}
+</table>
