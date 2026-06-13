@@ -1,7 +1,7 @@
 ---
 user: Gwii
-avatar: "gwii.png"
-signature1: "gwii.png"
+avatar: "Guestbook_gwii_AVATAR.png"
+signature1: "Guestbook_gwii_SIG.png"
 social: "https://twitter.com/gwiibles"
 thread: happy-birthday
 category: Password Protected

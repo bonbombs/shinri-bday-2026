@@ -10,6 +10,6 @@ category: Password Protected
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-<img src="/assets/img/guestbook/art/Guestbook_konori_ART.png"/>
+<img src="/assets/guestbook-img/art/Guestbook_konori_ART.png"/>
 
 example birthday message
