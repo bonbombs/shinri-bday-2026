@@ -1,0 +1,108 @@
+---js
+const eleventyNavigation = {
+	key: "Home",
+	order: 1,
+	permalink: "/home"
+};
+---
+
+<style>
+	.postlist {
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	.category-header td {
+		padding: 0.25em 1em;
+		background: #043038;
+	}
+
+	.postlist td {
+		border: 1px solid #043038;
+	}
+
+	.postrow {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		gap: 1em;
+		margin-top: 1em;
+	}
+	.postsearch {
+		display: block;
+	}
+</style>
+
+<table class="header-table">
+	<tr><th>read first!</th></tr>
+	<tr><td>
+		hey welcome to the board! we've got a few rules here, so please read them before you enter the website
+		<br/><br/>don't post fake stories
+		<br/>don't post exact places or addresses
+		<br/>if a thread disappears, we probably didn't delete them if you hear something outside right now... maybe stay inside
+		<br/><br/>look around awhile, post if you've seen something strange, you're probably not the only one.
+		<br/><br/>if you decide to investigate anything talked about here, that's on you, we are not responsible for what happens.
+	</td></tr>
+</table>
+<div class="postrow">
+	<table reversed class="postlist">
+	{% set categories = (categories.push({ title: "Password Protected", protected: true }), categories) %}
+	{%- for category in categories %}
+		{% set threadsInCategory = collections.threadsByCategory[category.title] %}
+		<tr class="category-header">
+			<td colspan="2">
+				<a href="/category/{{ category.title | slug }}/">{{category.title}}</a></td>
+		</tr>
+		<tr>
+			<td>{{ category.desc }}
+				{%if threadsInCategory %}
+				<div>
+					{% for thread in threadsInCategory | where("data.pinned", true) | reverse %}
+					<span>
+						📌 <a href="{{ thread.url }}">{{ thread.data.title }}</a>
+					</span>
+					{% endfor %}
+				</div>
+				{%endif%}
+			</td>
+			<td>
+			{% if threadsInCategory | length > 0 and not category.protected %}
+			{% set thread = collections.threadsByCategory[category.title] | last %}
+			{% set postcount = collections.postsByThread[thread.data.id] | length %}
+			<div class="category-thread">
+				<a href="{{ thread.url }}" class="postlist-link">{% if thread.data.title %}{{ thread.data.title }}{% else %}<code>{{ thread.url }}</code>{% endif %}</a>
+				<div>
+					<time class="postlist-date" datetime="{{ thread.date | htmlDateString }}">{{ thread.date | readableDate("LL-dd-yyyy") }}</time>
+					<span>{{postcount}} posts</span>
+				</div>
+			</div>
+			{% elseif not category.protected %}
+			<div class="category-thread">
+				<span>0 posts</span>
+			</div>
+			{% else %}
+			<div class="category-thread">
+				
+			</div>
+			{% endif %}
+			</td>
+		</tr>
+	{%- endfor %}
+	</table>
+	<div>
+		{% include "layouts/sidebar.njk" ignore missing %}
+	</div>
+</div>
+
+{# {% set moreThreads = threadCount - numberOfLatestThreadsToShow %}
+{% if moreThreads > 0 %}
+<p>{{ moreThreads }} more thread{% if moreThreads != 1 %}s{% endif %} can be found in <a href="blog.njk">the archive</a>.</p>
+{% endif %} #}
+
+{# List every content page in the project #}
+{#
+<ul>
+	{%- for entry in collections.all %}
+	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
+	{%- endfor %}
+</ul>
+#}
