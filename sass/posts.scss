@@ -55,6 +55,23 @@
         }
     }
 
+    blockquote {
+        position: relative;
+        padding: 1.5em;
+        padding-top: 2em;
+        padding-left: 2.5em;
+        border: 1px solid #043038;
+        background-color: rgba(#043038, 0.35);
+
+        &::before {
+            position: absolute;
+            top: 0.5em;
+            left: 0.5em;
+            content: open-quote;
+            font-size: 2em;
+        }
+    }
+
 
     details {
         summary {
