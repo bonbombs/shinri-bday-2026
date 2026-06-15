@@ -7,13 +7,6 @@ layout: layouts/base.njk
     <h2 style="margin: 0;">{{ title }}</h2>
     {# <span><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></span> #}
 </header>
-<div class="post-metadata">
-	
-	{# {%- for tag in tags | filterTagList %}
-	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
-	{%- endfor %} #}
-</div>
 
 <div>
 {% set thread = collections.thread | findThread(id) %}
@@ -45,3 +38,11 @@ layout: layouts/base.njk
 	{%- if nextPost %}<li class="links-nextprev-next">Next →<br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
 </ul>
 {%- endif %} #}
+{% js %}{%include "js/xorcipher.js" %}{% endjs %}
+{% js %}{%include "js/secret.js" %}{% endjs %}
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const input = sessionStorage.getItem("dt-secret") ?? "";
+        checkPassword(input);
+    })
+</script>

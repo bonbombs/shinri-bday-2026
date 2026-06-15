@@ -1,0 +1,53 @@
+---
+layout: "layouts/base.njk"
+---
+<style>
+    h1 { font-size: 4em; text-align: center; }
+    #hbd_grid {
+        display: grid;
+        grid-template-columns: 0.3fr 1fr 0.3fr;
+    }
+    .ad, .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .center {
+        padding: 0 2em;
+        box-sizing: border-box;
+        padding-bottom: 2em;
+    }
+    .ad img { width: 100%; margin-bottom: 1em; }
+    .center img {
+        width: 100%;
+        height: 500px;
+        border: 2px double white;
+        object-fit: cover;
+        background: white;
+        margin-bottom: 1em;
+    }
+    .center a.large {
+        font-size: 1.5em;
+        margin-bottom: 0.25em;
+    }
+</style>
+<h1>Happy Birthday, Shinri!</h1>
+
+
+<div id="hbd_grid">
+    <div class="ad">
+        <img src="/assets/img/ads/FREE-TRIP.gif"/>
+        <img src="/assets/img/ads/rissun-bay.jpg"/>
+    </div>
+    <div class="center">
+        <img src="#"/>
+        <a class="large" href="/category/password-protected/happy-birthday/thread">Click here to see messages!</a>
+        <i><a href="/category/password-protected/epilogue/thread">(what happened to MissingKoi???)</a></i>
+    </div>
+    <div class="ad">
+        <img src="/assets/img/ads/save-the-bleaksoot.jpg"/>
+        <img src="/assets/img/ads/FREE-TRIP.gif"/>
+    </div>
+</div>
+

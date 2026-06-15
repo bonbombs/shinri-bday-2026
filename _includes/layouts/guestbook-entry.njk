@@ -6,16 +6,16 @@
     }
 </style>
 {% set avatar %}
-    <img src="/assets/img/guestbook/profile/{{ post.data.avatar or "user.jpg" }}"/>
+    <img src="/assets/guestbook-img/profile/{{ post.data.avatar or "user.jpg" }}"/>
 {% endset %}
 {% set signature1 %}
-    <img src="/assets/img/guestbook/signature/{{ post.data.signature1 }}"/>
+    <img src="/assets/guestbook-img/signature/{{ post.data.signature1 }}"/>
 {% endset %}
 {% set signature2 %}
-    <img src="/assets/img/guestbook/signature/{{ post.data.signature2 }}"/>
+    <img src="/assets/guestbook-img/signature/{{ post.data.signature2 }}"/>
 {% endset %}
 {% set signature3 %}
-    <img src="/assets/img/guestbook/signature/{{ post.data.signature3 }}"/>
+    <img src="/assets/guestbook-img/signature/{{ post.data.signature3 }}"/>
 {% endset %}
 {% set postcount = collections.postsByUser[userid] | length %}
 <div id="{{ postid or post.fileSlug }}" class="post">

@@ -52,7 +52,8 @@ export default async function (eleventyConfig) {
     eleventyConfig
 		.addPassthroughCopy({
 			"./public/": "/",
-            "./assets/": "/assets/"
+            "./assets/": "/assets/",
+            "./hints/": "/hints/"
 		})
     
     // Watch CSS files
@@ -95,11 +96,11 @@ export default async function (eleventyConfig) {
         },
         metadata: {
             language: "en",
-            title: "Blog Title",
-            subtitle: "This is a longer description about your blog.",
+            title: "Dead Threads ARG",
+            subtitle: "Shinri 2026 Birthday Project",
             base: "https://example.com/",
             author: {
-                name: "Your Name"
+                name: "Elysium Delivery Services"
             }
         }
     });
