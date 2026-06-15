@@ -8,7 +8,6 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 
 no really
 
-## Dalu note: can change to screenshot of forum post instead
-<img src="/assets/img/post/PDog still.jpg" alt="blurry photo of a pomeranian looking down on the floor"/>
+<img src="/assets/img/post/e46d5bb0-314b-49f2-951a-abdd419d3f9d.jpg" alt="forum screencap of a blurry photo of a pomeranian looking down on the floor"/>
 
 you posted a picture of a dog.
