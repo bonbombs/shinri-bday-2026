@@ -6,5 +6,6 @@ category: Cryptid Sightings
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-Yeah MK, that’s a neat thought, but what does it mean?
+Yeah MK, that’s a neat thought, but what does it mean?<br/>
 Are you feeling all right?
+

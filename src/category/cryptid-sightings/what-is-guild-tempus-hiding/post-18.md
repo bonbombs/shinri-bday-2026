@@ -8,6 +8,7 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 
 no really
 
+## Dalu note: can change to screenshot of forum post instead
 <img src="/assets/img/post/PDog still"/>
 
 you posted a picture of a dog.
