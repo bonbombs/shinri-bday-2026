@@ -9,6 +9,6 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 okay fine<br/>
 but how about THIS that i found in the guild secretary’s quarters???
 
-<img src="/assets/img/post/Phantomdog small.gif"/>
+<img src="/assets/img/post/Phantomdog small.gif" alt="Blurry photo of a pdog"/>
 
 DEFINITELY A CRYPTID

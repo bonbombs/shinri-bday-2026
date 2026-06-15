@@ -12,4 +12,4 @@ But do you think Rissuna is really like that? I feel like all the advertising dr
 
 Have there been any new Rissuna sightings lately that you guys know of?
 
-<img src="/assets/img/post/Rissuna brochure post.jpg"/>
+<img src="/assets/img/post/Brochure.jpg" alt="Brochure featuring Rissuna in a lake. Text overlay: Rissuna, A Rissun Bay Story"/>

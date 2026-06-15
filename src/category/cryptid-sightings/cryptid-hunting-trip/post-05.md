@@ -9,6 +9,6 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 i have returned<br/>
 it was a very productive trip and i have photos to share
 <br/>
-<img src="/assets/img/post/Phantomdog big.gif"/>
+<img src="/assets/img/post/Phantomdog big.gif" alt="Blurry photo of pdog"/>
 <br/>
 i thought this one was particularly good

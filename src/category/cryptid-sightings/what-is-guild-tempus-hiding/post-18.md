@@ -9,6 +9,6 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 no really
 
 ## Dalu note: can change to screenshot of forum post instead
-<img src="/assets/img/post/PDog still"/>
+<img src="/assets/img/post/PDog still.jpg" alt="blurry photo of a pomeranian looking down on the floor"/>
 
 you posted a picture of a dog.

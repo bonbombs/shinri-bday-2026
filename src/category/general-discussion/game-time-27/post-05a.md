@@ -7,4 +7,4 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 ---
 You got it! How about this one?
 
-<img src="/assets/img/puzzles/711627b7-7b1d-45d2-9bf2-52d7f95aa626.png">
+<img src="/assets/img/puzzles/711627b7-7b1d-45d2-9bf2-52d7f95aa626.png" alt="Puzzle: Three 'SECRET's stacked on top of eachother, with the first one circled in green">

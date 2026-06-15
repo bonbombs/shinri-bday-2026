@@ -11,4 +11,4 @@ REBUS WORD PUZZLES! The first one to get the rebus word puzzle right gets to put
 
 Here's my starter:
 
-<img src="/assets/img/puzzles/b4a727a7-909e-41a4-a08c-3c92246cc6d1.png"/>
+<img src="/assets/img/puzzles/b4a727a7-909e-41a4-a08c-3c92246cc6d1.png" alt="Puzzle: SPRING, LLAF"/>

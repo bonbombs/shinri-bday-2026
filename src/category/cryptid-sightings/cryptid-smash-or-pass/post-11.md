@@ -8,4 +8,4 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 
 Hey what about this cryptid?
 
-<img src="/assets/img/puzzles/0bdd6523-9987-49eb-9db9-32b90d06ad91.png"/>
+<img src="/assets/img/puzzles/0bdd6523-9987-49eb-9db9-32b90d06ad91.png" alt="Puzzle: Word search puzzle titled 'Cryptids' Complete this cryptid themed word search to discover a secret message!"/>

@@ -14,4 +14,4 @@ I say Smash. Why? He’s mysterious, and that's sexy.  He flies, so he could car
 
 What do you say: Flutterrom, smash or pass?
 
-<img src="/assets/img/post/Flutterrom post.jpg"/>
+<img src="/assets/img/post/Flutterrom post.jpg" alt="Photo of Flutterom with glowing green eyes"/>

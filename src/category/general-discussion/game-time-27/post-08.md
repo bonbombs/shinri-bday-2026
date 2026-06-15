@@ -8,4 +8,4 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 
 Okay, guys, I know MissingKoi. Usually dominates the puzzle challenges, but let's try an easier one and see if anyone else gets it?
 
-<img src="/assets/img/puzzles/3a4bf2db-eab2-4d48-bbe0-2db7981d6e6c.png">
+<img src="/assets/img/puzzles/3a4bf2db-eab2-4d48-bbe0-2db7981d6e6c.png" alt="Puzzle: The letters 'TEEM' organized vertically">

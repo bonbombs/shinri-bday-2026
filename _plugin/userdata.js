@@ -2,12 +2,14 @@ export default [
     {
         "id": "secret-garden",
         "username": "SecretGarden",
+        "profilealt": "Pixelated image of a garden with a river and small waterfall",
         "joined": "1996-12-31",
         
     },
     {
         "id": "stillwaters",
         "username": "StillWaters",
+        "profilealt": "Red-earred slider sitting in a still pond, surrounded by grass",
         "title": "Pond Watcher",
         "location": "Somewhere nearby",
         "age": "Old enough to remember",
@@ -18,6 +20,7 @@ export default [
     {
         "id": "ladylake",
         "username": "LadyOfTheLake",
+        "profilealt": "Long haired woman covered in vines in a lake, surrounded by fireflies and cattails",
         "title": "Matron of the deep",
         "location": "The oldest stone by the pond",
         "age": "Classified",
@@ -28,6 +31,7 @@ export default [
     {
         "id": "neverscared",
         "username": "NeverScared",
+        "profilealt": "Image of a skeletal koi, with piercing red eyes",
         "title": "King of Horror Games",
         "location": "In Shinri's walls",
         "age": "Ancient",
@@ -38,6 +42,7 @@ export default [
     {
         "id": "ripplepoppop",
         "username": "RipplePopPop",
+        "profilealt": "Drawing of a lotus flower on a pond with sparkles and ripples",
         "title": "Draft #3",
         "location": "Near the lilypads",
         "age": "14",
@@ -47,6 +52,7 @@ export default [
     {
         "id": "dewdrop",
         "username": "DewDrop",
+        "profilealt": "Image of a dewdrop hanging off a blade of grass, with a faint reflection of the face inside the dewdrop",
         "title": "",
         "location": "on a morning walk",
         "age": "-",
@@ -57,6 +63,7 @@ export default [
     { 
         "id": "missing-koi",
         "username": "MissingKoi",
+        "profilealt": "Pixel art of a koi in the style of Moképon",
         "title": "Pattern analyst",
         "location": "Below the surface",
         "age": "Last seen yesterday",
@@ -67,6 +74,7 @@ export default [
     { 
         "id": "koi-mod",
         "username": "guardian of the pond",
+        "profilealt": "",
         "title": "Moderator",
         "location": "here",
         "hobbies": "Observing...",
@@ -75,6 +83,7 @@ export default [
     { 
         "id": "koinspiratorial",
         "username": "Koinspiratorial",
+        "profilealt": "Warped image of a TV with static and red swirls inside the screen.",
         "title": "Paredolia Master",
         "location": "You'll Never Find Me!",
         "age": "I'll Never Tell!",
@@ -84,6 +93,7 @@ export default [
     { 
         "id": "beegfeesh",
         "username": "BEEGFEESH",
+        "profilealt": "Big koi overtaking the sky with a little hot air balloon floating by",
         "title": "The Beegest Fish!",
         "location": "The Koi Pond",
         "age": "Not too beeg, not too small",
@@ -93,6 +103,7 @@ export default [
     {
         "id": "user",
         "username": "???",
+        "profilealt": "",
         "joined": "1970-1-1",
     }
 ]

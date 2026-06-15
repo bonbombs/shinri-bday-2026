@@ -10,4 +10,4 @@ Yes! Thank you!
 
 I'll leave everyone a challenging one as the last puzzle of the week.
 
-<img src="/assets/img/puzzles/6df0dbd3-2643-47e8-91bf-70c692cadc8b.png"/>
+<img src="/assets/img/puzzles/6df0dbd3-2643-47e8-91bf-70c692cadc8b.png" alt="Puzzle: the word 'Cherry' on the top. the word 'Please' on the bottom, in cursive"/>
