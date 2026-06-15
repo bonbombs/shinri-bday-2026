@@ -57,7 +57,14 @@ layout: layouts/base.njk
                     <dd><span>Location: </span><span>{{user.location or "-"}}</span><dd>
                     <dd><span>Hobbies: </span><span>{{user.hobbies or "-"}}</span><dd>
                     <dd><span>Joined: </span><span>{{user.joined}}<span></dd>
-                    <dd><span>Last login: </span><span>{{user.login or "1996-01-01"}}</span></dd>
+                    <dd><span>Last login: </span>
+                        
+                        {%if user.login == "today" %}
+                            <span id="login-today"></span>
+                        {% else %}
+                            <span>{{user.login or "1996-01-01"}}</span>
+                        {% endif %}
+                    </dd>
                     <dd><span>Forum posts: </span><span>{{ postcount }}</span></dd>
 
                     {% if signature | trim | length %}
@@ -74,3 +81,14 @@ layout: layouts/base.njk
         {% include "./sidebar.njk" ignore missing %}
     </div>
 </div>
+
+<script>
+    const loginEl = document.getElementById("login-today");
+    const loginToday = new Date();
+    loginToday.setFullYear(1996);
+    loginEl.innerHTML = loginToday.toLocaleDateString("en-CA", {
+        year: "numeric",
+        month: "numeric",
+        day: "numeric",
+    });
+</script>

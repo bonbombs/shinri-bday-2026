@@ -3,7 +3,7 @@ export default [
         "id": "secret-garden",
         "username": "SecretGarden",
         "profilealt": "Pixelated image of a garden with a river and small waterfall",
-        "joined": "1996-12-31",
+        "joined": "1995-12-31",
         
     },
     {
@@ -14,7 +14,7 @@ export default [
         "location": "Somewhere nearby",
         "age": "Old enough to remember",
         "hobbies": "Reading threads, replying late, preparing for the unavoidable apocalypse",
-        "joined": "1996-10-04",
+        "joined": "1995-10-04",
 
     },
     {
@@ -25,7 +25,7 @@ export default [
         "location": "The oldest stone by the pond",
         "age": "Classified",
         "hobbies": "Cooking (lore and food), midnight walks and photographic cryptids",
-        "joined": "1996-10-04",
+        "joined": "1995-10-04",
 
     },
     {
@@ -36,7 +36,7 @@ export default [
         "location": "In Shinri's walls",
         "age": "Ancient",
         "hobbies": "Playing Games, Knitting, Going to the Movies",
-        "joined": "1996-12-31",
+        "joined": "1995-12-31",
 
     },
     {
@@ -47,7 +47,7 @@ export default [
         "location": "Near the lilypads",
         "age": "14",
         "hobbies": "Writing fanfics, anime, horror, number 1 BlueHedgehog fan",
-        "joined": "1996-10-04",
+        "joined": "1995-10-04",
     },
     {
         "id": "dewdrop",
@@ -57,7 +57,7 @@ export default [
         "location": "on a morning walk",
         "age": "-",
         "hobbies": "Hunting cryptids, lazy afternoon naps, cuddles",
-        "joined": "1996-10-04",
+        "joined": "1995-10-04",
 
     },
     { 
@@ -68,17 +68,9 @@ export default [
         "location": "Below the surface",
         "age": "Last seen yesterday",
         "hobbies": "Lurking, Late-Night Posting, Keeping Notes, Conspiracy Theories, Moképon",
-        "joined": "1996-10-04",
+        "joined": "1995-10-04",
+        "login": "1995-10-15",
         "quote": "six a sentence for a surprise"
-    },
-    { 
-        "id": "koi-mod",
-        "username": "guardian of the pond",
-        "profilealt": "",
-        "title": "Moderator",
-        "location": "here",
-        "hobbies": "Observing...",
-        "joined": "2023-02-01",
     },
     { 
         "id": "koinspiratorial",
@@ -88,7 +80,7 @@ export default [
         "location": "You'll Never Find Me!",
         "age": "I'll Never Tell!",
         "hobbies": "Conspiracy Theories, Watching Streams, Karaoke",
-        "joined": "1996-10-04",
+        "joined": "1995-10-04",
     },
     { 
         "id": "beegfeesh",
@@ -98,12 +90,19 @@ export default [
         "location": "The Koi Pond",
         "age": "Not too beeg, not too small",
         "hobbies": "Swimming, Watching Streams, Memeing",
-        "joined": "1996-10-04",
+        "joined": "1995-10-04",
     },
     {
         "id": "user",
         "username": "???",
         "profilealt": "",
-        "joined": "1970-1-1",
+        "joined": "1970-01-01",
+    },
+    {
+        "id": "shinri",
+        "username": "Josuiji Shinri",
+        "joined": "1996-06-01",
+        "title": "Ronin",
+        "login": "today"
     }
 ]
