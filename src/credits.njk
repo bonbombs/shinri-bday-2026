@@ -5,7 +5,56 @@ eleventyNavigation:
   order: 5
 layout: "layouts/base.njk"
 ---
+<link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+<link href="/assets/fontawesome/css/brands.css" rel="stylesheet" />
 <style>
     h1 { text-align: center; }
+    table.credit-table {
+    }
+    table ul {
+      column-count: 2;
+    }
+    th:nth-child(1),
+    td:nth-child(1) { text-align: right; min-width: 150px; }
+    {# th:nth-child(2),
+    td:nth-child(2) { width: 50%; } #}
+    td { vertical-align: top; border-bottom: 1px solid #043038; }
 </style>
 <h1>Dead Threads Team</h1>
+{% for credit in credits %}
+<table class="credit-table" style="border: 5px double #043038; background: black; margin-bottom: 2em;">
+  <tr>
+    <th colspan="2" style="text-align: center;"><h2>{{credit.group}}</h2></th>
+  </tr>
+  <tr>
+    <th>Role</th>
+    <th>Name</th>
+  </tr>
+  {% for user in credit.users %}
+  <tr>
+      <td>{{user.role}}</td>
+      <td>
+        <span class="credit-name"><b>{{user.name}}</b></span>
+        {%if user.socials %} / 
+        {% set reTwt = r/^.*twitter.*/g %}
+        {% set reBsky = r/^.*bsky.*/g %}
+        {% for social in user.socials %}
+          {%if reTwt.test(social) %}
+            <a href="{{social}}"><i class="fa-brands fa-twitter"></i></a>
+          {%elseif reBsky.test(social) %}
+            <a href="{{social}}"><i class="fa-brands fa-bluesky"></i></a>
+          {%endif%}
+        {%endfor%}
+        {%endif%}
+        {%if user.items %}
+        <ul>
+        {% for item in user.items %}
+          <li>{{item}}</li>
+        {%endfor%}
+        </ul>
+        {%endif%}
+      </td>
+  </tr>
+  {% endfor %}
+</table>
+{% endfor %}
