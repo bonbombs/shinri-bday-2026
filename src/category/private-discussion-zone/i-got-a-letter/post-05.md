@@ -1,7 +1,7 @@
 ---
 user: neverscared
 thread: i-got-a-letter
-date: "1996-02-22T22:00:22.1Z"
+date: "1996-06-16T23:59:22.1Z"
 category: Private Discussion Zone
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---

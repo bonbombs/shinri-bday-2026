@@ -1,7 +1,7 @@
 ---
 user: missing-koi
 thread: missingkoi-an-internet-cryptid
-date: "1996-02-22T22:00:22.1Z"
+date: "1996-06-05T23:36:22.1Z"
 category: Cryptid Sightings
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---

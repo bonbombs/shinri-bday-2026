@@ -1,7 +1,7 @@
 ---
 user: secret-garden
 thread: bad-news-folks
-date: "1996-02-22T22:00:22.1Z" # day after previous post
+date: "1996-06-16T12:05:22.1Z" # day after previous post
 category: Private Discussion Zone
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
