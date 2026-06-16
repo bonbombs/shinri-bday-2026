@@ -7,5 +7,5 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 ---
 
 WHOA WTF<br/>
-Koin you can’t go around posting doxxing info like that<br/>
-WHAT ARE YOU DOING<br/>
+Koin you can’t go around posting private info like that<br/>
+WHAT ARE YOU DOING

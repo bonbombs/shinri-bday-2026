@@ -6,5 +6,5 @@ category: Private Discussion Zone
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-Okay but what about the doxxing or the recently deleted thread? <br/>
+Okay but what about the private info leaking or the recently deleted thread? <br/>
 He avoided breaking rules there based on technicalities.
