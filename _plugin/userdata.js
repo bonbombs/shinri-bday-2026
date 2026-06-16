@@ -16,9 +16,9 @@ export default [
         "profilealt": "Red-earred slider sitting in a still pond, surrounded by grass",
         "title": "Pond Watcher",
         "location": "Somewhere nearby",
-        "hobbies": "Reading threads, replying late, preparing for the unavoidable apocalypse",
+        "hobbies": "Tea, hiking, reading, preparing for the inevitable apocalypse",
         "joined": "1996-01-23",
-        "quote": "A drop of water on a still pond"
+        "quote": "I hope you’re taking this as seriously as I am!"
 
     },
     {
@@ -38,9 +38,9 @@ export default [
         "profilealt": "Image of a skeletal koi, with piercing red eyes",
         "title": "King of Horror Games",
         "location": "In Shinri's walls",
-        "hobbies": "Playing Games, Knitting, Going to the Movies",
+        "hobbies": "Movies… point and click adventures… baking…",
         "joined": "1996-01-26",
-        "quote": "if you would like cookies...let me know..."
+        "quote": "pm me… for baked goodies..."
 
     },
     {
@@ -81,9 +81,9 @@ export default [
         "profilealt": "Warped image of a TV with static and red swirls inside the screen.",
         "title": "Paredolia Master",
         "location": "You'll Never Find Me!",
-        "hobbies": "Conspiracy Theories, Watching Streams, Karaoke",
-        "joined": "1996-01-29",
-        "quote": "I WILL FIND!! ALL THE SECRETS!!!!!!"
+        "hobbies": "wouldnt u like to know",
+        "joined": "1996-0",
+        "quote": "the TRUTH is OUT THERE"
     },
     { 
         "id": "beegfeesh",

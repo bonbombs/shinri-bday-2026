@@ -6,4 +6,6 @@ category: Cryptid Sightings
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-Oh, that’s actually a good point. Having worked with the backend to our servers somewhat to fiddle with code though, I can pretty much guarantee that a bunch of slip-through-the-cracks creatures and critters are probably low priority. If they do get “fixed” it’s probably through some other larger fix or update.
+Oh, that’s a good point. <br/>
+Having worked with the backend to our servers somewhat to fiddle with code though, I can pretty much guarantee that a bunch of slip through the cracks critters are probably low priority.<br/>
+If they do get “fixed” it’s probably through some other larger fix or update.
