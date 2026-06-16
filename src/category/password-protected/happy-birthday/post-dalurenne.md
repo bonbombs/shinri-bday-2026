@@ -1,6 +1,6 @@
 ---
 user: Dalurenne
-avatar: "punikoA.jpg"
+avatar: "Guestbook_Dalurenne_AVATAR.jpg"
 signature1: "stackableSTARS.png"
 signature2: "stackableSHINRI.png"
 social: "https://twitter.com/dalurenne"
