@@ -7,17 +7,5 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 ---
 
 Well, fine.  Would a cryptid post something like this:
-## Dalu note: insert image to replace below later
-1. LRETEIP       Creature with scales
 
-2. SBATE           A wild animal
-
-3. DWIENG       To have wings
-
-4. LGAICAM      Supernatural powers
-
-5. LNEEGDS       A very old tale
-
-6. FBEAL             Not a myth or a story but a
-
-7. SONRTEM         A terrifying creature
+<img src="/assets/img/puzzles/22661b2c-cc9c-4ead-9115-f4ca15f22caf.png">

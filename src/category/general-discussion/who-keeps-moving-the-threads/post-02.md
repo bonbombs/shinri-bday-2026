@@ -6,4 +6,4 @@ category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-## Insert moon's haunted image
+<img src="/assets/img/post/moons-haunted-shinri.jpg">
