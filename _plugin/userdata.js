@@ -3,7 +3,11 @@ export default [
         "id": "secret-garden",
         "username": "SecretGarden",
         "profilealt": "Pixelated image of a garden with a river and small waterfall",
+        "title": "Forum overseer",
+        "location": "Behind the garden door",
+        "hobbies": "Reading manga, watching anime, reading forum posts",
         "joined": "1995-12-31",
+        "quote": "A garden for cryptids."
         
     },
     {
@@ -13,7 +17,8 @@ export default [
         "title": "Pond Watcher",
         "location": "Somewhere nearby",
         "hobbies": "Reading threads, replying late, preparing for the unavoidable apocalypse",
-        "joined": "1995-10-04",
+        "joined": "1996-01-23",
+        "quote": "A drop of water on a still pond"
 
     },
     {
@@ -22,8 +27,9 @@ export default [
         "profilealt": "Long haired woman covered in vines in a lake, surrounded by fireflies and cattails",
         "title": "Matron of the deep",
         "location": "The oldest stone by the pond",
-        "hobbies": "Cooking (lore and food), midnight walks and photographic cryptids",
-        "joined": "1995-10-04",
+        "hobbies": "Cooking (lore and food), midnight walks and photographing cryptids",
+        "joined": "1996-01-27",
+        "quote": "if you are deep in the mists, look to the lights"
 
     },
     {
@@ -33,7 +39,8 @@ export default [
         "title": "King of Horror Games",
         "location": "In Shinri's walls",
         "hobbies": "Playing Games, Knitting, Going to the Movies",
-        "joined": "1995-12-31",
+        "joined": "1996-01-26",
+        "quote": "if you would like cookies...let me know..."
 
     },
     {
@@ -43,7 +50,8 @@ export default [
         "title": "Draft #3",
         "location": "Near the lilypads",
         "hobbies": "Writing fanfics, anime, horror, number 1 BlueHedgehog fan",
-        "joined": "1995-10-04",
+        "joined": "1996-01-27",
+        "quote": "Step it up!"
     },
     {
         "id": "dewdrop",
@@ -52,7 +60,8 @@ export default [
         "title": "",
         "location": "on a morning walk",
         "hobbies": "Hunting cryptids, lazy afternoon naps, cuddles",
-        "joined": "1995-10-04",
+        "joined": "1996-01-27",
+        "quote": "Finding a reflection of myself."
 
     },
     { 
@@ -62,8 +71,8 @@ export default [
         "title": "Pattern analyst",
         "location": "Below the surface",
         "hobbies": "Lurking, Late-Night Posting, Keeping Notes, Conspiracy Theories, Moképon",
-        "joined": "1995-10-04",
-        "login": "1995-12-15",
+        "joined": "1996-01-23",
+        "login": "1996-05-15",
         "quote": "six a sentence for a surprise"
     },
     { 
@@ -73,7 +82,8 @@ export default [
         "title": "Paredolia Master",
         "location": "You'll Never Find Me!",
         "hobbies": "Conspiracy Theories, Watching Streams, Karaoke",
-        "joined": "1995-10-04",
+        "joined": "1996-01-29",
+        "quote": "I WILL FIND!! ALL THE SECRETS!!!!!!"
     },
     { 
         "id": "beegfeesh",
@@ -82,19 +92,21 @@ export default [
         "title": "The Beegest Fish!",
         "location": "The Koi Pond",
         "hobbies": "Swimming, Watching Streams, Memeing",
-        "joined": "1995-10-04",
+        "joined": "1996-01-23",
+        "quote": "Floating along swimmingly~"
     },
     {
         "id": "user",
         "username": "???",
         "profilealt": "",
-        "joined": "1970-01-01",
+        "joined": "1970-01-01"
     },
     {
         "id": "shinri",
         "username": "Josuiji Shinri",
-        "joined": "1996-06-01",
+        "joined": "1996-06-18",
         "title": "Ronin",
         "login": "today"
+        "quote": "They call me Josuiji 'Two Shins' Shinri."
     }
 ]
