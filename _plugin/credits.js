@@ -156,11 +156,6 @@ export default [
                 socials: ["https://twitter.com/dalurenne", "https://bsky.app/profile/dalurenne.bsky.social"],
             },
             {
-                name: "Dalurenne",
-                role: "Social Media Artist",
-                socials: ["https://twitter.com/dalurenne", "https://bsky.app/profile/dalurenne.bsky.social"],
-            },
-            {
                 name: "Kaika Hana",
                 role: "Copy Editor",
             },
