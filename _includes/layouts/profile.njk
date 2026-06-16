@@ -63,7 +63,7 @@ layout: layouts/base.njk
                             <span>{{(user.login or "1996-01-01") | toJSDate | readableDate }}</span>
                         {% endif %}
                     </dd>
-                    <dd><span>Forum posts: </span><span>{{ postcount }}</span></dd>
+                    <dd><span>Forum posts: </span><span>{{ user.posts or postcount }}</span></dd>
 
                     {% if signature | trim | length %}
                     <dd style="margin-top: 2em;margin-left: 1em;"><b><u>Signature:</u><b></dd>

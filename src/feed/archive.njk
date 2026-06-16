@@ -37,7 +37,7 @@
       "id": "{{ absolutePostUrl }}",
       "user": "{{ post.data.user }}",
       "userdata": {
-        "postcount": "{{postcount}}",
+        "postcount": "{{user.posts or postcount}}",
         "username": "{{ user.username | escape}}",
         "title": "{{user.title | escape}}",
         "location": "{{user.location | escape}}",

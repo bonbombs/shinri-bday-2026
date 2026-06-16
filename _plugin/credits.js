@@ -5,7 +5,7 @@ export default [
             {
                 name: "Ruselee",
                 role: "Project Lead",
-                socials: ["https://twitter.com/ruseleee"],
+                socials: ["https://twitter.com/ruseleee", "https://bsky.app/profile/ruselee.bsky.social"],
             },
             {
                 name: "Semiluminary",
@@ -35,7 +35,7 @@ export default [
             {
                 name: "Ruselee",
                 role: "Web Design",
-                socials: ["https://twitter.com/ruseleee"],
+                socials: ["https://twitter.com/ruseleee", "https://bsky.app/profile/ruselee.bsky.social"],
             },
             {
                 name: "AromanticPigeonMadness",
@@ -97,9 +97,10 @@ export default [
             {
                 name: "Ruselee",
                 role: "Artist",
-                socials: ["https://twitter.com/ruseleee"],
+                socials: ["https://twitter.com/ruseleee", "https://bsky.app/profile/ruselee.bsky.social"],
                 items: [
-                    "Website ads"
+                    "Website ads",
+                    "Koimble image <a href='/category/cryptid-sightings/missingkoi-an-internet-cryptid/thread/#post-10'>(\"MISSINGKOI AN INTERNET CRYPTID\")</a>"
                 ]
             },
             {

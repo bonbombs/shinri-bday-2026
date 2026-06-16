@@ -5,9 +5,9 @@ layout: "layouts/base.njk"
     h1 { font-size: 4em; text-align: center; }
     #hbd_grid {
         display: grid;
-        grid-template-columns: 0.3fr 1fr 0.3fr;
+        grid-template-columns: 0.3fr 1fr;
     }
-    .ad, .center {
+    .ads, .center {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -18,13 +18,12 @@ layout: "layouts/base.njk"
         box-sizing: border-box;
         padding-bottom: 2em;
     }
-    .ad img { width: 100%; margin-bottom: 1em; }
+    .ads img { width: 100%; margin-bottom: 1em; }
     .center img {
         width: 100%;
-        height: 500px;
+        height: 1000px;
         border: 2px double white;
         object-fit: cover;
-        background: white;
         margin-bottom: 1em;
     }
     .center a.large {
@@ -36,18 +35,15 @@ layout: "layouts/base.njk"
 
 
 <div id="hbd_grid">
-    <div class="ad">
-        <img src="/assets/img/ads/FREE-TRIP.gif" alt="AD: CALL and WIN a FREE trip to the ELYSIUM TREE\nCALL NOW!\nAs seen on TV 1-800-WIN-TREE\nOffer valid while supplies last. We have no supplies.\n2,50 PER CALL"/>
-        <img src="/assets/img/ads/rissun-bay.jpg" alt="AD: VISIT RISSUN BAY! Home of the Legendary Rissuna!\nWill YOU be the first to get a clear photo?\nGet a free booklet!"/>
+    <div class="ads">
+        <a href="https://x.com/josuijishinri" target="_blank"><img class="ad" src="/assets/img/ads/FREE-TRIP.gif" alt="AD: CALL and WIN a FREE trip to the ELYSIUM TREE\nCALL NOW!\nAs seen on TV 1-800-WIN-TREE\nOffer valid while supplies last. We have no supplies.\n2,50 PER CALL"/></a>
+        <a href="https://www.youtube.com/@JosuijiShinri" target="_blank"><img class="ad" src="/assets/img/ads/save-the-bleaksoot.jpg" alt="AD: CALL and WIN a FREE trip to the ELYSIUM TREE\nCALL NOW!\nAs seen on TV 1-800-WIN-TREE\nOffer valid while supplies last. We have no supplies.\n2,50 PER CALL"/></a>
+        <a href="https://bsky.app/profile/josuijishinri.holostars.tv" target="_blank"><img class="ad" src="/assets/img/ads/rissun-bay.jpg" alt="AD: VISIT RISSUN BAY! Home of the Legendary Rissuna!\nWill YOU be the first to get a clear photo?\nGet a free booklet!"/></a>
     </div>
     <div class="center">
-        <img src="#"/>
+        <img src="/assets/img/Restored_20260616155057.gif"/>
         <a class="large" href="/category/password-protected/happy-birthday/thread">Click here to see messages!</a>
         <i><a href="/category/password-protected/epilogue/thread">(what happened to MissingKoi???)</a></i>
-    </div>
-    <div class="ad">
-        <img src="/assets/img/ads/save-the-bleaksoot.jpg" alt="AD: They are fluffy. They are friendly. They are disaapearing.\nVisit the Bleaksoot Preserve and help protect one of the worlds rarest cryptids\nCAN YOU SEE THEM CLEARLY?\nSponsored by Elysium Wildlife Foundation"/>
-        <img src="/assets/img/ads/FREE-TRIP.gif" alt="AD: CALL and WIN a FREE trip to the ELYSIUM TREE\nCALL NOW!\nAs seen on TV 1-800-WIN-TREE\nOffer valid while supplies last. We have no supplies.\n2,50 PER CALL"/>
     </div>
 </div>
 
