@@ -33,6 +33,11 @@ export default [
         group: "Creative Team",
         users: [
             {
+                name: "Ruselee",
+                role: "Web Design",
+                socials: ["https://twitter.com/ruseleee"],
+            },
+            {
                 name: "AromanticPigeonMadness",
                 role: "Puzzle Designer",
                 socials: ["https://twitter.com/pigeonyei", "https://bsky.app/profile/softcartilage.bsky.social"],
@@ -87,6 +92,14 @@ export default [
                 items: [
                     "SecretGarden avatar & signature", 
                     "Moon's Haunted meme <a href='/category/general-discussion/who-keeps-moving-the-threads/thread/#post-02'>(\"Who keeps moving the threads?\")</a>"
+                ]
+            },
+            {
+                name: "Ruselee",
+                role: "Web Design",
+                socials: ["https://twitter.com/ruseleee"],
+                items: [
+                    "Website ads"
                 ]
             },
             {
