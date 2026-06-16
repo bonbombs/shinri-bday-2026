@@ -7,4 +7,4 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 ---
 Okay, let's try this one!
 
-<img src="/assets/img/puzzles/c7b7c35b-cbd2-4d1a-baff-09dc995a0101.png">
+<img src="/assets/img/puzzles/c7b7c35b-cbd2-4d1a-baff-09dc995a0101.png" alt="Puzzle: Four 'DANCE's formed in a square">

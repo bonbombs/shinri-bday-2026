@@ -51,7 +51,7 @@ function runSearch(q) {
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(postString, 'text/html');
                 const post = doc.body.firstElementChild;
-                replaceTextModern(post.querySelector(".content"), escapeRegExp(q), "<mark>$&</mark>")
+                replaceTextModern(post.querySelector(".content"), new RegExp(escapeRegExp(q), "gi"), "<mark>$&</mark>")
                 results_node.append(post);
             }
         }
@@ -70,7 +70,7 @@ function replaceTextModern(element, find, replace) {
     const iterator = document.createNodeIterator(element, NodeFilter.SHOW_TEXT);
     let node;
     while (node = iterator.nextNode()) {
-        if (!['SCRIPT', 'STYLE'].includes(node.parentNode.tagName) && node.nodeValue.includes(find)) {
+        if (!['SCRIPT', 'STYLE'].includes(node.parentNode.tagName)) {
             let replacedText = node.nodeValue.replace(find, replace);
             let fragment = document.createRange().createContextualFragment(replacedText);
             node.replaceWith(fragment);

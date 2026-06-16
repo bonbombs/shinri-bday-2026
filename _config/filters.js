@@ -53,6 +53,10 @@ export default function(eleventyConfig) {
 		(strings || []).sort((b, a) => b.localeCompare(a))
 	);
 
+	eleventyConfig.addFilter("sortByLatest", strings =>
+		(strings || []).sort((b, a) => Date.parse(b.date) - Date.parse(a.date))
+	);
+
 	eleventyConfig.addFilter("noTitle", (threads) => threads.filter(thread => thread.data.title))
 
     eleventyConfig.addCollection("postsByThread", function (collectionAPI) {
@@ -68,6 +72,10 @@ export default function(eleventyConfig) {
                 postsByThread[thread].push(item);
             }
         });
+
+		// for (var thread in postsByThread) {
+		// 	postsByThread[thread].sort((a, b) => Date.parse(a.date) - Date.parse(b.date))
+		// }
 
         // You can now access this as collections.postsByThread['your-tag-name']
         return postsByThread;
@@ -92,10 +100,32 @@ export default function(eleventyConfig) {
                 threadsByCategory[category].push(item);
             }
         });
-        // You can now access this as collections.threadsByCategory['your-tag-name']
+		// for (var category in threadsByCategory) {
+		// 	threadsByCategory[category].sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
+		// }
 		console.log(threadsByCategory)
+        // You can now access this as collections.threadsByCategory['your-tag-name']
         return threadsByCategory;
 	});
+	
+	eleventyConfig.addCollection("postsByCategory", function (collectionAPI) {
+		const posts = collectionAPI.getFilteredByGlob("./src/**/post-*.md");
+        const postsByCategory = {};
+
+        posts.forEach(item => {
+            const category = item.data.category;
+            if (category) {
+                if (!postsByCategory[category]) {
+                    postsByCategory[category] = [];
+                }
+                postsByCategory[category].push(item);
+            }
+        });
+		console.log(postsByCategory)
+        // You can now access this as collections.postsByCategory['your-tag-name']
+        return postsByCategory;
+	});
+	
 	eleventyConfig.addCollection("postsByUser", function (collectionAPI) {
         const posts = collectionAPI.getFilteredByGlob("./src/**/post-*.md");
         const postsByUser = {};

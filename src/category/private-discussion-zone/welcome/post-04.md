@@ -8,6 +8,6 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 
 thanks, boss head man!
 
-<img src="/assets/img/post/Puniko-blobfish-post.jpg>
+<img src="/assets/img/post/Puniko-blobfish-post.jpg">
 
 SG toward us!

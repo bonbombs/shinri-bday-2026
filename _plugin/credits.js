@@ -112,6 +112,7 @@ export default [
                     "Flutterrom <a href='/category/cryptid-sightings/cryptid-smash-or-pass/thread/#post-01'>(\"Cryptid Smash or Pass\")</a>",
                     "Rissuna brochure <a href='/category/cryptid-sightings/any-new-rissuna-sightings/thread/#post-01'>(\"Any new Rissuna sightings lately?\")</a>",
                     "Flutterrom birthday <a href='/category/general-discussion/its-my-birthday/thread/#post-05'>(\"its my birthday\")</a>",
+                    "Puniko blobfish <a href='/category/private-discussion-zone/welcome/thread/#post-04'>(\"Welcome, friends!\")</a>",
                     "Floating koipanions <a href='/category/cryptid-sightings/what-is-guild-tempus-hiding/thread/#post-01'>(\"WHAT IS GUILD TEMPUS HIDING\")</a>",
                     "Phantom/dog <a href='/category/cryptid-sightings/what-is-guild-tempus-hiding/thread/#post-10'>(\"WHAT IS GUILD TEMPUS HIDING\")</a>"
                 ]

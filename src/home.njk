@@ -66,12 +66,13 @@ const eleventyNavigation = {
 			</td>
 			<td>
 			{% if threadsInCategory | length > 0 and not category.protected %}
-			{% set thread = collections.threadsByCategory[category.title] | last %}
+			{% set lastPost = collections.postsByCategory[category.title] | sortByLatest | last %}
+			{% set thread = collections.threadsByCategory[category.title] | findThread(lastPost.data.thread) %}
 			{% set postcount = collections.postsByThread[thread.data.id] | length %}
 			<div class="category-thread">
-				<a href="{{ thread.url }}" class="postlist-link">{% if thread.data.title %}{{ thread.data.title }}{% else %}<code>{{ thread.url }}</code>{% endif %}</a>
+				<a href="{{ lastPost.url }}" class="postlist-link">{% if lastPost.data.thread %}{{ thread.data.title }}{% else %}<code>{{ lastPost.url }}</code>{% endif %}</a>
 				<div>
-					<time class="postlist-date" datetime="{{ thread.date | htmlDateString }}">{{ thread.date | readableDate("LL-dd-yyyy") }}</time>
+					<time class="postlist-date" datetime="{{ lastPost.date | htmlDateString }}">{{ lastPost.date | readableDate("LL-dd-yyyy") }}</time>
 					<span>{{postcount}} posts</span>
 				</div>
 			</div>

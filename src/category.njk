@@ -19,10 +19,12 @@ no threads here ): you should make one!
 			<th>replies</th>
 			<th>last post</th>
   </tr>
-{% for thread in threadlist | where("data.pinned", true) | reverse %}
-  {% set lastPost = collections.postsByThread[thread.data.id] | last %}
-  {% set userid = lastPost.data.user %}
+{% for thread in threadlist | where("data.pinned", true) %}
+  {% set firstPost = collections.postsByThread[thread.data.id] | sortByLatest | first %}
+  {% set lastPost = collections.postsByThread[thread.data.id] | sortByLatest | last %}
+  {% set userid = firstPost.data.user %}
   {% set userdata = users | findUser(userid) %}
+  {% set lastUserData = users | findUser(lastPost.data.user) %}
   <tr>
     <td>
       📌 <a href="{{ thread.url }}" class="postlist-link">{% if thread.data.title %}{{ thread.data.title }}{% else %}<code>{{ thread.url }}</code>{% endif %}</a>
@@ -39,16 +41,21 @@ no threads here ): you should make one!
     <td>
       {# {{lastPost}} #}
       <a href="{{lastPost.page.url}}">
-        <time class="postlist-date" datetime="{{ thread.date | htmlDateString }}">{{ thread.date | readableDate("LL-dd-yyyy") }}</time>
+        <time class="postlist-date" datetime="{{ lastPost.date | htmlDateString }}">
+          {{ lastPost.date | readableDate("LL-dd-yyyy") }}
+        </time>
       </a>
+      <div> by {{ lastUserData.username }}</div>
     </td>
   </tr>
 {% endfor %}
-{% for thread in threadlist | reverse %}
+{% for thread in threadlist %}
 {% if not thread.data.pinned %}
-  {% set lastPost = collections.postsByThread[thread.data.id] | last %}
-  {% set userid = lastPost.data.user %}
+  {% set firstPost = collections.postsByThread[thread.data.id] | sortByLatest | first %}
+  {% set lastPost = collections.postsByThread[thread.data.id] | sortByLatest | last %}
+  {% set userid = firstPost.data.user %}
   {% set userdata = users | findUser(userid) %}
+  {% set lastUserData = users | findUser(lastPost.data.user) %}
   <tr>
     <td>
       <a href="{{ thread.url }}" class="postlist-link">{% if thread.data.title %}{{ thread.data.title }}{% else %}<code>{{ thread.url }}</code>{% endif %}</a>
@@ -65,8 +72,11 @@ no threads here ): you should make one!
     <td>
       {# {{lastPost}} #}
       <a href="{{lastPost.page.url}}">
-        <time class="postlist-date" datetime="{{ thread.date | htmlDateString }}">{{ thread.date | readableDate("LL-dd-yyyy") }}</time>
+        <time class="postlist-date" datetime="{{ lastPost.date | htmlDateString }}">
+          {{ lastPost.date | readableDate("LL-dd-yyyy") }}
+        </time>
       </a>
+      <div> by {{ lastUserData.username }}</div>
     </td>
   </tr>
 {% endif %}
