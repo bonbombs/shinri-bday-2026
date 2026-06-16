@@ -34,8 +34,9 @@
     {% set user = users | findUser(post.data.user) %}
     <title>{{ thread.data.title }}</title>
     <link href="{{ absolutePostUrl }}" />
-    <pubDate>{{ post.date | dateToRfc3339 }}</pubDate>
+    <published>{{ post.date | dateToRfc3339 }}</published>
     <author>{{user.username}}</author>
+    <category>{{post.data.category}}</category>
     <id>{{ post.url }}</id>
     <content type="html">{{ post.content | renderTransforms(post.data.page, metadata.base) }}</content>
   </entry>
