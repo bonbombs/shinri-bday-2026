@@ -77,6 +77,7 @@
         summary {
             &::before { content: "Show: "; }
             cursor: help;
+            margin-top: 1em;
         }
 
         &[open] {
@@ -162,6 +163,12 @@
     padding: 20px;
     font-style: italic;
     font-weight: bold;
+    color: white;
+}
+
+.edit {
+    color: #22beca;
+    font-style: italic;
 }
 
 .clear { clear: both; }

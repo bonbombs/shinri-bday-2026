@@ -20,7 +20,7 @@ export default function(eleventyConfig) {
 
 	eleventyConfig.addFilter("htmlDateTime", (dateObj) => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat('ff');
+		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toLocaleString({ month: 'short', day: 'numeric', year: "numeric", hour: '2-digit', minute: '2-digit' });
 	});
 
 	// Get the first `n` elements of a collection.

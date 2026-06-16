@@ -106,7 +106,7 @@ export default [
         "username": "Josuiji Shinri",
         "joined": "1996-06-18",
         "title": "Ronin",
-        "login": "today"
+        "login": "today",
         "quote": "They call me Josuiji 'Two Shins' Shinri."
     }
 ]
