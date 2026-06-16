@@ -7,6 +7,7 @@ export default [
         "location": "Behind the garden door",
         "hobbies": "Reading manga, watching anime, reading forum posts",
         "joined": "1995-12-31",
+        "quote": "A garden for cryptids."
         
     },
     {
@@ -17,6 +18,7 @@ export default [
         "location": "Somewhere nearby",
         "hobbies": "Reading threads, replying late, preparing for the unavoidable apocalypse",
         "joined": "1996-01-23",
+        "quote": "A drop of water on a still pond"
 
     },
     {
@@ -25,8 +27,9 @@ export default [
         "profilealt": "Long haired woman covered in vines in a lake, surrounded by fireflies and cattails",
         "title": "Matron of the deep",
         "location": "The oldest stone by the pond",
-        "hobbies": "Cooking (lore and food), midnight walks and photographic cryptids",
+        "hobbies": "Cooking (lore and food), midnight walks and photographing cryptids",
         "joined": "1996-01-27",
+        "quote": "if you are deep in the mists, look to the lights"
 
     },
     {
@@ -37,6 +40,7 @@ export default [
         "location": "In Shinri's walls",
         "hobbies": "Playing Games, Knitting, Going to the Movies",
         "joined": "1996-01-26",
+        "quote": "if you would like cookies...let me know..."
 
     },
     {
@@ -47,6 +51,7 @@ export default [
         "location": "Near the lilypads",
         "hobbies": "Writing fanfics, anime, horror, number 1 BlueHedgehog fan",
         "joined": "1996-01-27",
+        "quote": "Step it up!"
     },
     {
         "id": "dewdrop",
@@ -56,6 +61,7 @@ export default [
         "location": "on a morning walk",
         "hobbies": "Hunting cryptids, lazy afternoon naps, cuddles",
         "joined": "1996-01-27",
+        "quote": "Finding a reflection of myself."
 
     },
     { 
@@ -77,6 +83,7 @@ export default [
         "location": "You'll Never Find Me!",
         "hobbies": "Conspiracy Theories, Watching Streams, Karaoke",
         "joined": "1996-01-29",
+        "quote": "I WILL FIND!! ALL THE SECRETS!!!!!!"
     },
     { 
         "id": "beegfeesh",
@@ -86,12 +93,13 @@ export default [
         "location": "The Koi Pond",
         "hobbies": "Swimming, Watching Streams, Memeing",
         "joined": "1996-01-23",
+        "quote": "Floating along swimmingly~"
     },
     {
         "id": "user",
         "username": "???",
         "profilealt": "",
-        "joined": "1970-01-01",
+        "joined": "1970-01-01"
     },
     {
         "id": "shinri",
@@ -99,5 +107,6 @@ export default [
         "joined": "1996-06-18",
         "title": "Ronin",
         "login": "today"
+        "quote": "They call me Josuiji 'Two Shins' Shinri."
     }
 ]
