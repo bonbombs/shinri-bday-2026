@@ -12,7 +12,6 @@ export default [
         "profilealt": "Red-earred slider sitting in a still pond, surrounded by grass",
         "title": "Pond Watcher",
         "location": "Somewhere nearby",
-        "age": "Old enough to remember",
         "hobbies": "Reading threads, replying late, preparing for the unavoidable apocalypse",
         "joined": "1995-10-04",
 
@@ -23,7 +22,6 @@ export default [
         "profilealt": "Long haired woman covered in vines in a lake, surrounded by fireflies and cattails",
         "title": "Matron of the deep",
         "location": "The oldest stone by the pond",
-        "age": "Classified",
         "hobbies": "Cooking (lore and food), midnight walks and photographic cryptids",
         "joined": "1995-10-04",
 
@@ -34,7 +32,6 @@ export default [
         "profilealt": "Image of a skeletal koi, with piercing red eyes",
         "title": "King of Horror Games",
         "location": "In Shinri's walls",
-        "age": "Ancient",
         "hobbies": "Playing Games, Knitting, Going to the Movies",
         "joined": "1995-12-31",
 
@@ -45,7 +42,6 @@ export default [
         "profilealt": "Drawing of a lotus flower on a pond with sparkles and ripples",
         "title": "Draft #3",
         "location": "Near the lilypads",
-        "age": "14",
         "hobbies": "Writing fanfics, anime, horror, number 1 BlueHedgehog fan",
         "joined": "1995-10-04",
     },
@@ -55,7 +51,6 @@ export default [
         "profilealt": "Image of a dewdrop hanging off a blade of grass, with a faint reflection of the face inside the dewdrop",
         "title": "",
         "location": "on a morning walk",
-        "age": "-",
         "hobbies": "Hunting cryptids, lazy afternoon naps, cuddles",
         "joined": "1995-10-04",
 
@@ -66,7 +61,6 @@ export default [
         "profilealt": "Pixel art of a koi in the style of Moképon",
         "title": "Pattern analyst",
         "location": "Below the surface",
-        "age": "Last seen yesterday",
         "hobbies": "Lurking, Late-Night Posting, Keeping Notes, Conspiracy Theories, Moképon",
         "joined": "1995-10-04",
         "login": "1995-12-15",
@@ -78,7 +72,6 @@ export default [
         "profilealt": "Warped image of a TV with static and red swirls inside the screen.",
         "title": "Paredolia Master",
         "location": "You'll Never Find Me!",
-        "age": "I'll Never Tell!",
         "hobbies": "Conspiracy Theories, Watching Streams, Karaoke",
         "joined": "1995-10-04",
     },
@@ -88,7 +81,6 @@ export default [
         "profilealt": "Big koi overtaking the sky with a little hot air balloon floating by",
         "title": "The Beegest Fish!",
         "location": "The Koi Pond",
-        "age": "Not too beeg, not too small",
         "hobbies": "Swimming, Watching Streams, Memeing",
         "joined": "1995-10-04",
     },
