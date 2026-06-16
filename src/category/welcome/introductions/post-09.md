@@ -1,7 +1,7 @@
 ---
 user: dewdrop
 thread: introductions
-date: "1996-02-22T22:00:22.1Z"
+date: "1996-04-01T22:05:22.1Z"
 category: Welcome
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---

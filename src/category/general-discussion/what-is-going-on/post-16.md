@@ -6,5 +6,5 @@ category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-let me join inn too!!! 
+let me join inn too!!! <br/>
 should we start a group pm?

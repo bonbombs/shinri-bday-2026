@@ -6,4 +6,5 @@ category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-Hey, let’s not get ahead of ourselves here, how do you even know MissingKoi.’s involved?
+hey let’s not get ahead of ourselves here<br/>
+how do you even know MK’s involved?

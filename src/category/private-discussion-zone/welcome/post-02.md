@@ -6,4 +6,4 @@ category: Private Discussion Zone
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-Oh neat, I’m sure we’ll find a way to use this space~
+Oh neat, I’m sure we’ll find a way to use this space :3
