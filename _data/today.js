@@ -1,1 +1,4 @@
-export default new Date();
+export default {
+    date: new Date(),
+    now: Date.now(),
+}

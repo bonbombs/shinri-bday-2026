@@ -72,7 +72,7 @@ const eleventyNavigation = {
 			<div class="category-thread">
 				<a href="{{ lastPost.url }}" class="postlist-link">{% if lastPost.data.thread %}{{ thread.data.title }}{% else %}<code>{{ lastPost.url }}</code>{% endif %}</a>
 				<div>
-					<time class="postlist-date" datetime="{{ lastPost.date | htmlDateString }}">{{ lastPost.date | readableDate("LL-dd-yyyy") }}</time>
+					<time class="postlist-date" datetime="{{ lastPost.date | htmlDateString("utc") }}">{{ lastPost.date | readableDate("LL-dd-yyyy") }}</time>
 					<span>{{postcount}} posts</span>
 				</div>
 			</div>

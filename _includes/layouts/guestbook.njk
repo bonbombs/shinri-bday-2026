@@ -20,7 +20,7 @@ layout: layouts/base.njk
             {% if loop.index > 1 %}Re: {% endif %}
             {{ thread.data.title }}</a> by 
             <span><a href="/users/{{userdata.id}}">{{ userdata.username }}</a></span> » 
-            <time datetime="{{post.date}}">{{post.date | htmlDateTime }}</time>
+            <time datetime="{{post.date}}">{{post.date | htmlDateTime("utc") }}</time>
         </span>
         <span class="num">#{{loop.index}}</span>
     {% endset %}

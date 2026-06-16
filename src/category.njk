@@ -41,7 +41,7 @@ no threads here ): you should make one!
     <td>
       {# {{lastPost}} #}
       <a href="{{lastPost.page.url}}">
-        <time class="postlist-date" datetime="{{ lastPost.date | htmlDateString }}">
+        <time class="postlist-date" datetime="{{ lastPost.date | htmlDateString("utc") }}">
           {{ lastPost.date | readableDate("LL-dd-yyyy") }}
         </time>
       </a>
@@ -72,7 +72,7 @@ no threads here ): you should make one!
     <td>
       {# {{lastPost}} #}
       <a href="{{lastPost.page.url}}">
-        <time class="postlist-date" datetime="{{ lastPost.date | htmlDateString }}">
+        <time class="postlist-date" datetime="{{ lastPost.date | htmlDateString("utc") }}">
           {{ lastPost.date | readableDate("LL-dd-yyyy") }}
         </time>
       </a>
