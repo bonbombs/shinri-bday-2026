@@ -15,4 +15,4 @@ And, as we wrap this up, thank you too, Shinri, for helping all of us get to thi
 
 Happy birthday from all of us here!
 
-<img src="/assets/img/post/team-artwork-full_taq.pngs" style="max-height: none;">
+<img src="/assets/img/post/team-artwork-full_taq.png" style="max-height: none;">
