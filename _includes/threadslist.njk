@@ -3,7 +3,7 @@
     {% set postcount = collections.postsByThread[thread.data.id] | length %}
 	<li class="postlist-item{% if thread.url == url %} postlist-item-active{% endif %}">
 		<a href="{{ thread.url }}" class="postlist-link">{% if thread.data.title %}{{ thread.data.title }}{% else %}<code>{{ thread.url }}</code>{% endif %}</a>
-		<time class="postlist-date" datetime="{{ thread.date | htmlDateString }}">{{ thread.date | readableDate("LLLL yyyy") }}</time>
+		<time class="postlist-date" datetime="{{ thread.date | htmlDateString }}">{{ thread.date | readableDate("LL-dd-yyyy") }}</time>
         <span>{{postcount}} posts</span>
 	</li>
 {%- endfor %}

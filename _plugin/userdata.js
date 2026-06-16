@@ -69,7 +69,7 @@ export default [
         "age": "Last seen yesterday",
         "hobbies": "Lurking, Late-Night Posting, Keeping Notes, Conspiracy Theories, Moképon",
         "joined": "1995-10-04",
-        "login": "1995-10-15",
+        "login": "1995-12-15",
         "quote": "six a sentence for a surprise"
     },
     { 

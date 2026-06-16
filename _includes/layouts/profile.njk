@@ -21,9 +21,7 @@ layout: layouts/base.njk
     dd:not(.title) {
         display: flex;
         margin-bottom: 0.35em;
-    }
-    dd span:nth-child(1) {
-        flex-basis: 200px;
+        width: 250px;
     }
     dd span:nth-child(2) {
         flex-grow: 1;
@@ -56,13 +54,13 @@ layout: layouts/base.njk
                     <dd><span>Title: </span><span>{{user.title or "-"}}<span></dd>
                     <dd><span>Location: </span><span>{{user.location or "-"}}</span><dd>
                     <dd><span>Hobbies: </span><span>{{user.hobbies or "-"}}</span><dd>
-                    <dd><span>Joined: </span><span>{{user.joined}}<span></dd>
+                    <dd><span>Joined: </span><span>{{user.joined | toJSDate | readableDate }}<span></dd>
                     <dd><span>Last login: </span>
                         
                         {%if user.login == "today" %}
                             <span id="login-today"></span>
                         {% else %}
-                            <span>{{user.login or "1996-01-01"}}</span>
+                            <span>{{(user.login or "1996-01-01") | toJSDate | readableDate }}</span>
                         {% endif %}
                     </dd>
                     <dd><span>Forum posts: </span><span>{{ postcount }}</span></dd>
@@ -86,9 +84,9 @@ layout: layouts/base.njk
     const loginEl = document.getElementById("login-today");
     const loginToday = new Date();
     loginToday.setFullYear(1996);
-    loginEl.innerHTML = loginToday.toLocaleDateString("en-CA", {
+    loginEl.innerHTML = loginToday.toLocaleDateString(undefined, {
+        month: "short",
         year: "numeric",
-        month: "numeric",
         day: "numeric",
     });
 </script>

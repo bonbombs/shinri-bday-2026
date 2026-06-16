@@ -43,7 +43,7 @@
         "location": "{{user.location | escape}}",
         "age": "{{user.age}}",
         "hobbies": "{{user.hobbies | escape}}",
-        "joined": "{{user.joined}}",
+        "joined": "{{user.joined | toJSDate | readableDate }}",
         "avatar": "{{user.avatar}}"
       },
       "url": "{{ absolutePostUrl }}",

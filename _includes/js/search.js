@@ -27,7 +27,7 @@ function runSearch(q) {
                             ${item.userdata.title ? `<dd><b>Title</b>: ${item.userdata.title}</dd>` : ""}
                             ${item.userdata.location ? `<dd><b>Location</b>: ${item.userdata.location}</dd>` : ""}
                             ${item.userdata.hobbies ? `<dd><b>Hobbies</b>: ${item.userdata.hobbies}</dd>` : ""}
-                            <dd><b>Joined:</b> {{userdata.joined}}</dd>
+                            <dd><b>Joined:</b> {{userdata.joined | toJSDate | readableDate }}</dd>
                         </dl>
                         <div class="body">
                             <div class="header">
