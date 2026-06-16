@@ -25,14 +25,20 @@
   <author>
     <name>{{ metadata.author.name }}</name>
   </author>
-  {%- for post in collections.posts | reverse %}
+  {%- for post in collections.posts | sortByLatest | reverse %}
   {%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.base) }}{% endset %}
+  {% if post.data.category == "Password Protected" %}
+  {% else %}
   <entry>
-    <title>{{ post.data.title }}</title>
+    {% set thread = collections.threads | findThread(post.data.thread) %}
+    {% set user = users | findUser(post.data.user) %}
+    <title>{{ thread.data.title }}</title>
     <link href="{{ absolutePostUrl }}" />
-    <updated>{{ post.date | dateToRfc3339 }}</updated>
-    <id>{{ absolutePostUrl }}</id>
+    <pubDate>{{ post.date | dateToRfc3339 }}</pubDate>
+    <author>{{user.username}}</author>
+    <id>{{ post.url }}</id>
     <content type="html">{{ post.content | renderTransforms(post.data.page, metadata.base) }}</content>
   </entry>
+  {% endif %}
   {%- endfor %}
 </feed>
