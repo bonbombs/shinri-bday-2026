@@ -27,7 +27,11 @@ layout: layouts/base.njk
             {% if loop.index > 1 %}Re: {% endif %}
             {{ thread.data.title }}</a> by 
             <span><a href="/users/{{userdata.id}}">{{ userdata.username }}</a></span> » 
-            <time datetime="{{post.date}}">{{post.date | htmlDateTime }}</time>
+            {% if post.data.timeSince %}
+            <time datetime="{{today.now + (post.data.timeSince * 60 * 1000)}}">{{(today.now + (post.data.timeSince * 60 * 1000)) | toJSDate | htmlDateTime }}</time>
+            {% else %}
+            <time datetime="{{post.date}}">{{post.date | htmlDateTime("utc") }}</time>
+            {% endif %}
         </span>
         <span class="num">#{{loop.index}}</span>
     {% endset %}

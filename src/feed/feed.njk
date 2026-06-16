@@ -20,15 +20,14 @@
   <subtitle>{{ metadata.description }}</subtitle>
   <link href="{{ permalink | htmlBaseUrl(metadata.base) }}" rel="self" />
   <link href="{{ metadata.base | addPathPrefixToFullUrl }}" />
-  <updated>{{ today | dateToRfc3339 }}</updated>
+  <updated>{{ today.date | dateToRfc3339 }}</updated>
   <id>{{ metadata.base | addPathPrefixToFullUrl }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
   </author>
   {%- for post in collections.posts | sortByLatest | reverse %}
   {%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.base) }}{% endset %}
-  {% if post.data.category == "Password Protected" %}
-  {% else %}
+  {% if post.data.category == "Password Protected" %}{% else %}
   <entry>
     {% set thread = collections.threads | findThread(post.data.thread) %}
     {% set user = users | findUser(post.data.user) %}
