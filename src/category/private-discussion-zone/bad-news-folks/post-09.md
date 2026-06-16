@@ -6,4 +6,7 @@ category: Private Discussion Zone
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-I share your sentiment, RPP, but ultimately we will get through this, even if our forum gets reset and all of our threads die, we’re all still here at least. We can always rebuild.
+i feel you RPP<br/>
+but we will get through this<br/>
+even if our forum gets reset and all of our threads die we’re all still here at least<br/>
+we can always rebuild.
