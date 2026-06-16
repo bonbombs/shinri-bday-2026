@@ -14,3 +14,5 @@ However, as I finished the last of the cookies on the last leg of all this, unfo
 And, as we wrap this up, thank you too, Shinri, for helping all of us get to this point!
 
 Happy birthday from all of us here!
+
+<img src="/assets/img/Restored_20260616155057.png" style="max-height: none;">

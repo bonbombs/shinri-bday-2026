@@ -71,7 +71,7 @@
 					</th>
 				</tr>
 			</table>
-			<img id="banner" class="ad" src="/assets/img/ads/internet-explorer-3-0-1996.gif"/>
+			<a href="#" target="_blank"><img id="banner" class="ad small" src="/assets/img/ads/internet-explorer-3-0-1996.gif"/></a>
 		</header>
 
 		<main id="main">
@@ -80,13 +80,14 @@
 
 		<hr/>
 		<footer>
-            <p>powered by fishnet explorer</p>
-			<img src="/assets/img/Fishnet_internet_explorer.jpg" alt="Free Fishnet Internet Explorer"/>
+            <p><b>powered by</b></p>
+			<a target="_blank" href="https://shinribday2024.weebly.com/"><img src="/assets/img/ads/fishnet_microbanner.jpg" alt="Free Fishnet Internet Explorer"/></a>
+			<a target="_blank" href="https://vgcon2024.wixsite.com/home"><img src="/assets/img/ads/koizip_microbanner.png" alt="Koizip"/></a>
 			<p><b>affiliate links</b></p>
 			<span id="affiliates">
-			<a href="https://x.com/ElysiumDelivery">elysium delivery services</a>
-			<a href="#">the badlands</a>
-			<a href="#">~tempus cafe~</a>
+				<a target="_blank" href="https://x.com/ElysiumDelivery"><img src="/assets/img/ads/eds_microbanner.png" alt="Elysium Delivery Services"/></a>
+				<a target="_blank" href="https://armis-anniversary-2025.vercel.app/"><img src="/assets/img/ads/badlands_microbanner.png" alt="Badlands"/></a>
+				<a target="_blank" href="https://hq-anniversary-2025.netlify.app/"><img src="/assets/img/ads/tempus_microbanner.png" alt="Tempus Cafe"/></a>
 			</span>
 		</footer>
 
@@ -102,13 +103,13 @@
 			});
 
 			const ads = [
-				{path: "FREE-TRIP.gif", alt: "AD: CALL and WIN a FREE trip to the ELYSIUM TREE\nCALL NOW!\nAs seen on TV 1-800-WIN-TREE\nOffer valid while supplies last. We have no supplies.\n2,50 PER CALL"},
-				{path:"save-the-bleaksoot.jpg", alt: "AD: They are fluffy. They are friendly. They are disaapearing.\nVisit the Bleaksoot Preserve and help protect one of the worlds rarest cryptids\nCAN YOU SEE THEM CLEARLY?\nSponsored by Elysium Wildlife Foundation"},
-				{path:"rissun-bay.jpg", alt: "AD: VISIT RISSUN BAY! Home of the Legendary Rissuna!\nWill YOU be the first to get a clear photo?\nGet a free booklet!"}
+				{path: "FREE-TRIP.gif", alt: "AD: CALL and WIN a FREE trip to the ELYSIUM TREE\nCALL NOW!\nAs seen on TV 1-800-WIN-TREE\nOffer valid while supplies last. We have no supplies.\n2,50 PER CALL", url: "https://x.com/josuijishinri"},
+				{path: "save-the-bleaksoot.jpg", alt: "AD: They are fluffy. They are friendly. They are disaapearing.\nVisit the Bleaksoot Preserve and help protect one of the worlds rarest cryptids\nCAN YOU SEE THEM CLEARLY?\nSponsored by Elysium Wildlife Foundation", url: "https://www.youtube.com/@JosuijiShinri"},
+				{path: "rissun-bay.jpg", alt: "AD: VISIT RISSUN BAY! Home of the Legendary Rissuna!\nWill YOU be the first to get a clear photo?\nGet a free booklet!", url: "https://bsky.app/profile/josuijishinri.holostars.tv"}
 			];
 			const banners = [
-				{path: "internet-explorer-3-0-1996.gif", alt: "AD: Fishnet Explorer 3.0\nBetter? You bet! Click here!"},
-				{path: "punikonic-v2.gif", alt: "AD: WIN a Digital Photocamera WITH Infrared thermovision\nPunikonic Digital Photocamera 550/600 Series"}
+				{path: "internet-explorer-3-0-1996.gif", alt: "AD: Fishnet Explorer 3.0\nBetter? You bet! Click here!", url: "https://shinribday2024.weebly.com/"},
+				{path: "punikonic-v2.gif", alt: "AD: WIN a Digital Photocamera WITH Infrared thermovision\nPunikonic Digital Photocamera 550/600 Series", url: "https://www.youtube.com/@JosuijiShinri/community"}
 			];
 
 			document.addEventListener("DOMContentLoaded", function() {
@@ -118,18 +119,22 @@
 					document.getElementById("random-link").href = posts[randomIdx].url.split("#")[0];
 				});
 
-				const ad = document.getElementById("ad");
+				const ad = document.querySelectorAll("ad");
 				const banner = document.getElementById("banner");
 
 				if (ad) {
-					let adData = ads[Math.floor(Math.random() * ads.length)];
-					ad.src = `/assets/img/ads/${adData.path}`;
-					ad.alt = adData.alt;
+					document.querySelectorAll(".ad.big").forEach(node => {				
+						let adData = ads[Math.floor(Math.random() * ads.length)];
+						node.src = `/assets/img/ads/${adData.path}`;
+						node.alt = adData.alt;
+						node.closest("a").href = adData.url;
+					})
 				};
 				if (banner) {
 					let bannerData = banners[Math.floor(Math.random() * banners.length)];
 					banner.src = `/assets/img/ads/${bannerData.path}`;
 					banner.alt = bannerData.alt;
+					banner.closest("a").href = bannerData.url;
 				}
 			});
 		</script>

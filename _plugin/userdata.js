@@ -73,7 +73,8 @@ export default [
         "hobbies": "Lurking, Late-Night Posting, Keeping Notes, Conspiracy Theories, Moképon",
         "joined": "1996-01-23",
         "login": "1996-05-15",
-        "quote": "six a sentence for a surprise"
+        "quote": "six a sentence for a surprise",
+        "posts": 6
     },
     { 
         "id": "koinspiratorial",

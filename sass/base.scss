@@ -116,14 +116,17 @@ footer {
     text-align: center;
     margin-bottom: 3rem;
 
-    #affiliates {
-        a {
-            border: 2px solid;
-            background-color: black;
-            padding: 3px 10px;
-        }
+    p {
+        margin-bottom: 0.5em;
     }
 }
+
+#banner, #ad, footer a {
+    &:hover {
+        background-color: #f99d3c;
+        box-shadow: 2px 2px 1px #f99d3c;
+    }
+} 
 
 a {
     color: #f99d3c;

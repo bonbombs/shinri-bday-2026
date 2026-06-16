@@ -5,7 +5,7 @@ export default [
             {
                 name: "Ruselee",
                 role: "Project Lead",
-                socials: ["https://twitter.com/ruseleee"],
+                socials: ["https://twitter.com/ruseleee", "https://bsky.app/profile/ruselee.bsky.social"],
             },
             {
                 name: "Semiluminary",
@@ -35,7 +35,7 @@ export default [
             {
                 name: "Ruselee",
                 role: "Web Design",
-                socials: ["https://twitter.com/ruseleee"],
+                socials: ["https://twitter.com/ruseleee", "https://bsky.app/profile/ruselee.bsky.social"],
             },
             {
                 name: "AromanticPigeonMadness",
@@ -68,7 +68,7 @@ export default [
             {
                 name: "Ruselee",
                 role: "Writer",
-                socials: ["https://twitter.com/ruselee"],
+                socials: ["https://twitter.com/ruselee", "https://bsky.app/profile/ruselee.bsky.social"],
                 items: ["LadyoftheLake", "DewDrop"]
             },
             {
@@ -97,9 +97,10 @@ export default [
             {
                 name: "Ruselee",
                 role: "Artist",
-                socials: ["https://twitter.com/ruseleee"],
+                socials: ["https://twitter.com/ruseleee", "https://bsky.app/profile/ruselee.bsky.social"],
                 items: [
-                    "Website ads"
+                    "Website ads & microbanners",
+                    "Koimble graphic <a href='/category/cryptid-sightings/missingkoi-an-internet-cryptid/thread/#post-10'>(\"MISSINGKOI AN INTERNET CRYPTID IN OUR MIDST\")</a>"
                 ]
             },
             {
