@@ -57,7 +57,7 @@ const numberOfLatestThreadsToShow = 3;
         <td>
             {# {{lastPost}} #}
             <a href="{{lastPost.page.url}}">
-                <time class="postlist-date" datetime="{{ threaditem.date | htmlDateString }}">{{ threaditem.date | readableDate("LL-dd-yyyy") }}</time>
+                <time class="postlist-date" datetime="{{ lastPost.date | htmlDateString }}">{{ lastPost.date | readableDate("LL-dd-yyyy") }}</time>
             </a>
         </td>
     </tr>
