@@ -9,4 +9,4 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 i have returned<br/>
 it was a very productive trip and i have photos to share
 
-## Dalu note: add image later
+<img src="/assets/img/post/DSCN2133.jpg">

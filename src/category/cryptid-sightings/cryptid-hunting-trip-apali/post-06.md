@@ -6,5 +6,6 @@ category: Cryptid Sightings
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-## Dalu note: insert photo here
 i thought this one was particularly good
+
+<img src="/assets/img/post/DSCN2152.jpg">
