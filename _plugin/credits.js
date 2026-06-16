@@ -96,7 +96,7 @@ export default [
             },
             {
                 name: "Ruselee",
-                role: "Web Design",
+                role: "Artist",
                 socials: ["https://twitter.com/ruseleee"],
                 items: [
                     "Website ads"
