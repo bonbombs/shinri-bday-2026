@@ -73,7 +73,7 @@ export default [
         "hobbies": "Lurking, Late-Night Posting, Keeping Notes, Conspiracy Theories, Moképon",
         "joined": "1996-01-23",
         "login": "1996-05-15",
-        "quote": "six a sentence for a surprise",
+        "quote": "Always look carefully.",
         "posts": 6
     },
     { 
@@ -83,7 +83,7 @@ export default [
         "title": "Paredolia Master",
         "location": "You'll Never Find Me!",
         "hobbies": "wouldnt u like to know",
-        "joined": "1996-0",
+        "joined": "1996-04-01",
         "quote": "the TRUTH is OUT THERE"
     },
     { 
