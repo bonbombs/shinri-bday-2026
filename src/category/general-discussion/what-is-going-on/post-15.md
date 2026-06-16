@@ -6,5 +6,4 @@ category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-hey let’s not get ahead of ourselves here<br/>
-how do you even know MK’s involved?
+hah, maybe i’ll join in

@@ -7,6 +7,6 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 ---
 
 they solve ALL THE DUMB PUZZLES posted almost INSTANTLY<br/>
-and more and more of their posts are CRYPTIC BULLSHIT<br/>
+and more and more of their posts are CRYPTIC BS<br/>
 how do we know they arent TESTING US as a first step to INFILTRATING INTO SOCIETY<br/>
 has anyone seen them??? has anyone interacted with them outside of this forum???

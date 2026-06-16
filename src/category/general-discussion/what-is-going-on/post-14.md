@@ -1,0 +1,10 @@
+---
+user: stillwaters
+thread: what-is-going-on
+date: "1996-02-22T22:00:22.1Z" # few days later
+category: General Discussion
+permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
+---
+
+…You know what<br/>
+Yeah fine, I’ll work on another one of these puzzles. Better than sitting on my thumbs.

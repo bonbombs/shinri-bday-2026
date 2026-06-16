@@ -6,7 +6,5 @@ category: Cryptid Sightings
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-
-So if they’re remembering something differently, does that mean we can remember a cryptid that no longer exists?<br/>
-
-…Could that be what happened to Rissuna?
+so if theyre rememberign differently doest hat mean we could remembrer a cryptid that no longer exists :OOO<br/>
+coudl that be wut happened to rissuna??!!

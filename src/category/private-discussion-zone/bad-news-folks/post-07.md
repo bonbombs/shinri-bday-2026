@@ -12,8 +12,8 @@ What’s really strange is that there’s been no follow-up at all. I’ve been 
 
 It’s like whoever did the hack was only after control of this forum. 
 
-But that doesn’t make any sense, there’s no real monetary value in these forums. And, though we’re enthusiastic about it, it’s a far cry to say that we’re actually good researchers, so there’s no real academic value here either (sorry folks, but it’s true)
+But that doesn’t make any sense, there’s no monetary value in these forums. And, though we’re enthusiastic about it, it’s a far cry to say that we’re actually good researchers, so there’s no real academic value here either (sorry folks, but it’s true)
 
-And it’s not exactly like the Coverment would be interested in our cryptid research. Even if it was somehow a governmental body that was after our forum, they wouldn’t exactly go through the trouble of surreptitiously hacking my account when they could just seize the servers directly.
+And it’s not like the Coverment would be interested in our cryptid research. Even if it was somehow a governmental body that was after our forum, they wouldn’t exactly go through the trouble of surreptitiously hacking my account when they could just seize the servers directly.
 
 But what am I saying? I’m starting to sound like Koinspiratorial.

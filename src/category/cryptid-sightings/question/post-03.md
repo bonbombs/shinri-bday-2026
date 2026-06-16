@@ -6,6 +6,5 @@ category: Cryptid Sightings
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-
-Isn’t this like that other group of nerds that research what they believe are changes and updates to the world that slip the notice of most people?<br/>
-I think they call remembering the past differently the Mandolin Effect?
+isn’t this like that other group of nerds like us researching what they think are changes and updates to the world that slip the notice of most people?<br/>
+i think they call remembering the past differently the Mandolin Effect

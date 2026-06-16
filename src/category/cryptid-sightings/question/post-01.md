@@ -6,7 +6,10 @@ category: Cryptid Sightings
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-Hey QUESTION: Do cryptids get updated and patched like other “more legit” monsters do?
-Every so often we get a notice that there are “balance changes,” whatever that means, to specific monsters like corruption beasts.
+hey QUESTION!!<br/>
+do cryptids get updated or patched liek other monsters do????<br/>
+every so foten adventurers get noitces that theres “balance changes” w/e that means to monstesrs liek corruptionbeasts<br/>
+i know some peeps think cryptids r mistakes in teh system sorta<br/>
+“gods blunders” as theyre called<br/>
+so do thye get fixed??? woud we remembemr if they get fixed???
 
-I know some people speculate that cryptids are entities that are mistakes in the system in some kind of way. “Gods’ Blunders” as they’ve been poetically described. So do they get fixed? Would we remember them if they get fixed?

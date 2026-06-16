@@ -7,4 +7,4 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 ---
 
 what is going on why is there a locked section to this forum what does that even MEAN<br/>
-why has the forum even gotten involved into missingkois cryptic cryptid BULLSHIT
+why has the forum even gotten involved into missingkois cryptic cryptid BS

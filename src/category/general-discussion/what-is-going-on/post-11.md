@@ -6,4 +6,5 @@ category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-Can we back up here? Let’s not get into anything that’ll make anyone say anything they’ll regret
+can we back up here?<br/>
+let’s not get into anything that’ll make anyone say anything they’ll regret

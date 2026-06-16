@@ -6,8 +6,7 @@ category: Private Discussion Zone
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-thanks, boss head man!
-
+thanks, boss head man!<br/>
+SG toward us:
 <img src="/assets/img/post/Puniko-blobfish-post.jpg>
 
-SG toward us!
