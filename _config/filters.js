@@ -59,6 +59,20 @@ export default function(eleventyConfig) {
 
 	eleventyConfig.addFilter("noTitle", (threads) => threads.filter(thread => thread.data.title))
 
+    eleventyConfig.addCollection("recentThreads", function (collectionAPI) {
+		const posts = collectionAPI.getFilteredByGlob("./src/**/post-*.md");
+		const threads = {};
+		posts.sort((b, a) => Date.parse(a.date) - Date.parse(b.date));
+		posts.forEach(item => {
+			const thread = item.data.thread;
+            if (!threads[thread]) {
+                threads[thread] = item;
+            }
+		})
+		console.log(threads)
+		return Object.values(threads);
+	})
+
     eleventyConfig.addCollection("postsByThread", function (collectionAPI) {
         const posts = collectionAPI.getFilteredByGlob("./src/**/post-*.md");
         const postsByThread = {};

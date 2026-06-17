@@ -27,7 +27,7 @@
     }
   ],
   "items": [
-    {%- for post in collections.posts | reverse %}
+    {%- for post in collections.posts | sortByLatest | reverse %}
     {%- set absolutePostUrl %}{{ post.url }}{% endset %}
     {%- set thread = collections.thread | findThread(post.data.thread) %}
     {%- set user = users | findUser(post.data.user) %}
