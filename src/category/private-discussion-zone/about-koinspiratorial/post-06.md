@@ -6,5 +6,5 @@ category: Private Discussion Zone
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-Funny… you talk about Koinspiratorial targeting someone… <br/>
-And yet here is a thread that he can’t see or find that’s targeting him…
+Funny... you talk about Koinspiratorial targeting someone... <br/>
+And yet here is a thread that he can’t see or find that’s targeting him...

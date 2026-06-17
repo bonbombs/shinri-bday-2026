@@ -6,5 +6,5 @@ category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-When you get to a certain age… you might find yourself haunted by your own previous accounts… even before you’ve passed on…<br/>
-It’s happened to me… and it… will happen to you… :)
+When you get to a certain age... you might find yourself haunted by your own previous accounts... even before you’ve passed on...<br/>
+It’s happened to me... and it... will happen to you... :)

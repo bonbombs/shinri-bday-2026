@@ -6,6 +6,6 @@ category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-Oh…<br/>
+Oh...<br/>
 My condolences.<br/>
 I misunderstood what you meant.

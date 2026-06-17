@@ -6,4 +6,4 @@ category: Private Discussion Zone
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-…That’s a little concerning.
+...That’s a little concerning.

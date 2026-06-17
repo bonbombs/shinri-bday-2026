@@ -6,10 +6,10 @@ category: Forum Fun!
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-For some fun… what scares you?
-Imagine… we’re at a campfire in the woods…
-What spooky stories will you tell…
-Doesn’t have to be a personal story but… the more personal the better…
+For some fun... what scares you?
+Imagine... we’re at a campfire in the woods...
+What spooky stories will you tell...
+Doesn’t have to be a personal story but... the more personal the better...
 
 <---->
 
@@ -49,9 +49,9 @@ user: neverscared
 date: "1996-02-22T22:00:22.1Z"
 ---
 NeverScared
-Haha… StillWaters…
-That joke story is so old… it was ancient when I was young…
-Is it a very personal story to you… :)
+Haha... StillWaters...
+That joke story is so old... it was ancient when I was young...
+Is it a very personal story to you... :)
 StillWaters
 Okay, okay you got me.
 It’s your thread, so I’ll be more serious.
@@ -121,9 +121,9 @@ date: "1996-02-22T22:00:22.1Z"
 
 making notes on everyone’s stories so far,,
 
-the sppokiest story i have… ohohoh! once when i was a kid i had a big stack of notebook paper i put this aquarium skull decoration thing on.
+the sppokiest story i have... ohohoh! once when i was a kid i had a big stack of notebook paper i put this aquarium skull decoration thing on.
 
-my family was gone… i was sick, maybe, and they went out to see a movie without me? but i woke up before they got back home and!!! the skull!!! had turned around!!! i left it facing the other way for sure and then it wasn’t!
+my family was gone... i was sick, maybe, and they went out to see a movie without me? but i woke up before they got back home and!!! the skull!!! had turned around!!! i left it facing the other way for sure and then it wasn’t!
 
 <---->
 

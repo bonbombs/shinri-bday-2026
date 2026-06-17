@@ -22,7 +22,7 @@ user: beegfeesh
 date: "1996-02-22T22:00:22.1Z"
 ---
 
-maybe if they got jobs as models, people would be able to get better pictures of them! … but they are shy.  Matilda could maybe pick rare forest plants? she lievs there, she should know!
+maybe if they got jobs as models, people would be able to get better pictures of them! ... but they are shy.  Matilda could maybe pick rare forest plants? she lievs there, she should know!
 
 ---
 user: stillwaters

@@ -8,4 +8,4 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 
 hihihihihi!!! i'm ripplepoppop! i kinda came here but accident but it seems really cool!!
 
-my fav cryptid is a… rit-ozel? writ-ouzel?? the bird thing that eats words and moves pens around and stuff. i really like writing and reading fanfic and meeting new people!!!
+my fav cryptid is a... rit-ozel? writ-ouzel?? the bird thing that eats words and moves pens around and stuff. i really like writing and reading fanfic and meeting new people!!!

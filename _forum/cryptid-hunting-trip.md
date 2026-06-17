@@ -119,7 +119,7 @@ user: ladylake
 date: "1996-02-22T22:00:22.1Z"
 ---
 
-what an interesting … puzzle?
+what an interesting ... puzzle?
 what is it about?
 did you also go cryptic hunting mk?
 

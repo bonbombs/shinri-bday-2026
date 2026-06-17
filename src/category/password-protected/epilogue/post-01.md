@@ -7,14 +7,14 @@ category: Password Protected
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-So… I might need to explain a few things :3
+So... I might need to explain a few things :3
 
 Funnily enough, it started out with a box of messed up cookies.
 
 I got food poisoning of course! And I can’t really blame NeverScared. I should have known better than to munch on obviously gone-bad cookies, but I had thought the specks of mold could have been some sort of the gourmet cookie topping.<br/>
 In my feverish dreams I had a vision??? A moment of contact???
 
-When my head was clear enough to sit at my computer, I saw that I had already started working.  That either I, while delirious, or some entity that was posing as me, had sent SecretGarden a phishing email on a burner account, had started to post cryptically here…
+When my head was clear enough to sit at my computer, I saw that I had already started working.  That either I, while delirious, or some entity that was posing as me, had sent SecretGarden a phishing email on a burner account, had started to post cryptically here...
 
 And well, I could have just confessed and made my apologies, but I realized that the most likely source of all of this was the bad cookies, but also
 
@@ -23,7 +23,7 @@ MissingKoi.
 The thing that most people wouldn’t know is that I’m not the original MissingKoi. <br/>
 He’s gone now, and I took up his web handle in his memory, so his story didn’t have to end there three years ago. 
 
-…So I kept eating more of those cookies, and every time I could feel myself possessed by something, through all of the food poisoning. The spirit of inquiry and discovery had taken over me as much as this other “spirit” did!
+...So I kept eating more of those cookies, and every time I could feel myself possessed by something, through all of the food poisoning. The spirit of inquiry and discovery had taken over me as much as this other “spirit” did!
 
 I think MissingKoi. did become somewhat of an internet cryptid, funnily enough,  Koinspiratorial was right for once. <br/>
 And of course, that’s where all of this comes back around.

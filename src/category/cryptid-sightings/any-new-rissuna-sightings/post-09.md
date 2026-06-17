@@ -6,4 +6,4 @@ category: Cryptid Sightings
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-Now I’m really concerned… What happened to Rissuna?
+Now I’m really concerned... What happened to Rissuna?

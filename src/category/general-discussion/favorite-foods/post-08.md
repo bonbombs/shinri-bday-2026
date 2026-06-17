@@ -6,6 +6,6 @@ category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-Oh dear… maybe they got lost in the mail?<br/>
-I can whip up another batch pretty quickly… I still have all the ingredients on hand…<br/>
-I'll just have to send you another one…
+Oh dear... maybe they got lost in the mail?<br/>
+I can whip up another batch pretty quickly... I still have all the ingredients on hand...<br/>
+I'll just have to send you another one...

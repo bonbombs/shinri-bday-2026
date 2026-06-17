@@ -6,5 +6,5 @@ category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 {% spoiler %}
-The spider grumbled as it stepped… into another patch of dew…
+The spider grumbled as it stepped... into another patch of dew...
 {% endspoiler %}

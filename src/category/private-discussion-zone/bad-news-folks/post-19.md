@@ -6,6 +6,6 @@ category: Private Discussion Zone
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-Yeah, he was always the best at these sorts of things…
+Yeah, he was always the best at these sorts of things...
 
-MissingKoi… where are you :((((
+MissingKoi... where are you :((((

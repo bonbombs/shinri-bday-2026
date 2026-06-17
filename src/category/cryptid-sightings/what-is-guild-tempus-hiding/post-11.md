@@ -9,4 +9,4 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 are you posting from guild tempus right now???<br/>
 their guild leader is going to get you ( ˶°ㅁ°) !! he’s so scary
 
-…also isn’t that just a dog??
+...also isn’t that just a dog??

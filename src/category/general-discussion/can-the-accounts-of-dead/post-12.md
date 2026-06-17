@@ -6,6 +6,6 @@ category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-Waters… still?
+Waters... still?
 
 It’s been three years

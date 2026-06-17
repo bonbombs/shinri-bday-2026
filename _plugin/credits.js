@@ -90,6 +90,7 @@ export default [
                 role: "Artist",
                 socials: ["https://twitter.com/muse9420"],
                 items: [
+                    "Background art",
                     "SecretGarden avatar & signature", 
                     "Moon's Haunted meme <a href='/category/general-discussion/who-keeps-moving-the-threads/thread/#post-02'>(\"Who keeps moving the threads?\")</a>"
                 ]
@@ -159,6 +160,7 @@ export default [
             {
                 name: "Kaika Hana",
                 role: "Copy Editor",
+                socials: ["https://twitter.com/kaikahana38", "https://bsky.app/profile/kaikahana.bsky.social"]
             },
             {
                 name: "rose_river",
@@ -172,6 +174,11 @@ export default [
                 name: "Reese",
                 role: "Sensitivity Reader",
                 socials: ["https://twitter.com/aureillion"],
+            },
+            {
+                name: "Sunshii",
+                role: "Sensitivity Reader",
+                socials: ["https://twitter.com/sunshiiiiiiii"],
             },
         ]
     }

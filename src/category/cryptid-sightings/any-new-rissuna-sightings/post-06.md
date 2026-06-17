@@ -6,4 +6,4 @@ category: Cryptid Sightings
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-But… Rissuna hasn’t been spotted? Maybe Rissuna moved away after all?
+But... Rissuna hasn’t been spotted? Maybe Rissuna moved away after all?

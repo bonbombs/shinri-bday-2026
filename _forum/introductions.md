@@ -22,7 +22,7 @@ date: "1996-02-22T22:00:22.1Z"
 
 Hello, I’m MissingKoi.
 
-I love any sort of spooky creature. If I had to pick a favorite… I don’t really think I can! There’s just so many. Lately, I’ve been reading a lot about elverdogs and weeping lichen and–
+I love any sort of spooky creature. If I had to pick a favorite... I don’t really think I can! There’s just so many. Lately, I’ve been reading a lot about elverdogs and weeping lichen and–
 
 Ah, I just like a lot of them! I really like keeping notes on different things that interest me, playing Mokepon, and discussing conspiracy theories.
 
@@ -82,10 +82,10 @@ user: neverscared
 date: "1996-02-22T22:00:22.1Z"
 ---
 
-Hello all…
-I was invited here by MissingKoi… you seem like a nice bunch of kids…
-I looked at your list… and I think this Bigfoot fellow is… quite interesting!
-I am looking forward to getting to know you all…
+Hello all...
+I was invited here by MissingKoi... you seem like a nice bunch of kids...
+I looked at your list... and I think this Bigfoot fellow is... quite interesting!
+I am looking forward to getting to know you all...
 
 <---->
 
@@ -96,7 +96,7 @@ date: "1996-02-22T22:00:22.1Z"
 
 hihihihihi!!! i’m ripplepoppop! i kinda came here but accident but it seems really cool!!
 
-my fav cryptid is a… rit-ozel? writ-ouzel?? the bird thing that eats words and moves pens around and stuff. i really like writing and reading fanfic and meeting new people!!!
+my fav cryptid is a... rit-ozel? writ-ouzel?? the bird thing that eats words and moves pens around and stuff. i really like writing and reading fanfic and meeting new people!!!
 
 
 <---->

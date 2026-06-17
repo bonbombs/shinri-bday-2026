@@ -6,10 +6,10 @@ category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 {% spoiler %}
-The fish went outside… to get a closer look…<br/>
-But… <br/>
-Matilda was gone…
+The fish went outside... to get a closer look...<br/>
+But... <br/>
+Matilda was gone...
 {% endspoiler %}
 
-Not quite sure how this works… <br/>
-Can I call a story completed…?
+Not quite sure how this works... <br/>
+Can I call a story completed...?

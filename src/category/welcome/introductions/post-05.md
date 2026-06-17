@@ -6,7 +6,7 @@ category: Welcome
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-Hello all…<br/>
-I was invited here by MissingKoi… you seem like a nice bunch of kids…<br/>
-I looked at your list… and I think this Bigfoot fellow is… quite interesting!<br/>
-I am looking forward to getting to know you all…
+Hello all...<br/>
+I was invited here by MissingKoi... you seem like a nice bunch of kids...<br/>
+I looked at your list... and I think this Bigfoot fellow is... quite interesting!<br/>
+I am looking forward to getting to know you all...

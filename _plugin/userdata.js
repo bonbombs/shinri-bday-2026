@@ -38,9 +38,9 @@ export default [
         "profilealt": "Image of a skeletal koi, with piercing red eyes",
         "title": "King of Horror Games",
         "location": "In Shinri's walls",
-        "hobbies": "Movies… point and click adventures… baking…",
+        "hobbies": "Movies... point and click adventures... baking...",
         "joined": "1996-01-26",
-        "quote": "pm me… for baked goodies..."
+        "quote": "pm me... for baked goodies..."
 
     },
     {
