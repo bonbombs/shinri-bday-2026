@@ -1,7 +1,7 @@
 ---
 user: secret-garden
 thread: any-new-rissuna-sightings
-date: "1996-01-28T02:08:22.1Z"
+date: "1996-03-01T05:08:22.1Z"
 category: Cryptid Sightings
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---

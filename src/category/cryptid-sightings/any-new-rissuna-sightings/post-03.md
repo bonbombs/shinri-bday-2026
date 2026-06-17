@@ -1,7 +1,7 @@
 ---
 user: stillwaters
 thread: any-new-rissuna-sightings
-date: "1996-01-29T09:43:22.1Z"
+date: "1996-03-04T15:02:22.1Z"
 category: Cryptid Sightings
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---

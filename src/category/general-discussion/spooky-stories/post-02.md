@@ -1,7 +1,7 @@
 ---
 user: secret-garden
 thread: spooky-stories
-date: "1996-02-22T22:00:22.1Z"
+date: "1996-04-03T19:56:22.1Z"
 category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---

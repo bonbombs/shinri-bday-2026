@@ -1,7 +1,7 @@
 ---
 user: stillwaters
 thread: question
-date: "1996-02-22T22:00:22.1Z"
+date: "1996-03-12T12:14:22.1Z"
 category: Cryptid Sightings
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
