@@ -71,7 +71,7 @@
 					</th>
 				</tr>
 			</table>
-			<a href="#" target="_blank"><img id="banner" class="ad small" src="/assets/img/ads/internet-explorer-3-0-1996.gif"/></a>
+			<div style="text-align: center;"><a class="banner-link" external-link href="#" target="_blank"><img id="banner" class="ad small" src="/assets/img/ads/internet-explorer-3-0-1996.gif"/></a></div>
 		</header>
 
 		<main id="main">
@@ -81,13 +81,13 @@
 		<hr/>
 		<footer>
             <p><b>powered by</b></p>
-			<a target="_blank" href="https://shinribday2024.weebly.com/"><img src="/assets/img/ads/fishnet_microbanner.jpg" alt="Free Fishnet Internet Explorer"/></a>
-			<a target="_blank" href="https://vgcon2024.wixsite.com/home"><img src="/assets/img/ads/koizip_microbanner.png" alt="Koizip"/></a>
+			<a target="_blank" external-link href="https://shinribday2024.weebly.com/"><img src="/assets/img/ads/fishnet_microbanner.jpg" alt="Free Fishnet Internet Explorer"/></a>
+			<a target="_blank" external-link href="https://vgcon2024.wixsite.com/home"><img src="/assets/img/ads/koizip_microbanner.png" alt="Koizip"/></a>
 			<p><b>affiliate links</b></p>
 			<span id="affiliates">
-				<a target="_blank" href="https://x.com/ElysiumDelivery"><img src="/assets/img/ads/eds_microbanner.png" alt="Elysium Delivery Services"/></a>
-				<a target="_blank" href="https://armis-anniversary-2025.vercel.app/"><img src="/assets/img/ads/badlands_microbanner.png" alt="Badlands"/></a>
-				<a target="_blank" href="https://hq-anniversary-2025.netlify.app/"><img src="/assets/img/ads/tempus_microbanner.png" alt="Tempus Cafe"/></a>
+				<a target="_blank" external-link href="https://x.com/ElysiumDelivery"><img src="/assets/img/ads/eds_microbanner.png" alt="Elysium Delivery Services"/></a>
+				<a target="_blank" external-link href="https://armis-anniversary-2025.vercel.app/"><img src="/assets/img/ads/badlands_microbanner.png" alt="Badlands"/></a>
+				<a target="_blank" external-link href="https://hq-anniversary-2025.netlify.app/"><img src="/assets/img/ads/tempus_microbanner.png" alt="Tempus Cafe"/></a>
 			</span>
 		</footer>
 
@@ -136,7 +136,18 @@
 					banner.alt = bannerData.alt;
 					banner.closest("a").href = bannerData.url;
 				}
+
+				document.querySelectorAll("[external-link]").forEach(n => n.addEventListener("click", confirmExternal))
 			});
+
+			function confirmExternal () {
+				const link = this.href;
+				const message = `You are leaving Dead Threads to visit:\n${link}\n\nDo you want to continue?`;
+				const confirm = window.confirm(message);
+				if (!confirm) {
+					event.preventDefault();
+				}
+			}
 		</script>
 		<script src="{% getBundleFileUrl "js" %}"></script>
 	</body>
