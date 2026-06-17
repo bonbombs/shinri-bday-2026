@@ -2,5 +2,5 @@
 id: cryptid-hunting-trip-apali
 title: Cryptid hunting trip for apali
 category: Cryptid Sightings
-date: "1996-02-22T22:00:22.1Z"
+date: "1996-04-11T16:04:22.1Z"
 ---

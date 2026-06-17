@@ -1,7 +1,7 @@
 ---
 user: beegfeesh
 thread: the-hollow-tree
-date: "1996-02-22T22:00:22.1Z"
+date: "1996-05-19T19:13:22.1Z"
 category: Cryptid Sightings
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
