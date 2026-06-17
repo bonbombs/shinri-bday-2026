@@ -1,7 +1,7 @@
 ---
 user: secret-garden
 thread: who-keeps-moving-the-threads
-date: "1996-02-22T22:00:22.1Z"
+date: "1996-06-03T12:13:22.1Z"
 category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---

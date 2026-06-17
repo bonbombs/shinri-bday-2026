@@ -1,9 +1,9 @@
 ---
-user: secret-garden
+user: stillwaters
 thread: cryptid-hunting-trip-apali
-date: "1996-02-22T22:00:22.1Z"
+date: "1996-05-25T18:00:22.1Z"
 category: Cryptid Sightings
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-Let’s take this to PMs, then!
+MK, are you sure you meant to post that here? Did you accidentally upload the wrong thing?

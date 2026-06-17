@@ -1,11 +1,11 @@
 ---
-user: ladylake
+user: secret-garden
 thread: cryptid-hunting-trip-apali
-date: "1996-02-22T22:00:22.1Z"
+date: "1996-04-19T19:10:22.1Z"
 category: Cryptid Sightings
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-what an interesting … puzzle?<br/>
-what is it about?<br/>
-did you also go cryptic hunting mk?
+Oh, hey, LadyOfTheLake, that’s amazing!
+
+I’m planning a trip out to Paradise to catch a carriage into the woods near the Hollow Tree so I can go hunting for Matilda! Maybe you’d like to come along?

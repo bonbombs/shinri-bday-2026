@@ -1,7 +1,7 @@
 ---
 user: koinspiratorial
 thread: what-is-guild-tempus-hiding
-date: "1996-02-22T22:00:22.1Z"
+date: "1996-04-25T19:01:22.1Z"
 category: Cryptid Sightings
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---

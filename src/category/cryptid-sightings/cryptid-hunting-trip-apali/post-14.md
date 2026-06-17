@@ -1,11 +1,9 @@
 ---
-user: secret-garden
+user: missing-koi
 thread: cryptid-hunting-trip-apali
-date: "1996-02-22T22:00:22.1Z"
+date: "1996-05-25T16:20:22.1Z"
 category: Cryptid Sightings
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-Oh, hey, LadyOfTheLake, that’s amazing!
-
-I’m planning a trip out to Paradise to catch a carriage into the woods near the Hollow Tree so I can go hunting for Matilda! Maybe you’d like to come along?
+<img src="/assets/img/puzzles/32559787-1c2f-46e2-9e86-7651c976e5a1.png" alt="Puzzle: Crossword puzzle titled 'Find What They Have In Common' The highlighted space is a quality all of these words and their clues share with one another. Find out what it is!"/>
