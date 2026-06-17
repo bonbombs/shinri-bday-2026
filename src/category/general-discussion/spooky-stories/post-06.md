@@ -1,7 +1,7 @@
 ---
 user: ladylake
 thread: spooky-stories
-date: "1996-02-22T22:00:22.1Z"
+date: "1996-04-08T15:02:56.1Z"
 category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---

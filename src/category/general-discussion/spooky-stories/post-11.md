@@ -1,7 +1,7 @@
 ---
 user: missing-koi
 thread: spooky-stories
-date: "1996-02-22T22:00:22.1Z"
+date: "1996-05-17T15:00:56.1Z"
 category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
