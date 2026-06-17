@@ -1,6 +1,6 @@
 ---
 user: Reese
-avatar: "Guestbook_Reese_AVATAR.jpg"
+avatar: "GUESTBOOK_Reese_AVATAR.jpg"
 signature1: "stackableSTARS.png"
 social: "https://twitter.com/aureillion"
 thread: happy-birthday
