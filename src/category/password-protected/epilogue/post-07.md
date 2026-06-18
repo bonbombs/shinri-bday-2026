@@ -2,6 +2,7 @@
 user: missing-koi
 thread: epilogue
 date: "1996-06-23T22:00:00.1Z"
+timeSince: -5
 category: Password Protected
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
@@ -15,4 +16,4 @@ And, as we wrap this up, thank you too, Shinri, for helping all of us get to thi
 
 Happy birthday from all of us here!
 
-<img src="/assets/img/post/team-artwork-full_taq.png" style="max-height: none; width: 100%;">
+<img src="/assets/img/post/team-artwork-full_taq.png" style="max-height: none; width: 100%;" alt="Shinri is dressed in a hanfu outfit, floating in deep water and surrounded by various Koipanions with different patterns and accessories. They all hold different flowers for Shinri, while two place a flower wreath on his head.">
