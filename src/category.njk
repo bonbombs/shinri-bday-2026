@@ -49,10 +49,10 @@ no threads here ): you should make one!
     </td>
   </tr>
 {% endfor %}
-{% for thread in (collections.recentThreads | sortByLatest | reverse) %}
+{% for lastPost in (collections.recentThreads | where("data.category", category.title)) %}
+{% set thread = threadlist | findThread(lastPost.data.thread) %}
 {% if not thread.data.pinned %}
-  {% set firstPost = collections.postsByThread[thread.data.id] | sortByLatest | first %}
-  {% set lastPost = collections.postsByThread[thread.data.id] | sortByLatest | last %}
+  {% set firstPost = collections.postsByThread[lastPost.data.thread] | sortByLatest | first %}
   {% set userid = firstPost.data.user %}
   {% set userdata = users | findUser(userid) %}
   {% set lastUserData = users | findUser(lastPost.data.user) %}
@@ -66,7 +66,7 @@ no threads here ): you should make one!
       </div>
     </td>
     <td>
-      {% set postcount = collections.postsByThread[thread.data.id] | length %}
+      {% set postcount = collections.postsByThread[lastPost.data.thread] | length %}
       <span>{{postcount}} posts</span>
     </td>
     <td>
