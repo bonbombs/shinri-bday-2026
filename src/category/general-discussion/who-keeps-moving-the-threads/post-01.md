@@ -6,7 +6,10 @@ category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-# INCLUDE FORUM SCREENSHOT LATER
+<img src="/assets/img/post/thread01.jpg">
+
+
+<img src="/assets/img/post/thread02.jpg">
 
 Okay, guys, who keeps moving the threads? This is the third time this week that the threads moved, then moved back.  Don’t tell me I’m the only one that sees it.  I really don’t want an internet cryptid on our site, as much as I know some of you would like that.  So PLEASE, whoever figured out how to access this site, STOP MOVING THE THREADS.
 
