@@ -8,4 +8,4 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 
 Well, fine.  Would a cryptid post something like this:
 
-<img src="/assets/img/puzzles/22661b2c-cc9c-4ead-9115-f4ca15f22caf.png">
+<a href="/assets/img/puzzles/22661b2c-cc9c-4ead-9115-f4ca15f22caf.png" target="_blank"><img src="/assets/img/puzzles/22661b2c-cc9c-4ead-9115-f4ca15f22caf.png"></a>

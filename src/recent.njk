@@ -28,15 +28,15 @@ const numberOfLatestThreadsToShow = 3;
 	}
 </style>
 
-<table reversed class="postlist">
+<table class="postlist">
     <tr>
         <th>subject</th>
         <th>started by</th>
         <th>replies</th>
         <th>last post</th>
     </tr>
-{%- for threaditem in collections.thread %}	
-    {% set lastPost = collections.postsByThread[threaditem.data.id] | last %}
+{%- for lastPost in collections.recentThreads %}
+    {% set threaditem = collections.thread | findThread(lastPost.data.thread) %}
     {% set userid = lastPost.data.user %}
     {% set userdata = users | findUser(userid) %}
     {% if threaditem.data.category == "Password Protected" %}
