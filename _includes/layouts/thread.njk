@@ -28,7 +28,7 @@ layout: layouts/base.njk
             {{ thread.data.title }}</a> by 
             <span><a href="/users/{{userdata.id}}">{{ userdata.username }}</a></span> » 
             {% if post.data.timeSince %}
-            <time datetime="{{today.now + (post.data.timeSince * 60 * 1000)}}">{{(today.now + (post.data.timeSince * 60 * 1000)) | toJSDate | htmlDateTime }}</time>
+            <time datetime="{{(today.now + (post.data.timeSince * 60000)) | toJSDate | htmlDateTime }}">{{(today.now + (post.data.timeSince * 60000)) | toJSDate | htmlDateTime }}</time>
             {% else %}
             <time datetime="{{post.date}}">{{post.date | htmlDateTime("utc") }}</time>
             {% endif %}
