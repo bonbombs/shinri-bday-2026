@@ -49,7 +49,7 @@ no threads here ): you should make one!
     </td>
   </tr>
 {% endfor %}
-{% for thread in threadlist %}
+{% for thread in (collections.recentThreads | sortByLatest | reverse) %}
 {% if not thread.data.pinned %}
   {% set firstPost = collections.postsByThread[thread.data.id] | sortByLatest | first %}
   {% set lastPost = collections.postsByThread[thread.data.id] | sortByLatest | last %}
