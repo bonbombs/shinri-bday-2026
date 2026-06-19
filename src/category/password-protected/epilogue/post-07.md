@@ -17,3 +17,5 @@ And, as we wrap this up, thank you too, Shinri, for helping all of us get to thi
 Happy birthday from all of us here!
 
 <img src="/assets/img/post/team-artwork-full_taq.png" style="max-height: none; width: 100%;" alt="Shinri is dressed in a hanfu outfit, floating in deep water and surrounded by various Koipanions with different patterns and accessories. They all hold different flowers for Shinri, while two place a flower wreath on his head.">
+
+<span class="edit">Art by taqoyan.</span>

@@ -1,7 +1,7 @@
 ---
 user: ladylake
 thread: introductions
-date: "1996-01-27T15:02:22.1Z"
+date: "1996-02-28T15:02:22.1Z"
 category: Welcome
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---

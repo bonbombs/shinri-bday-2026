@@ -1,7 +1,7 @@
 ---
 user: neverscared
 thread: introductions
-date: "1996-01-26T09:25:22.1Z"
+date: "1996-02-20T09:25:22.1Z"
 category: Welcome
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---

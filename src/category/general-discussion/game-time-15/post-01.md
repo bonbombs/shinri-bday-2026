@@ -5,7 +5,7 @@ date: "1996-05-20T08:10:22.1Z"
 category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
-It's time to start Game Time #27! What is this week's game?
+It's time to start Game Time #15! What is this week's game?
 
 REBUS WORD PUZZLES! The first one to get the rebus word puzzle right gets to put up their own rebus word puzzle, so guess away, and plan ahead!  If nobody gets it after three people guess, I'll put up a new one to keep testing your minds! (You can still work on the old ones, of course!)
 

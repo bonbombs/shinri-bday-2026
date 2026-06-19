@@ -6,5 +6,5 @@ category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-...You know what
+...You know what<br/>
 Yeah fine, I’ll work on another one of these puzzles. Better than sitting on my thumbs.

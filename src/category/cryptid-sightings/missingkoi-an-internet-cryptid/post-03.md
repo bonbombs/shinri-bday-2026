@@ -1,5 +1,5 @@
 ---
-user: missingkoi
+user: missing-koi
 thread: missingkoi-an-internet-cryptid
 date: "1996-06-05T16:24:22.1Z"
 category: Cryptid Sightings

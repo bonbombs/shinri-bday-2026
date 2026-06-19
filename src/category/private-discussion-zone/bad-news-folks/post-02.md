@@ -6,4 +6,4 @@ category: Private Discussion Zone
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-Oh dear, I hope everything turns out okay!
+oh dear, i hope everything turns out okay!

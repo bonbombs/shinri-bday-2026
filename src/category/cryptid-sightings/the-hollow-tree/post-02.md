@@ -9,4 +9,4 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 Oh cripes. Here we go again.<br/>
 Like the other so-called “cryptids” that you “sight,” the Hollow Tree is not a cryptid!<br/>
 No one thinks of it as a cryptid! It is not “hidden in plain sight” because it’s not hiding!<br/>
-What is wrong with you.
+<i>What is wrong with you.</i>

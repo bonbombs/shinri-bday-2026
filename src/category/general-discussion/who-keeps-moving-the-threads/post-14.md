@@ -10,4 +10,4 @@ That’s quite enough, Koinspiratorial.
 
 EDIT: Upon further discussion with involved parties, I have unbanned Koinspiratorial because the address and coordinates were not identifying information, and instead to a public facility. However, for the sake of avoiding further controversy, the post will stay removed and I’m closing this thread.
 
-<span class="edit">edited by SecretGarden</span>
+<span class="edit">Edited by SecretGarden.</span>
