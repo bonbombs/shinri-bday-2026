@@ -10,6 +10,6 @@ i also have gone on a cryptid sighting adventure<br/>
 i jumped the fence to the guild tempus facilities and<br/>
 BEHOLD
 
-<img src="/assets/img/post/Koipanionsfloat.jpg" alt="Blurry photo of koipanions floating in a pond"/>
+<img src="/assets/img/post/Koipanionsfloat.jpg" alt="A blurry photo of a group of koipanions floating in a pond."/>
 
 GUILD TEMPUS IS HARBORING CRYPTIDS

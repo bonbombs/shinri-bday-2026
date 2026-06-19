@@ -9,4 +9,4 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 happy birthday SecretGarden<br/>
 i took this picture for you on my last trip
 
-<img src="/assets/img/post/Flutterrom birthday small.gif" alt="Animated gif of Flutterrom with a party hat, birthday cake, party blower, and balloons. Text overlay: Happy Birthday... in cursive"/>
+<img src="/assets/img/post/Flutterrom birthday small.gif" alt="A 90s-early 2000s style animated GIF of a birthday-themed flutterrom. Text overlay: Happy Birthday... in cursive"/>

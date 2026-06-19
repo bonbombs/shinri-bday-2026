@@ -8,5 +8,5 @@ permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{
 
 Why would I wish that evil on them?
 
-<img src="/assets/img/post/icklefish email.jpg" alt="Photo of an icklefish swimming along the river. Text overlay: I hope this email doesn't find you..."/>
+<img src="/assets/img/post/icklefish email.jpg" alt="An artwork image of an icklefish down the river. Text overlay: I hope this email doesn't find you..."/>
 
