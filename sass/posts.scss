@@ -124,6 +124,11 @@
             object-fit: cover;
         }
     }
+
+    .system-notice {
+        color: #22beca;
+        padding: 0.25em 1em;
+    }
     
     .profile {
         line-height: 1.5;
@@ -169,6 +174,7 @@
 .edit {
     color: #22beca;
     font-style: italic;
+    font-size: 0.85em;
 }
 
 .clear { clear: both; }

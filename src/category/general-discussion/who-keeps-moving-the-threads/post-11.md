@@ -6,6 +6,6 @@ category: General Discussion
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-<i>POST REMOVED</i>
+<span class="system-notice"><i>POST REMOVED</i></span>
 
-<i><b>USER WAS BANNED FOR THIS POST.</b></i>
+<span class="system-notice"><i><b>USER WAS BANNED FOR THIS POST.</b></i></span>
