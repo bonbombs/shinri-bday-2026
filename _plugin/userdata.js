@@ -66,7 +66,7 @@ export default [
     },
     { 
         "id": "missing-koi",
-        "username": "MissingKoi",
+        "username": "MissingKoi.",
         "profilealt": "Pixel art of a koi in the style of Moképon",
         "title": "Pattern analyst",
         "location": "Below the surface",
