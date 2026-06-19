@@ -6,5 +6,5 @@ category: Cryptid Sightings
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
 ---
 
-in this one you can even see a vague figure<br/>
+in that one you can even see a vague figure<br/>
 its super tall
