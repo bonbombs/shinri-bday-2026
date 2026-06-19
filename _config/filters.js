@@ -65,7 +65,7 @@ export default function(eleventyConfig) {
 		posts.sort((b, a) => Date.parse(a.date) - Date.parse(b.date));
 		posts.forEach(item => {
 			const thread = item.data.thread;
-            if (!threads[thread]) {
+            if (!threads[thread] && item.data.category != "Password Protected") {
                 threads[thread] = item;
             }
 		})

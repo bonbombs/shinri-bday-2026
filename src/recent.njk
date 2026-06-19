@@ -39,7 +39,8 @@ const numberOfLatestThreadsToShow = 3;
     {% set threaditem = collections.thread | findThread(lastPost.data.thread) %}
     {% set userid = lastPost.data.user %}
     {% set userdata = users | findUser(userid) %}
-    {% if threaditem.data.category == "Password Protected" %}
+    {% set postcount = collections.postsByThread[threaditem.data.id] | length %}
+    {% if threaditem.data.category == "Password Protected" or postcount == 0 %}
     {% else %}
     <tr>
         <td>
@@ -51,7 +52,6 @@ const numberOfLatestThreadsToShow = 3;
             </div>
         </td>
         <td>
-            {% set postcount = collections.postsByThread[threaditem.data.id] | length %}
             <span>{{postcount}} posts</span>
         </td>
         <td>
