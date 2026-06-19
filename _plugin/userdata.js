@@ -28,7 +28,7 @@ export default [
         "title": "Matron of the deep",
         "location": "The oldest stone by the pond",
         "hobbies": "Cooking (lore and food), midnight walks and photographing cryptids",
-        "joined": "1996-01-27",
+        "joined": "1996-02-28",
         "quote": "if you are deep in the mists, look to the lights"
 
     },
@@ -36,10 +36,10 @@ export default [
         "id": "neverscared",
         "username": "NeverScared",
         "profilealt": "Image of a skeletal koi, with piercing red eyes",
-        "title": "King of Horror Games",
-        "location": "In Shinri's walls",
+        "title": "Queen of Horror Games",
+        "location": "In the walls...",
         "hobbies": "Movies... point and click adventures... baking...",
-        "joined": "1996-01-26",
+        "joined": "1996-02-20",
         "quote": "pm me... for baked goodies..."
 
     },
@@ -50,7 +50,7 @@ export default [
         "title": "Draft #3",
         "location": "Near the lilypads",
         "hobbies": "Writing fanfics, anime, horror, number 1 BlueHedgehog fan",
-        "joined": "1996-01-27",
+        "joined": "1996-03-08",
         "quote": "Step it up!"
     },
     {
@@ -60,7 +60,7 @@ export default [
         "title": "",
         "location": "on a morning walk",
         "hobbies": "Hunting cryptids, lazy afternoon naps, cuddles",
-        "joined": "1996-01-27",
+        "joined": "1996-03-29",
         "quote": "Finding a reflection of myself."
 
     },
@@ -70,7 +70,7 @@ export default [
         "profilealt": "Pixel art of a koi in the style of Moképon",
         "title": "Pattern analyst",
         "location": "Below the surface",
-        "hobbies": "Lurking, Late-Night Posting, Keeping Notes, Conspiracy Theories, Moképon",
+        "hobbies": "Lurking, Late-Night Posting, Documenting the Unknown, Moképon",
         "joined": "1996-01-23",
         "login": "1996-05-15",
         "quote": "Always look carefully.",
@@ -83,7 +83,7 @@ export default [
         "title": "Paredolia Master",
         "location": "You'll Never Find Me!",
         "hobbies": "wouldnt u like to know",
-        "joined": "1996-04-01",
+        "joined": "1996-03-26",
         "quote": "the TRUTH is OUT THERE"
     },
     { 
