@@ -19,8 +19,14 @@ export default [
     {
         "path": "117b23fa-c3c6-4ff6-a87c-6c2f4a99135d.jpg",
         "modified": "01-Jan-1996 00:00:00",
-        "size": "8 k",
+        "size": "18 k",
         "desc": "hint 03"
+    },
+    {
+        "path": "246ad6d6-f515-4d1e-ab87-8832170a2414.jpg",
+        "modified": "01-Jan-1996 00:00:00",
+        "size": "13 k",
+        "desc": "hint 03b"
     },
     {
         "path": "9b04d2c2-270f-4ef1-8b50-c29b9df05775.jpg",
