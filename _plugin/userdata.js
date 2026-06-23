@@ -7,6 +7,7 @@ export default [
         "location": "Behind the garden door",
         "hobbies": "Reading manga, watching anime, reading forum posts",
         "joined": "1995-12-31",
+        "login": "today",
         "quote": "A garden for cryptids."
         
     },
@@ -18,6 +19,7 @@ export default [
         "location": "Somewhere nearby",
         "hobbies": "Tea, hiking, reading, preparing for the inevitable apocalypse",
         "joined": "1996-01-23",
+        "login": "today",
         "quote": "I hope you’re taking this as seriously as I am!"
 
     },
@@ -29,6 +31,7 @@ export default [
         "location": "The oldest stone by the pond",
         "hobbies": "Cooking (lore and food), midnight walks and photographing cryptids",
         "joined": "1996-02-28",
+        "login": "today",
         "quote": "if you are deep in the mists, look to the lights"
 
     },
@@ -40,6 +43,7 @@ export default [
         "location": "In the walls...",
         "hobbies": "Movies... point and click adventures... baking...",
         "joined": "1996-02-20",
+        "login": "today",
         "quote": "pm me... for baked goodies..."
 
     },
@@ -51,6 +55,7 @@ export default [
         "location": "Near the lilypads",
         "hobbies": "Writing fanfics, anime, horror, number 1 BlueHedgehog fan",
         "joined": "1996-03-08",
+        "login": "today",
         "quote": "Step it up!"
     },
     {
@@ -61,6 +66,7 @@ export default [
         "location": "on a morning walk",
         "hobbies": "Hunting cryptids, lazy afternoon naps, cuddles",
         "joined": "1996-03-29",
+        "login": "today",
         "quote": "Finding a reflection of myself."
 
     },
@@ -84,6 +90,7 @@ export default [
         "location": "You'll Never Find Me!",
         "hobbies": "wouldnt u like to know",
         "joined": "1996-03-26",
+        "login": "today",
         "quote": "the TRUTH is OUT THERE"
     },
     { 
@@ -94,6 +101,7 @@ export default [
         "location": "The Koi Pond",
         "hobbies": "Swimming, Watching Streams, Memeing",
         "joined": "1996-01-23",
+        "login": "today",
         "quote": "Floating along swimmingly~"
     },
     {
