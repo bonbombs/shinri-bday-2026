@@ -2,7 +2,7 @@
 user: Hata
 avatar: "Guestbook_Hata-Art_AVATAR.jpg"
 signature1: "Guestbook_Hata-Art_SIG.jpg"
-social: "https://twitter.com/chiffles_"
+social: "https://twitter.com/HataArt"
 thread: happy-birthday
 category: Password Protected
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"

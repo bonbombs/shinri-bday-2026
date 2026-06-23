@@ -2,7 +2,7 @@
 user: Odie
 avatar: "punikoB.jpg"
 signature1: "stackableSHINRI.png"
-social: "https://twitter.com/serefima"
+social: "https://twitter.com/serefima_"
 thread: happy-birthday
 category: Password Protected
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"

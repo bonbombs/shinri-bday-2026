@@ -2,7 +2,7 @@
 user: Fluor
 avatar: "Guestbook_Fluor_AVATAR.jpg"
 signature1: "shinri01.png"
-social: "https://twitter.com/chiffles_"
+social: "https://twitter.com/FluorescentArt"
 thread: happy-birthday
 category: Password Protected
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
