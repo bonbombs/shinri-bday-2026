@@ -2,7 +2,6 @@
 user: Niko
 avatar: "fishB.jpg"
 signature1: "shinri01.png"
-social: "https://twitter.com/justdegenerate"
 thread: happy-birthday
 category: Password Protected
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"

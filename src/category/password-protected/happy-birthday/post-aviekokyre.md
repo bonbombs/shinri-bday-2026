@@ -1,7 +1,7 @@
 ---
 user: Avie Kokyre
 avatar: "Guestbook_aviekokyre_AVATAR.jpg"
-social: "https://twitter.com/aviekokyre"
+social: "https://bsky.app/profile/aviekokyre.bsky.social"
 thread: happy-birthday
 category: Password Protected
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"

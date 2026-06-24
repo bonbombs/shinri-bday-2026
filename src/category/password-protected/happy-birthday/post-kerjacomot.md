@@ -1,7 +1,7 @@
 ---
 user: Kerjacomot
 avatar: "punikoA.jpg"
-social: "https://twitter.com/kerjacomot"
+social: "https://bsky.app/profile/kerjacomot.bsky.social"
 thread: happy-birthday
 category: Password Protected
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"

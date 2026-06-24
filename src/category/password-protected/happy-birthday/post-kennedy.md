@@ -1,7 +1,7 @@
 ---
 user: Kennedy
 avatar: "fanB.jpg"
-social: "https://twitter.com/kennedylo"
+social: "https://bsky.app/profile/kennedylo.bsky.social"
 thread: happy-birthday
 category: Password Protected
 permalink: "/category/{{ category | slugify }}/{{ thread }}/thread/index.html#{{ page.fileSlug | slugify }}"
